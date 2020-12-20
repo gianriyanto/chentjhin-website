@@ -12,6 +12,13 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
+
+#Services{
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+
+}
 
 </style>

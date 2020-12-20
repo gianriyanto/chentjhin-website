@@ -1,29 +1,41 @@
 <template>
   <div id="app">
+    <TopNav/>
     <Landing/>
+    <Typeform/>
+    <Services/>
   </div>
 </template>
 
 <script>
+import TopNav from './components/TopNav.vue'
 import Landing from './components/sections/Landing.vue'
+import Typeform from "@/components/sections/Typeform";
+import Services from './components/sections/Services'
 
 export default {
   name: 'App',
   components: {
-    Landing
+    TopNav,
+    Landing,
+    Typeform,
+    Services,
   }
 }
 </script>
 
 <style lang="scss">
 
+html, body {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
 }
 
 @font-face {
