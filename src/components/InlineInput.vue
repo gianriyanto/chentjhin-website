@@ -9,7 +9,7 @@
           v-focus
       >
     </label>
-    <div v-else class="input-container">
+    <div v-else class="input-card">
       <div :class="applyInputStyle(field.input)">
         <label @click="onEditText"> {{field.input}} </label>
       </div>
@@ -60,28 +60,28 @@ export default {
 <style lang="scss" scoped>
 
 #InlineInput{
-  font-size: 22px;
+  font-size: 18px;
   font-family: "Gilroy Bold", serif;
 
   .input-editing{
     font-family: "Gilroy Bold", serif;
-    font-size: 22px;
+    font-size: 18px;
     color: darkgrey;
-    width: 320px;
+    width: 290px;
     border: transparent;
     outline: transparent;
     background-color: transparent;
     border-bottom: 1px solid #5651ec;
   }
 
-  .input-container{
+  .input-card{
     display: flex;
     flex-direction: row;
   }
   .check-icon{
-    font-size: 17px;
-    margin: 3px 0 0 10px;
-    color: #2b9d68;
+    font-size: 14px;
+    margin: 3px 0 0 8px;
+    color: #1c1c1c;
   }
   .input-has-value-style{
     color: #5651ec;

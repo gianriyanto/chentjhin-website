@@ -1,44 +1,43 @@
 <template>
   <div>
-    <gradient-bg id="gradient-bg"/>
     <section id="Typeform">
       <div class="wrapper">
         <span class="header">
           Hi there!
         </span>
         <transition appear name="slide-fade">
-          <span class="input-container">
-            <a class="prompt"> Your name is </a>
+          <span class="input-card">
+            <a class="prompt"> Hi there! Your name is </a>
             <inline-input v-bind:inputData="name"/>
           </span>
         </transition>
         <transition appear name="slide-fade">
-        <span v-if="name.isValid" class="input-container">
+        <span v-if="name.isValid" class="input-card">
           <a class="prompt"> It's best to reach you at </a>
           <inline-input v-bind:inputData="email"/>
         </span>
         </transition>
         <transition appear name="slide-fade">
-          <span v-if="email.isValid" class="input-container">
+          <span v-if="email.isValid" class="input-card">
             <a class="prompt"> And you're planning to study </a>
             <inline-input v-bind:inputData="course"/>
           </span>
         </transition>
         <transition appear name="slide-fade">
-          <span v-if="course.isValid" class="input-container">
+          <span v-if="course.isValid" class="input-card">
             <a class="prompt"> Cool! Preferably in </a>
             <inline-input v-bind:inputData="country"/>
           </span>
         </transition>
         <transition appear name="slide-fade">
-          <span v-if="country.isValid" class="input-container">
+          <span v-if="country.isValid" class="input-card">
             <a class="prompt"> to pursue a career as a</a>
             <inline-input v-bind:inputData="career"/>
           </span>
         </transition>
         <transition appear name="slide-fade">
-          <span v-if="career.isValid" class="footer">
-            <a class="label"> Fantastic! You're all set. Chat soon.</a>
+          <span v-if="career.isValid" class="footer-card">
+            <a class="label"> Fantastic! Chat soon.</a>
             <button class="email-button">
               <a class="button-label"> Done </a>
             </button>
@@ -51,12 +50,10 @@
 
 <script>
 import InlineInput from "@/components/InlineInput";
-import GradientBg from "@/components/background/gradienttypeformbg";
 
 export default {
   name: "Typeform",
   components: {
-    GradientBg,
     InlineInput
   },
   data() {
@@ -73,20 +70,11 @@ export default {
 
 <style scoped lang="scss">
 
-#gradient-bg{
-  position: absolute;
-  z-index: -1;
-}
-
 #Typeform{
   position: relative;
   display: flex;
   flex-direction: column;
-  height: 100vh;
-  background: rgba( 255, 255, 255, 0.40 );
-  backdrop-filter: blur( 30px );
-  -webkit-backdrop-filter: blur( 30px );
-  z-index: 1;
+  margin: auto 0;
 
   .wrapper{
     display: flex;
@@ -95,68 +83,80 @@ export default {
     margin: auto;
     text-align: left;
     height: fit-content;
-    width: 36vw;
-    padding: 60px;
+    width: 350px;
 
     .header{
+      display: none;
       font-family: "Gilroy Bold", serif;
       color: #1c1c1c;
       font-size: 30px;
       margin: 0 9px 10px 10px;
     }
 
-    .input-container{
+    .input-card{
       position: relative;
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      justify-content: space-evenly;
       margin-bottom: 13px;
-      padding: 20px 40px;
-      height: fit-content;
-      background: rgba(207, 201, 201, 0.0);
-      box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.1 );
-      backdrop-filter: blur( 10px );
-      -webkit-backdrop-filter: blur( 10px );
+      padding: 14px 25px;
+      height: 60px;
+      background: rgba(215, 202, 202, 0);
+      box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.2 );
+      backdrop-filter: blur( 1.5px );
+      -webkit-backdrop-filter: blur( 1.5px );
       border-radius: 12px;
 
       .prompt {
-        font-family: "Gilroy Bold", serif;
+        font-family: "Gilroy SemiBold", serif;
         color: #1c1c1c;
-        font-size: 22px;
+        font-size: 18px;
         margin: 0 9px 5px 0;
       }
     }
-
-    .footer{
-      margin: 15px 9px 10px 9px;
+    .footer-card{
+      position: relative;
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
       justify-content: space-between;
-      height: fit-content;
+      margin-bottom: 13px;
+      padding: 0 6px 0 20px;
+      height: 55px;
+      background: rgba(207, 201, 201, 0.0);
+      box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.2 );
+      backdrop-filter: blur( 10px );
+      -webkit-backdrop-filter: blur( 10px );
+      border-radius: 12px;
 
       .label{
         margin: auto 0;
         font-family: "Gilroy Bold", serif;
         color: #1c1c1c;
-        font-size: 24px;
+        font-size: 18px;
       }
-
       .email-button{
-        margin-top: 20px;
-        width: 130px;
-        height: 44px;
-        background-color: #5b1fff;
-        border-radius: 8px;
+        cursor: pointer;
+        margin: auto 0;
+        width: 110px;
+        height: 39px;
         border: none;
+        background-color: #282828;
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.6 );
+        border-radius: 10px;
         outline: none;
         text-decoration: none;
+        transition: all 0.3s ease-in-out;
 
         .button-label{
-          font-family: Montserrat, serif;
+          font-family: "Gilroy SemiBold", serif;
           font-weight: 600;
           font-size: 13px;
           margin: auto;
           color: white;
+        }
+
+        &:hover{
+          opacity: 0.9;
         }
       }
     }
@@ -167,7 +167,7 @@ export default {
 /* Enter and leave animations can use different */
 /* durations and timing functions.              */
 .slide-fade-enter-active {
-  transition: all 0.7s ease-out;
+  transition: all 1s ease-out;
 }
 .slide-fade-leave-active {
   transition: all 1s cubic-bezier(1.0, 0.5, 0.8, 1.0);

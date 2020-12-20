@@ -2,8 +2,8 @@
   <div id="TopNav">
     <div class="wrapper">
       <span class="logo"/>
-      <button class="contact-button">
-        <a class="button-label"> Say Hi! </a>
+      <button class="menu-button">
+        <font-awesome-icon class="menu-icon" :icon="['fas', 'bars']"/>
       </button>
     </div>
   </div>
@@ -31,6 +31,7 @@ export default {
     justify-content: space-between;
     height: 50px;
     width: 80vw;
+    max-width: 1200px;
 
     .logo {
       width: 25px;
@@ -41,20 +42,18 @@ export default {
       border-bottom: 0;
     }
 
-    .contact-button {
-      width: 120px;
+    .menu-button {
+      width: 100px;
       height: 45px;
-      background-color: black;
-      border-radius: 8px;
+      background-color: transparent;
+      border: none;
+      text-decoration: none;
       outline: none;
-      border: 0;
 
-      .button-label{
-        font-family: Montserrat, serif;
-        font-weight: 600;
-        font-size: 13px;
+      .menu-icon{
+        font-size: 30px;
         margin: auto;
-        color: white;
+        color: black;
       }
     }
   }

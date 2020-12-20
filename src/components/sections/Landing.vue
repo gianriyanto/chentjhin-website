@@ -2,25 +2,22 @@
   <div>
     <gradient-bg id="gradient-bg"/>
     <section id="Landing">
+      <div id="half-bg"> </div>
       <div class="wrapper">
         <div class="header-container">
-          <a class="header-index0">
+          <a class="header-index1">
             My name is Chen,
           </a>
-          <a class="header-index1">
+          <a class="header-index2">
             I am a senior education counsellor.
           </a>
-          <button class="get-started-button" v-scroll-to="{
-                el: '#Typeform',
-                easing: [.2, .80, .30, 1],
-                duration: 1100
-            }">
-            <a class="button-label"> Get started </a>
-          </button>
+          <span class="content-container">
+            <button class="get-started-button" v-scroll-to="{ el: '#Typeform', easing: [.2, .80, .30, 1],duration: 1100}">
+              <a class="button-label"> See how I can help </a>
+            </button>
+          </span>
         </div>
-        <span class="image-container">
-          <img class="image" src="@/assets/images/professional.svg" alt=""/>
-        </span>
+        <Typeform id="Typeform"/>
       </div>
     </section>
   </div>
@@ -28,10 +25,12 @@
 
 <script>
 import GradientBg from "@/components/background/gradientlandingbg";
+import Typeform from "@/components/sections/Typeform";
 
 export default {
   name: "Landing",
   components: {
+    Typeform,
     GradientBg,
   }
 }
@@ -57,10 +56,12 @@ export default {
   .wrapper{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    margin: auto;
-    width: 72vw;
-    height: 50vh;
+    justify-content: space-evenly;
+    margin: 180px auto;
+    width: 73vw;
+    max-width: 1097px;
+    min-width: 950px;
+    height: 60vh;
 
     .header-container{
       display: flex;
@@ -69,48 +70,55 @@ export default {
       margin: auto 0;
       text-align: left;
       letter-spacing: -1px;
-      line-height: 1.1;
-      font-size: 55px;
+      line-height: 1.2;
+      font-size: 52px;
       width: 50%;
 
-      .header-index0{
-        font-family: "Gilroy Bold", serif;
-        color: #5b1fff;
-      }
       .header-index1{
         font-family: "Gilroy Bold", serif;
-        color: #1d1d1d;
+        color: #5b1fff;
+        font-size: 53px;
       }
-      .get-started-button{
-        margin: 20px 0 0 0;
-        width: 170px;
-        height: 50px;
-        background-color: #5b1fff;
-        box-shadow: 0 8px 32px 0 rgba(17, 20, 57, 0.5);
-        border-radius: 8px;
-        border: none;
-        outline: none;
-        text-decoration: none;
+      .header-index2{
+        font-family: "Gilroy Bold", serif;
+        color: #1d1d1d;
+        font-size: 53px;
+      }
+      .content-container{
+        display: flex;
+        flex-direction: row;
+        margin-top: 30px;
 
-        .button-label{
-          font-family: Montserrat, serif;
-          font-weight: 600;
-          font-size: 14px;
-          margin: auto;
-          color: white;
+        .get-started-button{
+          cursor: pointer;
+          width: 190px;
+          height: 50px;
+          background-color: #5b1fff;
+          box-shadow: 0 8px 32px 0 rgba(17, 20, 57, 0.5);
+          border-radius: 40px;
+          border: none;
+          outline: none;
+          text-decoration: none;
+          transition: all .35s ease-in-out;
+
+          &:hover{
+            opacity: 0.9;
+          }
+
+          .button-label{
+            font-family: Montserrat, serif;
+            font-weight: 600;
+            font-size: 14px;
+            margin: auto;
+            color: white;
+          }
         }
       }
     }
-    .image-container{
-      width: 40%;
-
-      .image{
-        width: 400px;
-        height: auto;
-      }
+    #Typeform{
+      z-index: 2;
     }
   }
-
 }
 
 </style>
