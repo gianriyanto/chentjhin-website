@@ -54,7 +54,7 @@
 </template>
 
 <script>
-import GradientBg from "@/components/background/flipgradientbg";
+import GradientBg from "@/components/background/gradientbg";
 
 export default {
   name: "Services",
@@ -116,30 +116,30 @@ export default {
 
   .wrapper{
     display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: space-around;
     margin: 0 auto;
-    width: 64vw;
+    width: 60vw;
     height: fit-content;
 
     .header-container{
-      margin: 190px 0 0 0;
+      margin: 180px 0 0 0;
       display: flex;
       flex-direction: column;
       width: 40%;
       text-align: left;
 
       .header{
-        font-family: "Gilroy Bold", serif;
-        background: linear-gradient(to bottom left, #5b1fff, #5a3fff);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        font-family: "Bw Modelica Bold", serif;
+        font-weight: 700;
+        color: black;
         font-size: 70px;
         letter-spacing: -2px;
+        margin-bottom: 20px;
       }
       .sub-header{
-        font-family: "Gilroy Bold", serif;
-        color: #515151;
+        font-family: "Gilroy SemiBold", serif;
+        color: #403f3f;
         font-size: 22px;
         letter-spacing: -1px;
         margin-bottom: 80px;
@@ -158,8 +158,8 @@ export default {
       flex-direction: column;
       justify-content: center;
       height: fit-content;
-      width: 45%;
-      margin: 180px 0 0 0;
+      width: 40%;
+      margin: 250px 0 0 0;
 
       .item-wrapper {
         display: flex;
@@ -178,29 +178,29 @@ export default {
           flex-direction: column;
           padding: 20px;
           text-align: left;
-          height: 90px;
+          height: 80px;
           width: 310px;
-          margin-bottom: 30px;
           background: rgba(207, 201, 201, 0.1);
-          box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.3);
+          box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.2);
           backdrop-filter: blur(10px);
           -webkit-backdrop-filter: blur(10px);
-          border-radius: 16px;
+          border-radius: 12px;
+          margin-bottom: 25px;
 
           .item-header {
             font-family: "Gilroy Bold", serif;
-            color: #5b1fff;
-            font-size: 20px;
+            color: #5b23f1;
+            font-size: 21px;
             z-index: 2;
-            letter-spacing: -1px;
-            margin-bottom: 10px;
+            letter-spacing: -1.2px;
+            margin-bottom: 5px;
           }
           .item-description {
-            font-family: "Gilroy Medium", serif;
-            color: #1f1f1f;
-            font-size: 17px;
+            font-family: "Bw Modelica Medium", serif;
+            color: #3e3e3e;
+            font-size: 15px;
             z-index: 2;
-            letter-spacing: -0.5px;
+            letter-spacing: -1px;
           }
         }
       }

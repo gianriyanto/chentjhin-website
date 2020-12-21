@@ -2,8 +2,8 @@
   <div id="app">
     <TopNav/>
     <Landing/>
+    <About/>
     <Services/>
-    <Testimony/>
   </div>
 </template>
 
@@ -11,12 +11,12 @@
 import TopNav from './components/TopNav.vue'
 import Landing from './components/sections/Landing.vue'
 import Services from "@/components/sections/Services";
-import Testimony from "@/components/sections/Testimony";
+import About from "@/components/sections/About";
 
 export default {
   name: 'App',
   components: {
-    Testimony,
+    About,
     Services,
     TopNav,
     Landing,
@@ -72,6 +72,36 @@ html, body {
   font-family: "Gilroy Thin";
   src: local("Gilroy Thin"),
   url(./fonts/Gilroy/Gilroy-Thin.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Bw Modelica Bold";
+  src: local("Bw Modelica Bold"),
+  url(./fonts/BwModelica/BwModelica-Bold.otf) format("truetype");
+}
+@font-face {
+  font-family: "Bw Modelica Medium";
+  src: local("Bw Modelica Medium"),
+  url(./fonts/BwModelica/BwModelica-Medium.otf) format("truetype");
+}
+@font-face {
+  font-family: "Bw Modelica Regular";
+  src: local("Bw Modelica Regular"),
+  url(./fonts/BwModelica/BwModelica-Regular.otf) format("truetype");
+}
+@font-face {
+  font-family: "Bw Modelica Light";
+  src: local("Bw Modelica Light"),
+  url(./fonts/BwModelica/BwModelica-Light.otf) format("truetype");
+}
+@font-face {
+  font-family: "Bw Modelica Thin";
+  src: local("Bw Modelica Thin"),
+  url(./fonts/BwModelica/BwModelica-Thin.otf) format("truetype");
+}
+@font-face {
+  font-family: "Bw Modelica Hairline";
+  src: local("Bw Modelica Hairline"),
+  url(./fonts/BwModelica/BwModelica-Hairline.otf) format("truetype");
 }
 
 </style>
