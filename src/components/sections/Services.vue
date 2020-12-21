@@ -54,7 +54,7 @@
 </template>
 
 <script>
-import GradientBg from "@/components/background/gradienttypeformbg";
+import GradientBg from "@/components/background/flipgradientbg";
 
 export default {
   name: "Services",

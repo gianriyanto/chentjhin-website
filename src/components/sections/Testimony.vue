@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import GradientBg from "@/components/background/gradientlandingbg";
+import GradientBg from "@/components/background/gradientbg";
 export default {
   name: "Testimony",
   components: {

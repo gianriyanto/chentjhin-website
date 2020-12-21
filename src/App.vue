@@ -2,16 +2,22 @@
   <div id="app">
     <TopNav/>
     <Landing/>
+    <Services/>
+    <Testimony/>
   </div>
 </template>
 
 <script>
 import TopNav from './components/TopNav.vue'
 import Landing from './components/sections/Landing.vue'
+import Services from "@/components/sections/Services";
+import Testimony from "@/components/sections/Testimony";
 
 export default {
   name: 'App',
   components: {
+    Testimony,
+    Services,
     TopNav,
     Landing,
   }

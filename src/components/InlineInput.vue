@@ -59,12 +59,12 @@ export default {
 <style lang="scss" scoped>
 
 #InlineInput{
-  font-size: 18px;
+  font-size: 19px;
   font-family: "Gilroy Bold", serif;
 
   .input-editing{
     font-family: "Gilroy Bold", serif;
-    font-size: 18px;
+    font-size: 19px;
     color: darkgrey;
     width: 290px;
     border: transparent;

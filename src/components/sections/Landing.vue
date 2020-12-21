@@ -24,7 +24,7 @@
 </template>
 
 <script>
-import GradientBg from "@/components/background/gradientlandingbg";
+import GradientBg from "@/components/background/gradientbg";
 import Typeform from "@/components/sections/Typeform";
 
 export default {
@@ -58,7 +58,7 @@ export default {
     flex-direction: row;
     justify-content: space-evenly;
     margin: 200px auto;
-    width: 73vw;
+    width: 71vw;
     max-width: 1097px;
     min-width: 950px;
     height: 60vh;
@@ -91,7 +91,7 @@ export default {
 
         .get-started-button{
           cursor: pointer;
-          width: 200px;
+          width: 210px;
           height: 50px;
           background-color: #5b1fff;
           box-shadow: 0 8px 32px 0 rgba(17, 20, 57, 0.5);

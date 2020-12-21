@@ -83,7 +83,7 @@ export default {
     margin: auto;
     text-align: left;
     height: fit-content;
-    width: 350px;
+    width: 366px;
 
     .header{
       display: none;
@@ -99,7 +99,7 @@ export default {
       flex-direction: column;
       justify-content: space-evenly;
       margin-bottom: 13px;
-      padding: 13px 25px;
+      padding: 18px 27px;
       height: 55px;
       background: rgba(215, 202, 202, 0);
       box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.2 );
