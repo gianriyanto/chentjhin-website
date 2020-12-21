@@ -1,24 +1,211 @@
 <template>
-  <section id="Services">
-    <div class="wrapper">
-      Services
-    </div>
-  </section>
+  <div>
+    <gradient-bg id="gradient-bg"/>
+    <section id="Services">
+      <div class="wrapper">
+        <div class="header-container">
+          <span class="header">
+            Process.
+          </span>
+          <span class="sub-header">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          </span>
+          <img class="image-container" src="@/assets/images/professional.svg" alt=""/>
+        </div>
+        <div class="content-container">
+          <span class="item-wrapper">
+            <span class="item-card left">
+              <span class="item-header">
+                 Aptitude
+              </span>
+              <span class="item-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </span>
+            </span>
+            <span class="item-card right">
+              <span class="item-header">
+                 Consulting
+              </span>
+              <span class="item-description">
+                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </span>
+            </span>
+            <span class="item-card left">
+              <span class="item-header">
+                 Application
+              </span>
+              <span class="item-description">
+                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </span>
+            </span>
+            <span class="item-card right">
+              <span class="item-header">
+                 Counselling
+              </span>
+              <span class="item-description">
+                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </span>
+            </span>
+          </span>
+        </div>
+      </div>
+    </section>
+  </div>
 </template>
 
 <script>
+import GradientBg from "@/components/background/gradienttypeformbg";
+
 export default {
-  name: "Services"
+  name: "Services",
+  components: {
+    GradientBg
+  },
+  data () {
+    return {
+      services: [
+        {
+          index: 1,
+          name: 'Aptitude',
+          description: 'Aptitude Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+          imageURL: 'ideasflow.svg'
+        },
+        {
+          index: 2,
+          name: 'Consulting',
+          description: 'Consulting Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+          imageURL: 'professional.svg'
+        },
+        {
+          index: 3,
+          name: 'Application',
+          description: 'Application Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+          imageURL: 'teacher.svg'
+        },
+        {
+          index: 4,
+          name: 'Counselling',
+          description: 'Counselling Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+          imageURL: 'ideasflow.svg'
+        },
+      ]
+    }
+  },
+  methods: {
+
+  }
 }
 </script>
 
 <style scoped lang="scss">
 
+#gradient-bg{
+  position: absolute;
+  height: 90vh;
+  z-index: -1;
+}
+
 #Services{
   position: relative;
   height: 100vh;
   width: 100vw;
+  background: rgba( 255, 255, 255, 0.40 );
+  backdrop-filter: blur( 30px );
+  -webkit-backdrop-filter: blur( 30px );
+  z-index: 1;
 
+  .wrapper{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 64vw;
+    height: fit-content;
+
+    .header-container{
+      margin: 190px 0 0 0;
+      display: flex;
+      flex-direction: column;
+      width: 40%;
+      text-align: left;
+
+      .header{
+        font-family: "Gilroy Bold", serif;
+        background: linear-gradient(to bottom left, #5b1fff, #5a3fff);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 70px;
+        letter-spacing: -2px;
+      }
+      .sub-header{
+        font-family: "Gilroy Bold", serif;
+        color: #515151;
+        font-size: 22px;
+        letter-spacing: -1px;
+        margin-bottom: 80px;
+      }
+
+      .image-container{
+        opacity: 0.8;
+        display: block;
+        width: 320px;
+        height: auto;
+      }
+    }
+
+    .content-container{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: fit-content;
+      width: 45%;
+      margin: 180px 0 0 0;
+
+      .item-wrapper {
+        display: flex;
+        flex-direction: column;
+        margin: auto 0;
+
+        .right{
+          margin-left: 110px;
+        }
+
+        .left{
+        }
+
+        .item-card {
+          display: flex;
+          flex-direction: column;
+          padding: 20px;
+          text-align: left;
+          height: 90px;
+          width: 310px;
+          margin-bottom: 30px;
+          background: rgba(207, 201, 201, 0.1);
+          box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.3);
+          backdrop-filter: blur(10px);
+          -webkit-backdrop-filter: blur(10px);
+          border-radius: 16px;
+
+          .item-header {
+            font-family: "Gilroy Bold", serif;
+            color: #5b1fff;
+            font-size: 20px;
+            z-index: 2;
+            letter-spacing: -1px;
+            margin-bottom: 10px;
+          }
+          .item-description {
+            font-family: "Gilroy Medium", serif;
+            color: #1f1f1f;
+            font-size: 17px;
+            z-index: 2;
+            letter-spacing: -0.5px;
+          }
+        }
+      }
+    }
+  }
 }
 
 </style>

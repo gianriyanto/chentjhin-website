@@ -12,7 +12,7 @@
             I am a senior education counsellor.
           </a>
           <span class="content-container">
-            <button class="get-started-button" v-scroll-to="{ el: '#Typeform', easing: [.2, .80, .30, 1],duration: 1100}">
+            <button class="get-started-button" v-scroll-to="{ el: '#Services', easing: [.2, .80, .30, 1],duration: 1100}">
               <a class="button-label"> See how I can help </a>
             </button>
           </span>
@@ -44,9 +44,9 @@ export default {
 }
 
 #Landing{
+  position: relative;
   height: 100vh;
   width: 100vw;
-  position: relative;
   display: flex;
   background: rgba( 255, 255, 255, 0.40 );
   backdrop-filter: blur( 30px );
@@ -57,7 +57,7 @@ export default {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    margin: 180px auto;
+    margin: 200px auto;
     width: 73vw;
     max-width: 1097px;
     min-width: 950px;
@@ -91,7 +91,7 @@ export default {
 
         .get-started-button{
           cursor: pointer;
-          width: 190px;
+          width: 200px;
           height: 50px;
           background-color: #5b1fff;
           box-shadow: 0 8px 32px 0 rgba(17, 20, 57, 0.5);

@@ -6,8 +6,7 @@
           v-model="field.input"
           v-on:blur="field.edit=false; onChangeText(field.input); $emit('update')"
           v-on:keyup.enter="$event.target.blur()"
-          v-focus
-      >
+          v-focus>
     </label>
     <div v-else class="input-card">
       <div :class="applyInputStyle(field.input)">

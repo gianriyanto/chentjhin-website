@@ -1,17 +1,36 @@
 <template>
-  <section id="Testimony">
-    <div class="wrapper">
-      Testimony
-    </div>
-  </section>
+  <div>
+    <gradient-bg id="gradient-bg"/>
+    <section id="Testimony">
+
+    </section>
+  </div>
 </template>
 
 <script>
+import GradientBg from "@/components/background/gradientlandingbg";
 export default {
-  name: "Testimony"
+  name: "Testimony",
+  components: {
+    GradientBg
+  },
+  data() {
+    return{
+
+    }
+  }
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
+
+#gradient-bg{
+  position: absolute;
+  z-index: -1;
+}
+
+#Landing{
+
+}
 
 </style>

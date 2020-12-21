@@ -99,8 +99,8 @@ export default {
       flex-direction: column;
       justify-content: space-evenly;
       margin-bottom: 13px;
-      padding: 14px 25px;
-      height: 60px;
+      padding: 13px 25px;
+      height: 55px;
       background: rgba(215, 202, 202, 0);
       box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.2 );
       backdrop-filter: blur( 1.5px );
@@ -110,7 +110,7 @@ export default {
       .prompt {
         font-family: "Gilroy SemiBold", serif;
         color: #1c1c1c;
-        font-size: 18px;
+        font-size: 17px;
         margin: 0 9px 5px 0;
       }
     }
@@ -120,8 +120,8 @@ export default {
       flex-direction: row;
       justify-content: space-between;
       margin-bottom: 13px;
-      padding: 0 6px 0 20px;
-      height: 55px;
+      padding: 0 8px 0 20px;
+      height: 58px;
       background: rgba(207, 201, 201, 0.0);
       box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.2 );
       backdrop-filter: blur( 10px );
@@ -137,8 +137,8 @@ export default {
       .email-button{
         cursor: pointer;
         margin: auto 0;
-        width: 110px;
-        height: 39px;
+        width: 120px;
+        height: 38px;
         border: none;
         background-color: #282828;
         box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.6 );
