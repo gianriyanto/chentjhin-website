@@ -99,11 +99,13 @@ export default {
       margin-bottom: 13px;
       padding: 18px 27px;
       height: 55px;
-      background: rgba(215, 202, 202, 0);
-      box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.2 );
-      backdrop-filter: blur( 1.5px );
-      -webkit-backdrop-filter: blur( 1.5px );
       border-radius: 12px;
+
+      border: 0.5px solid rgba(255,255,255,0.1);
+      background: rgba(255, 255, 255, 0.2);
+      box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.2 );
+      backdrop-filter: blur( 10px );
+      -webkit-backdrop-filter: blur( 10px );
 
       .prompt {
         font-family: "Gilroy SemiBold", serif;
@@ -120,11 +122,12 @@ export default {
       margin-bottom: 13px;
       padding: 0 8px 0 20px;
       height: 58px;
-      background: rgba(207, 201, 201, 0.0);
+      border-radius: 12px;
+
+      background: rgba(255, 255, 255, 0.1);
       box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.2 );
       backdrop-filter: blur( 10px );
       -webkit-backdrop-filter: blur( 10px );
-      border-radius: 12px;
 
       .label{
         margin: auto 0;

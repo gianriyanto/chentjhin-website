@@ -2,7 +2,6 @@
   <div>
     <gradient-bg id="gradient-bg"/>
     <section id="Landing">
-      <div id="half-bg"> </div>
       <div class="wrapper">
         <div class="header-container">
           <a class="header-index1">
@@ -19,6 +18,7 @@
         </div>
         <Typeform id="Typeform"/>
       </div>
+      <Process/>
     </section>
   </div>
 </template>
@@ -27,10 +27,12 @@
 
 import GradientBg from "@/components/background/gradientbg";
 import Typeform from "@/components/Typeform";
+import Process from "@/components/sections/Process";
 
 export default {
   name: "Landing",
   components: {
+    Process,
     Typeform,
     GradientBg,
   }
@@ -47,13 +49,16 @@ export default {
 
 #Landing{
   position: relative;
-  height: 110vh;
+  height: fit-content;
   width: 100vw;
   display: flex;
-  background: rgba( 255, 255, 255, 0.50 );
+  flex-direction: column;
+  z-index: 1;
+  border: thin solid red;
+
+  background: rgba( 255, 255, 255, 0.60 );
   backdrop-filter: blur( 30px );
   -webkit-backdrop-filter: blur( 30px );
-  z-index: 1;
 
   .wrapper{
     display: flex;

@@ -14,13 +14,20 @@ export default {
 
 #gradient-bg{
   position: absolute;
-  height: 100vh;
+  height: 120vh;
   width: 100vw;
   z-index: -1;
+  display: flex;
 
-  .image{
-    height: 100vh;
-    width: 100vw;
+  .glass-layer{
+    background: rgba( 255, 255, 255, 0.60 );
+    backdrop-filter: blur( 30px );
+    -webkit-backdrop-filter: blur( 30px );
+
+    .image{
+      height: 100%;
+      width: 100%;
+    }
   }
 }
 
