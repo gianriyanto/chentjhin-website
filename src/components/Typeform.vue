@@ -135,12 +135,12 @@ export default {
       .email-button{
         cursor: pointer;
         margin: auto 0;
-        width: 120px;
+        width: 110px;
         height: 38px;
         border: none;
-        background-color: #282828;
-        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.6 );
-        border-radius: 10px;
+        background-color: #5b1fff;
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.4 );
+        border-radius: 7px;
         outline: none;
         text-decoration: none;
         transition: all 0.3s ease-in-out;

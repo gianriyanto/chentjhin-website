@@ -3,21 +3,21 @@
     <TopNav/>
     <Landing/>
     <About/>
-    <Services/>
+    <Process/>
   </div>
 </template>
 
 <script>
 import TopNav from './components/TopNav.vue'
 import Landing from './components/sections/Landing.vue'
-import Services from "@/components/sections/Services";
+import Process from "@/components/sections/Process";
 import About from "@/components/sections/About";
 
 export default {
   name: 'App',
   components: {
     About,
-    Services,
+    Process,
     TopNav,
     Landing,
   }

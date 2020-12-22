@@ -59,11 +59,7 @@ export default {
   name: "AboutTiles",
   data() {
     return {
-      tiles: [
-        {
-
-        }
-      ]
+      tiles: [{ }]
     }
   }
 }
@@ -72,13 +68,18 @@ export default {
 <style scoped lang="scss">
 
 #AboutTiles {
+  position: relative;
+  width: 70vw;
+  min-width: 1050px;
+  height: 27vh;
+  min-height: 500px;
 
   .content-wrapper {
     margin: 0 auto 0 auto;
     display: flex;
     flex-direction: row;
-    width: 70vw;
-    height: 500px;
+    width: 100%;
+    height: 100%;
 
     .text {
       text-align: left;

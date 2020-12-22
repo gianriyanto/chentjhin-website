@@ -107,9 +107,8 @@ export default {
           }
 
           .button-label{
-            font-family: "Gilroy Medium", serif;
-            font-weight: 600;
-            font-size: 14px;
+            font-family: "Gilroy SemiBold", serif;
+            font-size: 15px;
             margin: auto;
             color: white;
           }
