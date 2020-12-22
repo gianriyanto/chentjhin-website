@@ -4,13 +4,13 @@
       <div class="left-side">
         <span class="top">
           <span class="tile-01">
-            <a class="text">
+            <a class="header">
               Tailoring career blueprints one person at a time.
             </a>
              <img class="image" src="@/assets/images/career.svg" alt=""/>
           </span>
           <span class="tile-02">
-            <a class="text">
+            <a class="header">
               Your Future Simplified.
             </a>
           </span>
@@ -18,7 +18,7 @@
         <span class="bottom">
           <span class="tile-03">
             <span class="cover">
-              <a class="text">
+              <a class="header">
                 I care about your education journey and understand that each person learns and grows in their own way.
               </a>
               <img class="image" src="@/assets/images/ideasflow.svg" alt=""/>
@@ -29,7 +29,7 @@
       <div class="right-side">
         <span class="left">
           <span class="tile-04">
-            <a class="text">
+            <a class="header">
               Let me handle all the nitty-gritty so you can focus on building your career.
             </a>
             <img class="image" src="@/assets/images/countingstars.svg" alt=""/>
@@ -37,14 +37,14 @@
         </span>
         <span class="right">
           <span class="tile-05">
-            <a class="text">
+            <a class="header">
               Sending students to universities worldwide including USA, UK, and Australia.
             </a>
             <img class="image" src="@/assets/images/world.svg" alt=""/>
           </span>
           <span class="tile-06">
              <font-awesome-icon class="phone-icon" :icon="['fas', 'mobile-alt']"/>
-            <a class="text">
+            <a class="header">
               62 811 899 688
             </a>
           </span>
@@ -81,7 +81,7 @@ export default {
     width: 100%;
     height: 100%;
 
-    .text {
+    .header {
       text-align: left;
       font-family: "Bw Modelica ExtraBold", serif;
       font-size: 40px;
@@ -110,7 +110,7 @@ export default {
           background-image: linear-gradient(to bottom, white, white);
           box-shadow: 0 8px 32px 0 rgba(17, 20, 57, 0.3);
 
-          .text {
+          .header {
             text-align: left;
             font-family: "Bw Modelica ExtraBold", serif;
             font-size: 22px;
@@ -135,7 +135,7 @@ export default {
           border-radius: 15px;
           background-image: linear-gradient(to top right, #071329, #091732);
 
-          .text {
+          .header {
             text-align: right;
             font-family: "Bw Modelica ExtraBold", serif;
             font-size: 32px;
@@ -174,7 +174,7 @@ export default {
           -webkit-backdrop-filter: blur(30px);
           border-radius: 15px;
 
-          .text {
+          .header {
             width: 45%;
             text-align: left;
             font-family: "Bw Modelica ExtraBold", serif;
@@ -213,7 +213,7 @@ export default {
           background-image: linear-gradient(to bottom, white, white);
           box-shadow: 0 8px 32px 0 rgba(17, 20, 57, 0.3);
 
-          .text {
+          .header {
             text-align: left;
             font-family: "Bw Modelica ExtraBold", serif;
             font-size: 38px;
@@ -250,7 +250,7 @@ export default {
           box-shadow: 0 8px 32px 0 rgba(17, 20, 57, 0.1);
           border-radius: 15px;
 
-          .text {
+          .header {
             text-align: left;
             font-family: "Bw Modelica ExtraBold", serif;
             font-size: 20px;
@@ -283,7 +283,7 @@ export default {
             position: sticky;
           }
 
-          .text {
+          .header {
             margin: auto;
             text-align: center;
             font-family: "Bw Modelica ExtraBold", serif;

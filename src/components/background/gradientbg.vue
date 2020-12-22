@@ -22,13 +22,13 @@ export default {
   z-index: -1;
 
   .image{
-    height: 130vh;
+    height: 125vh;
     width: 100%;
   }
 
   .blur-effect{
     box-shadow: 0 0 40px 40px white;
-    height: 10vh;
+    height: 15vh;
     width: 100%;
   }
 

@@ -43,7 +43,7 @@ export default {
 
 #Landing{
   position: relative;
-  height: 140vh;
+  height: 145vh;
   width: 100vw;
   display: flex;
   flex-direction: column;
