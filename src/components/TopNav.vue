@@ -30,7 +30,7 @@ export default {
     flex-direction: row;
     justify-content: space-between;
     height: 50px;
-    width: 80vw;
+    width: 90vw;
     max-width: 1200px;
 
     .logo {
