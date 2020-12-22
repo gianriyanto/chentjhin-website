@@ -101,8 +101,8 @@ export default {
 
 #gradient-bg{
   position: absolute;
-  height: 90vh;
   z-index: -1;
+  box-shadow: 0 -8px 12px 20px rgba(17, 20, 57, 0.5);
 }
 
 #Services{

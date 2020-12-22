@@ -12,7 +12,7 @@
             I am a senior education counsellor.
           </a>
           <span class="content-container">
-            <button class="get-started-button" v-scroll-to="{ el: '#Services', easing: [.2, .80, .30, 1],duration: 1100}">
+            <button class="get-started-button" v-scroll-to="{ el: '#About', easing: [.2, .80, .30, 1],duration: 1100}">
               <a class="button-label"> See how I can help </a>
             </button>
           </span>
@@ -41,11 +41,12 @@ export default {
 #gradient-bg{
   position: absolute;
   z-index: -1;
+  box-shadow: 0 8px 22px 10px rgba(17, 20, 57, 0.5);
 }
 
 #Landing{
   position: relative;
-  height: 100vh;
+  height: 110vh;
   width: 100vw;
   display: flex;
   background: rgba( 255, 255, 255, 0.40 );
@@ -70,19 +71,19 @@ export default {
       margin: auto 0;
       text-align: left;
       letter-spacing: -1px;
-      line-height: 1.2;
-      font-size: 52px;
+      line-height: 1.3;
+      font-size: 53px;
       width: 50%;
 
       .header-index1{
-        font-family: "Gilroy Bold", serif;
+        font-family: "Bw Modelica Bold", serif;
+        font-weight: 600;
         color: #5b1fff;
-        font-size: 53px;
       }
       .header-index2{
-        font-family: "Gilroy Bold", serif;
-        color: #1d1d1d;
-        font-size: 53px;
+        font-family: "Bw Modelica Bold", serif;
+        font-weight: 600;
+        color: #212121;
       }
       .content-container{
         display: flex;

@@ -66,11 +66,11 @@ export default {
     font-family: "Gilroy Bold", serif;
     font-size: 19px;
     color: darkgrey;
-    width: 290px;
+    width: 310px;
     border: transparent;
     outline: transparent;
     background-color: transparent;
-    border-bottom: 1px solid #5651ec;
+    border-bottom: 1px solid #4945cf;
   }
 
   .input-card{

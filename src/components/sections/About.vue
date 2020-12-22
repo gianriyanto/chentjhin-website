@@ -102,13 +102,13 @@ export default {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    margin: 200px auto 0 auto;
+    margin: 0 auto;
 
     .header-container{
       display: flex;
       flex-direction: column;
       justify-content: center;
-      margin: 50px auto;
+      margin: 170px auto;
       text-align: center;
       width: 70vw;
 
@@ -125,7 +125,7 @@ export default {
     }
 
     .description-container{
-      margin: 60px auto 0 auto;
+      margin: 40px auto 0 auto;
       display: flex;
       flex-direction: row;
       justify-content: space-evenly;
@@ -148,7 +148,7 @@ export default {
   }
 
   #cards-container{
-    margin: 70px auto 0 auto;
+    margin: 20px auto 0 auto;
     display: flex;
     flex-direction: row;
     width: 70vw;
