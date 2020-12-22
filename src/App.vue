@@ -32,7 +32,6 @@ html, body {
 }
 
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
@@ -74,6 +73,11 @@ html, body {
   url(./fonts/Gilroy/Gilroy-Thin.ttf) format("truetype");
 }
 @font-face {
+  font-family: "Bw Modelica ExtraBold";
+  src: local("Bw Modelica ExtraBold"),
+  url(./fonts/BwModelica/BwModelica-ExtraBold.ttf) format("truetype");
+}
+@font-face {
   font-family: "Bw Modelica Bold";
   src: local("Bw Modelica Bold"),
   url(./fonts/BwModelica/BwModelica-Bold.otf) format("truetype");
@@ -103,5 +107,42 @@ html, body {
   src: local("Bw Modelica Hairline"),
   url(./fonts/BwModelica/BwModelica-Hairline.otf) format("truetype");
 }
+
+@font-face {
+  font-family: "Montserrat ExtraBold";
+  src: local("Montserrat ExtraBold"),
+  url(./fonts/Montserrat/Montserrat-ExtraBold.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Montserrat Bold";
+  src: local("Montserrat Bold"),
+  url(./fonts/Montserrat/Montserrat-Bold.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Montserrat SemiBold";
+  src: local("Montserrat SemiBold"),
+  url(./fonts/Montserrat/Montserrat-SemiBold.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Montserrat Medium";
+  src: local("Montserrat Medium"),
+  url(./fonts/Montserrat/Montserrat-Medium.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Montserrat Regular";
+  src: local("Montserrat Regular"),
+  url(./fonts/Montserrat/Montserrat-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Montserrat Thin";
+  src: local("Montserrat Thin"),
+  url(./fonts/Montserrat/Montserrat-Thin.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Montserrat Light";
+  src: local("Montserrat Light"),
+  url(./fonts/Montserrat/Montserrat-Light.ttf) format("truetype");
+}
+
 
 </style>

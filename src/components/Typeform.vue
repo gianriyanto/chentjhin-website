@@ -5,38 +5,37 @@
         <span class="header">
           Hi there!
         </span>
+
         <transition appear name="slide-fade">
           <span class="input-card">
             <a class="prompt"> Hi there! Your name is </a>
             <inline-input v-bind:inputData="name"/>
           </span>
         </transition>
+
         <transition appear name="slide-fade">
-        <span v-if="name.isValid" class="input-card">
-          <a class="prompt"> It's best to reach you at </a>
-          <inline-input v-bind:inputData="email"/>
-        </span>
-        </transition>
-        <transition appear name="slide-fade">
-          <span v-if="email.isValid" class="input-card">
+          <span v-if="name.isValid" class="input-card">
             <a class="prompt"> And you're planning to study </a>
             <inline-input v-bind:inputData="course"/>
           </span>
         </transition>
+
         <transition appear name="slide-fade">
           <span v-if="course.isValid" class="input-card">
             <a class="prompt"> Cool! Preferably in </a>
             <inline-input v-bind:inputData="country"/>
           </span>
         </transition>
+
         <transition appear name="slide-fade">
           <span v-if="country.isValid" class="input-card">
-            <a class="prompt"> to pursue a career as a</a>
-            <inline-input v-bind:inputData="career"/>
+            <a class="prompt"> It's best to reach you at </a>
+            <inline-input v-bind:inputData="contact"/>
           </span>
         </transition>
+
         <transition appear name="slide-fade">
-          <span v-if="career.isValid" class="footer-card">
+          <span v-if="contact.isValid" class="footer-card">
             <a class="label"> Fantastic! Chat soon.</a>
             <button class="email-button">
               <a class="button-label"> Done </a>
@@ -60,9 +59,8 @@ export default {
     return {
       name: {prompt: 'your full name?', input: 'your full name?', edit: false, isValid: false},
       course: {prompt: 'what course?', input: 'what course?', edit: false, isValid: false},
-      country: {prompt: 'where?', input: 'where?', edit: false, isValid: false},
-      career: {prompt: 'profession?', input: 'profession?', edit: false, isValid: false},
-      email: {prompt: 'your email', input: 'your email', edit: false, isValid: false},
+      country: {prompt: 'country?', input: 'country?', edit: false, isValid: false},
+      contact: {prompt: 'your email or mobile', input: 'your email or mobile', edit: false, isValid: false},
     }
   }
 }

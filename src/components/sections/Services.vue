@@ -54,7 +54,7 @@
 </template>
 
 <script>
-import GradientBg from "@/components/background/gradientbg";
+import GradientBg from "@/components/background/flipgradientbg";
 
 export default {
   name: "Services",
@@ -102,14 +102,14 @@ export default {
 #gradient-bg{
   position: absolute;
   z-index: -1;
-  box-shadow: 0 -8px 12px 20px rgba(17, 20, 57, 0.5);
+  box-shadow: 0 -8px 12px 5px rgba(17, 20, 57, 0.5);
 }
 
 #Services{
   position: relative;
   height: 100vh;
   width: 100vw;
-  background: rgba( 255, 255, 255, 0.40 );
+  background: rgba( 255, 255, 255, 0.50 );
   backdrop-filter: blur( 30px );
   -webkit-backdrop-filter: blur( 30px );
   z-index: 1;

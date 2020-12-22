@@ -24,8 +24,9 @@
 </template>
 
 <script>
+
 import GradientBg from "@/components/background/gradientbg";
-import Typeform from "@/components/sections/Typeform";
+import Typeform from "@/components/Typeform";
 
 export default {
   name: "Landing",
@@ -49,7 +50,7 @@ export default {
   height: 110vh;
   width: 100vw;
   display: flex;
-  background: rgba( 255, 255, 255, 0.40 );
+  background: rgba( 255, 255, 255, 0.50 );
   backdrop-filter: blur( 30px );
   -webkit-backdrop-filter: blur( 30px );
   z-index: 1;
@@ -70,19 +71,18 @@ export default {
       justify-content: center;
       margin: auto 0;
       text-align: left;
-      letter-spacing: -1px;
+      word-spacing: 1.5px;
+      letter-spacing: -3.5px;
       line-height: 1.3;
       font-size: 53px;
-      width: 50%;
+      width: 55%;
 
       .header-index1{
         font-family: "Bw Modelica Bold", serif;
-        font-weight: 600;
         color: #5b1fff;
       }
       .header-index2{
         font-family: "Bw Modelica Bold", serif;
-        font-weight: 600;
         color: #212121;
       }
       .content-container{
@@ -107,7 +107,7 @@ export default {
           }
 
           .button-label{
-            font-family: Montserrat, serif;
+            font-family: "Gilroy Medium", serif;
             font-weight: 600;
             font-size: 14px;
             margin: auto;
