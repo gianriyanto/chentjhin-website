@@ -1,6 +1,7 @@
 <template>
   <div id="gradient-bg">
     <img class="image" src="@/assets/gradient-images/Gradient-Mesh-1.jpg" alt=""/>
+    <span class="blur-effect"></span>
   </div>
 </template>
 
@@ -14,21 +15,23 @@ export default {
 
 #gradient-bg{
   position: absolute;
-  height: 120vh;
+  display: flex;
+  flex-direction: column;
+  height: 140vh;
   width: 100vw;
   z-index: -1;
-  display: flex;
 
-  .glass-layer{
-    background: rgba( 255, 255, 255, 0.60 );
-    backdrop-filter: blur( 30px );
-    -webkit-backdrop-filter: blur( 30px );
-
-    .image{
-      height: 100%;
-      width: 100%;
-    }
+  .image{
+    height: 130vh;
+    width: 100%;
   }
+
+  .blur-effect{
+    box-shadow: 0 0 40px 40px white;
+    height: 10vh;
+    width: 100%;
+  }
+
 }
 
 </style>

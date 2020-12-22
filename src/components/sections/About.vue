@@ -49,9 +49,9 @@ export default {
 #About{
   position: relative;
   display: flex;
-  height: 160vh;
+  height: 150vh;
   width: 100vw;
-  background: rgba( 255, 255, 255, 0.70 );
+  background: rgba( 255, 255, 255, 0.90 );
   backdrop-filter: blur( 30px );
   -webkit-backdrop-filter: blur( 30px );
   z-index: 1;

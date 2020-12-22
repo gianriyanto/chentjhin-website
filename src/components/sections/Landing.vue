@@ -41,24 +41,14 @@ export default {
 
 <style scoped lang="scss">
 
-#gradient-bg{
-  position: absolute;
-  z-index: -1;
-  box-shadow: 0 8px 22px 10px rgba(17, 20, 57, 0.5);
-}
-
 #Landing{
   position: relative;
-  height: fit-content;
+  height: 140vh;
   width: 100vw;
   display: flex;
   flex-direction: column;
   z-index: 1;
-  border: thin solid red;
-
-  background: rgba( 255, 255, 255, 0.60 );
-  backdrop-filter: blur( 30px );
-  -webkit-backdrop-filter: blur( 30px );
+  background: rgba( 255, 255, 255, 0.40 );
 
   .wrapper{
     display: flex;

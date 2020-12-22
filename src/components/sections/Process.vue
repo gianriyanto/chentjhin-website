@@ -2,16 +2,24 @@
  <section id="Process">
    <div class="wrapper">
      <span class="process-card">
-
+       <a class="text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+       </a>
      </span>
      <span class="process-card">
-
+       <a class="text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+       </a>
      </span>
      <span class="process-card">
-
+       <a class="text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+       </a>
      </span>
      <span class="process-card">
-
+       <a class="text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+       </a>
      </span>
    </div>
  </section>
@@ -35,21 +43,29 @@ export default {
     flex-direction: row;
     justify-content: space-evenly;
     margin: 0 auto;
-    height: 330px;
-    width: 80vw;
+    height: 260px;
+    width: 75vw;
 
     .process-card{
+      text-align: left;
       margin: auto 0;
       display: flex;
       flex-direction: column;
-      width: 23%;
+      padding: 30px;
+      width: 17%;
       height: 90%;
-      border-radius: 9px;
-      border: 0.5px solid rgba(255,255,255,0.2);
+      border-radius: 12px;
+      border: 0.5px solid rgba(255,255,255,0.7);
       background: rgba(255, 255, 255, 0.2);
-      box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.2 );
+      box-shadow: 0 8px 33px 0 rgba(120, 121, 128, 0.2);
       backdrop-filter: blur( 10px );
       -webkit-backdrop-filter: blur( 10px );
+
+      .text{
+        font-family: "Bw Modelica ExtraBold", serif;
+        font-size: 20px;
+        color: #262626;
+      }
     }
   }
 
