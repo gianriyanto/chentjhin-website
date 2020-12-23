@@ -30,7 +30,7 @@ export default {
     justify-content: space-between;
     height: 50px;
     width: 90vw;
-    max-width: 1200px;
+    max-width: 1280px;
 
     .logo {
       width: 25px;

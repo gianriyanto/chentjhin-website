@@ -38,15 +38,15 @@ export default {
 
 #TestimonyCard{
   flex: 0 0 auto;
-  margin: auto 70px auto 0;
+  margin: auto 40px auto 0;
   width: 350px;
 
   .card{
     display: flex;
     flex-direction: column;
-    padding: 30px;
-    height: 280px;
-    border-radius: 15px;
+    padding: 35px 45px;
+    height: fit-content;
+    border-radius: 13px;
     background-color: #f8f8f8;
     text-align: left;
 
@@ -72,7 +72,7 @@ export default {
     }
   }
   .client-container{
-    margin-top: 8px;
+    margin-top: 15px;
     display: flex;
     flex-direction: row;
     padding: 10px 2px;

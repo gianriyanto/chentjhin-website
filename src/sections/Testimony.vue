@@ -9,8 +9,11 @@
           {{ subheader }}
         </span>
       </div>
-      <div class="content-container">
-        <TestimonyCard v-for="testimony in testimonies" :key="testimony.index" v-bind:testimonyData="testimony"/>
+      <div class="testimonies-container">
+        <TestimonyCard v-for="testimony in testimonies"
+                       :key="testimony.index"
+                       v-bind:testimonyData="testimony"
+        />
       </div>
     </div>
   </section>
@@ -130,7 +133,7 @@ export default {
     position: relative;
     display: flex;
     flex-direction: column;
-    height: 80vh;
+    justify-content: flex-start;
     margin: 0 auto;
 
     .header-container{
@@ -144,7 +147,7 @@ export default {
       .header{
         font-family: "Bw Modelica ExtraBold", serif;
         letter-spacing: -2px;
-        font-size: 55px;
+        font-size: 65px;
         color: #303030;
         width: 45%;
       }
@@ -157,12 +160,12 @@ export default {
         width: 45%;
       }
     }
-    .content-container{
+    .testimonies-container{
       display: flex;
       flex-direction: row;
       align-content: center;
       padding-left: calc((100vw - 1152px) / 2);
-      margin-top: 60px;
+      margin-top: 30px;
       height: fit-content;
       overflow: scroll !important;
 
@@ -170,7 +173,7 @@ export default {
         display: none;
       }
 
-      #TestimonyCard{}
+      #TestimonyCard{ }
     }
   }
 }

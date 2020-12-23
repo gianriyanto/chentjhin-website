@@ -12,7 +12,7 @@
             <a class="header-index2">
               I am a senior education counsellor.
             </a>
-            <span class="content-container">
+            <span class="testimonies-container">
               <button class="get-started-button" v-scroll-to="{ el: '#About', easing: [.2, .80, .30, 1],duration: 1100}">
                 <a class="button-label"> See how I can help </a>
               </button>
@@ -60,7 +60,7 @@ export default {
     display: flex;
     flex-direction: column;
     z-index: 1;
-    background: rgba( 255, 255, 255, 0.40 );
+    background: rgba( 255, 255, 255, 0.50 );
   }
   .content-wrapper {
     display: flex;
@@ -94,7 +94,7 @@ export default {
         color: #212121;
       }
 
-      .content-container {
+      .testimonies-container {
         display: flex;
         flex-direction: row;
         margin-top: 30px;

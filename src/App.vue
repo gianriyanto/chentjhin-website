@@ -4,6 +4,7 @@
     <Landing/>
     <About/>
     <Testimony/>
+    <Contact/>
   </div>
 </template>
 
@@ -12,10 +13,12 @@ import TopNav from './components/nav/TopNav.vue'
 import Landing from './sections/Landing.vue'
 import About from "@/sections/About";
 import Testimony from "@/sections/Testimony";
+import Contact from "@/sections/Contact";
 
 export default {
   name: 'App',
   components: {
+    Contact,
     Testimony,
     About,
     TopNav,
