@@ -1,6 +1,5 @@
 <template>
   <div>
-    <gradient-bg id="gradient-bg"/>
     <section id="About">
       <div class="wrapper">
         <div class="header-container">
@@ -21,14 +20,12 @@
 </template>
 
 <script>
-import GradientBg from "@/components/background/flipgradientbg";
 import AboutTiles from "@/components/AboutTiles";
 
 export default {
   name: "About",
   components: {
     AboutTiles,
-    GradientBg
   },
   data() {
     return{
@@ -40,20 +37,11 @@ export default {
 
 <style scoped lang="scss">
 
-#gradient-bg{
-  display: none;
-  position: absolute;
-  z-index: -1;
-}
-
 #About{
   position: relative;
   display: flex;
   height: 150vh;
   width: 100vw;
-  background: rgba( 255, 255, 255, 0.90 );
-  backdrop-filter: blur( 30px );
-  -webkit-backdrop-filter: blur( 30px );
   z-index: 1;
 
   .wrapper{
@@ -66,7 +54,7 @@ export default {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      margin: 170px auto;
+      margin: 70px auto 0 auto;
       text-align: center;
       width: 71vw;
       min-width: 955px;

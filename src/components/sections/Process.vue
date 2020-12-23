@@ -2,35 +2,39 @@
  <section id="Process">
    <div class="wrapper">
      <span class="process-card">
+       <img class="image" src="@/assets/images/aptitude.svg" alt=""/>
        <a class="header">
           Aptitude Test
        </a>
        <a class="description">
-           Lorem ipsum dolor sit amet
+           Lorem ipsum dolor sit consectetur adipiscing elit, do eiusmod.
        </a>
      </span>
      <span class="process-card">
+       <img class="image" src="@/assets/images/consulting.svg" alt=""/>
        <a class="header">
           Consulting
        </a>
        <a class="description">
-           Lorem ipsum dolor sit amet
+           Lorem ipsum dolor sit amet adipiscing elit, sed do eiusmod tempor incididunt.
        </a>
      </span>
      <span class="process-card">
+       <img class="image" src="@/assets/images/application.svg" alt=""/>
        <a class="header">
           Application
        </a>
        <a class="description">
-           Lorem ipsum dolor sit amet
+           Lorem ipsum dolor sit amet consectetur adipiscing elit incididunt.
        </a>
      </span>
      <span class="process-card">
+       <img class="image" src="@/assets/images/counselling.svg" alt=""/>
        <a class="header">
           Counselling
        </a>
        <a class="description">
-           Lorem ipsum dolor sit amet
+           Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do.
        </a>
      </span>
    </div>
@@ -86,33 +90,41 @@ export default {
     justify-content: space-evenly;
     margin: 0 auto;
     height: 280px;
-    width: 75vw;
+    width: 82vw;
 
     .process-card{
       text-align: left;
-      margin: auto 0;
+      margin: auto;
       display: flex;
       flex-direction: column;
+      justify-content: space-evenly;
       padding: 30px;
-      width: 18%;
+      width: 17%;
       height: 90%;
       border-radius: 10px;
       border: 0.5px solid rgba(255,255,255,0.1);
       background: rgba(255, 255, 255, 0.2);
       box-shadow: 0 8px 33px 0 rgba(165, 166, 172, 0.3);
-      backdrop-filter: blur( 10px );
-      -webkit-backdrop-filter: blur( 10px );
+      backdrop-filter: blur( 5px );
+      -webkit-backdrop-filter: blur( 5px );
       line-height: 1.5;
+
+      .image {
+        width: 80%;
+        height: 60%;
+        margin-bottom: 15px;
+      }
 
       .header{
         font-family: "Bw Modelica ExtraBold", serif;
-        font-size: 26px;
+        font-size: 22px;
         letter-spacing: -1px;
-        color: #262626;
+        color: #545454;
+        margin-bottom: 15px;
       }
       .description{
-        font-family: "Gilroy SemiBold", serif;
-        font-size: 15px;
+        font-family: "Gilroy Medium", serif;
+        font-size: 13px;
         letter-spacing: -0.6px;
         color: #5b5b5b;
       }

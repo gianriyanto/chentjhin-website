@@ -5,13 +5,13 @@
         <span class="top">
           <span class="tile-01">
             <a class="header">
-              Tailoring career blueprints one person at a time.
+              {{ tiles[0].content }}
             </a>
-             <img class="image" src="@/assets/images/career.svg" alt=""/>
+             <img class="image" :src="require(`@/assets/images/${tiles[0].url}`)" alt="failed to load image"/>
           </span>
           <span class="tile-02">
             <a class="header">
-              Your Future Simplified.
+              {{ tiles[1].content }}
             </a>
           </span>
         </span>
@@ -19,9 +19,9 @@
           <span class="tile-03">
             <span class="cover">
               <a class="header">
-                I care about your education journey and understand that each person learns and grows in their own way.
+                {{ tiles[2].content }}
               </a>
-              <img class="image" src="@/assets/images/ideasflow.svg" alt=""/>
+             <img class="image" :src="require(`@/assets/images/${tiles[2].url}`)" alt="failed to load image"/>
             </span>
           </span>
         </span>
@@ -30,22 +30,22 @@
         <span class="left">
           <span class="tile-04">
             <a class="header">
-              Let me handle all the nitty-gritty so you can focus on building your career.
+              {{ tiles[3].content }}
             </a>
-            <img class="image" src="@/assets/images/countingstars.svg" alt=""/>
+             <img class="image" :src="require(`@/assets/images/${tiles[3].url}`)" alt="failed to load image"/>
           </span>
         </span>
         <span class="right">
           <span class="tile-05">
             <a class="header">
-              Sending students to universities worldwide including USA, UK, and Australia.
+              {{ tiles[4].content }}
             </a>
-            <img class="image" src="@/assets/images/world.svg" alt=""/>
+             <img class="image" :src="require(`@/assets/images/${tiles[4].url}`)" alt="failed to load image"/>
           </span>
           <span class="tile-06">
              <font-awesome-icon class="phone-icon" :icon="['fas', 'mobile-alt']"/>
             <a class="header">
-              62 811 899 688
+              {{ tiles[5].content }}
             </a>
           </span>
         </span>
@@ -59,7 +59,37 @@ export default {
   name: "AboutTiles",
   data() {
     return {
-      tiles: [{ }]
+      tiles: [
+        {
+          tileIndex: 1,
+          content: "Tailoring career blueprints one person at a time.",
+          url: "career.svg"
+        },
+        {
+          tileIndex: 2,
+          content: "Your Future Simplified.",
+          url: "",
+        },
+        {
+          tileIndex: 3,
+          content: "I care about your education journey and understand that each person learns and grows in their own way.",
+          url: "ideasflow.svg",
+        },
+        {
+          tileIndex: 4,
+          content: "Let me handle all the nitty-gritty so you can focus on building your career.",
+          url: "countingstars.svg",
+        },
+        {
+          tileIndex: 5,
+          content: "Sending students to universities worldwide including USA, UK, and Australia.",
+          url: "world.svg",
+        },
+        {
+          tileIndex: 6,
+          content: "62 811 899 688"
+        },
+      ]
     }
   }
 }
@@ -68,6 +98,7 @@ export default {
 <style scoped lang="scss">
 
 #AboutTiles {
+  margin: 170px auto 0 auto;
   position: relative;
   width: 70vw;
   min-width: 1050px;
