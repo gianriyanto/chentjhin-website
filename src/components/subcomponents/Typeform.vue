@@ -48,7 +48,7 @@
 </template>
 
 <script>
-import InlineInput from "@/components/InlineInput";
+import InlineInput from "@/components/subcomponents/InlineInput";
 
 export default {
   name: "Typeform",
@@ -73,6 +73,7 @@ export default {
   display: flex;
   flex-direction: column;
   margin: auto 0;
+  z-index: 2;
 
   .content-wrapper{
     display: flex;
@@ -100,7 +101,6 @@ export default {
       padding: 18px 27px;
       height: 55px;
       border-radius: 12px;
-
       background: rgba(255, 255, 255, 0.2);
       box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.2 );
       backdrop-filter: blur( 10px );

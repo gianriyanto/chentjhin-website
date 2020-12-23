@@ -56,19 +56,19 @@ export default {
         {
           index: 2,
           name: 'Consulting',
-          description: 'Tailor an education blueprint with an end-to-end consulting service.',
+          description: 'Develop a tailored education blueprint with a comprehensive end-to-end consulting service.',
           url: 'consulting.svg'
         },
         {
           index: 3,
           name: 'Application',
-          description: 'We all know that there are a lot paperwork and administrative process can be a hassle.',
+          description: 'Consider all the administrative paperwork when it comes to studying abroad done and dusted.',
           url: 'application.svg'
         },
         {
           index: 4,
           name: 'Counselling',
-          description: 'Dedicated and people-oriented counselling for life.',
+          description: 'People-oriented counselling to provide expert counselling throughout the education journey.',
           url: 'counselling.svg'
         },
       ]
@@ -119,14 +119,14 @@ export default {
 
       .header{
         font-family: "Bw Modelica ExtraBold", serif;
-        font-size: 22px;
+        font-size: 20px;
         letter-spacing: -1px;
-        color: #545454;
+        color: #373737;
         margin-bottom: 15px;
       }
       .description{
         font-family: "Gilroy Medium", serif;
-        font-size: 13px;
+        font-size: 14px;
         letter-spacing: -0.6px;
         color: #5b5b5b;
       }

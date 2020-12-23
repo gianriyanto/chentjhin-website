@@ -1,26 +1,24 @@
 <template>
-  <div>
-    <section id="About">
-      <div class="content-wrapper">
-        <div class="header-container">
-          <span class="header">
-            Connecting aspiring learners with an education that transforms their passion into a profession.
-          </span>
-        </div>
-        <AboutTiles id="AboutTiles"/>
-        <div class="description-container">
-          <span class="header-description">
-          </span>
-          <span class="content-description">
-          </span>
-        </div>
+  <section id="About">
+    <div class="wrapper">
+      <div class="header-container">
+        <span class="header">
+          Connecting aspiring learners with an education that transforms their passion into a profession.
+        </span>
       </div>
-    </section>
-  </div>
+      <AboutTiles id="AboutTiles"/>
+      <div class="description-container">
+        <span class="header-description">
+        </span>
+        <span class="content-description">
+        </span>
+      </div>
+    </div>
+  </section>
 </template>
 
 <script>
-import AboutTiles from "@/components/AboutTiles";
+import AboutTiles from "@/components/subcomponents/AboutTiles";
 
 export default {
   name: "About",
@@ -28,8 +26,7 @@ export default {
     AboutTiles,
   },
   data() {
-    return{
-
+    return {
     }
   }
 }
@@ -43,7 +40,7 @@ export default {
   width: 100vw;
   z-index: 1;
 
-  .content-wrapper{
+  .wrapper{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -70,9 +67,7 @@ export default {
       }
     }
 
-    #AboutTiles{
-
-    }
+    #AboutTiles{}
 
     .description-container{
       margin: 40px auto 0 auto;

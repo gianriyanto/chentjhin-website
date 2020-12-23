@@ -3,17 +3,20 @@
     <TopNav/>
     <Landing/>
     <About/>
+    <Testimony/>
   </div>
 </template>
 
 <script>
-import TopNav from './components/TopNav.vue'
-import Landing from './components/sections/Landing.vue'
-import About from "@/components/sections/About";
+import TopNav from './components/nav/TopNav.vue'
+import Landing from './sections/Landing.vue'
+import About from "@/sections/About";
+import Testimony from "@/sections/Testimony";
 
 export default {
   name: 'App',
   components: {
+    Testimony,
     About,
     TopNav,
     Landing,
@@ -22,6 +25,8 @@ export default {
 </script>
 
 <style lang="scss">
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&display=swap');
 
 html, body {
   margin: 0 !important;
@@ -32,7 +37,6 @@ html, body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  min-width: 1150px;
 }
 
 @font-face {
