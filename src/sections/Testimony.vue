@@ -30,13 +30,13 @@ export default {
   data () {
     return{
       header: 'Client Stories',
-      subheader: 'I am lucky to have worked with many aspiring professionals and watch them embark on their new learning journey. You are in good hands.',
+      subheader: 'I am lucky to have worked with many aspiring professionals and watch them embark on their new learning journey.',
       testimonies: [
         {
           client: 'Deandra Kezia Djunaedi',
           university: 'University of Warwick',
           header: "Paved my road to success.",
-          message: "Chen has been a saving grace during my experience of college applications. Chen was always very easy to confide in, she always took the time to understand my situation and help paved my road to success.",
+          message: "Chen has been a saving grace during my experience of college applications. She was very easy to confide in, she always took the time to understand my situation and help paved my road to success.",
         },
         {
           client: 'Emir Ksatria Ganie',
@@ -47,19 +47,19 @@ export default {
         {
           client: 'Novella Alvina',
           university: 'Darham University',
-          header: 'Professional and caring.',
+          header: 'Professional and caring describes her best.',
           message: "Chen's professionalism in working inspires me to no end. She provides unlimited support and motivation for me to become the best version of myself. Professional and caring describes her best in my eyes.",
         },
         {
           client: 'Thoriq Gibran Ibrahim',
           university: 'University of Warwick',
           header: 'Second to None.',
-          message: "Chen's helping hand in my university application was second to none. In such a hectic time of assignments and IB exams. her tireless assistance and encouragement gave me calm, reassurance, and motivation.",
+          message: "Chen's helping hand in my university application was second to none. In such a hectic time of assignments and IB exams, her tireless assistance and encouragement gave me calm, reassurance, and motivation.",
         },
         {
           client: 'M. Bilal Alfarizi',
           university: 'University of Sussex',
-          header: 'Great professional mentor and a trusted advisor.',
+          header: 'Professional mentor and a trusted advisor.',
           message: "Her endless support, motivation, and care has nourished me as an ambitious person able to persevere and reach my full potential. She is a great professional mentor and a trusted advisor.",
         },
         {
@@ -148,7 +148,7 @@ export default {
         font-family: "Bw Modelica ExtraBold", serif;
         letter-spacing: -2px;
         font-size: 65px;
-        color: #303030;
+        color: #292929;
         width: 45%;
       }
       .subheader{

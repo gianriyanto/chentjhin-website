@@ -38,7 +38,7 @@ export default {
 
 #TestimonyCard{
   flex: 0 0 auto;
-  margin: auto 40px auto 0;
+  margin: auto 60px auto 0;
   width: 350px;
 
   .card{
