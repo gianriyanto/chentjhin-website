@@ -100,6 +100,7 @@ export default {
 #AboutTiles {
   margin: 170px auto 0 auto;
   position: relative;
+  max-width: 1200px;
   width: 70vw;
   min-width: 1050px;
   height: 27vh;

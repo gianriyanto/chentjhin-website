@@ -32,6 +32,7 @@ html, body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
+  min-width: 1150px;
 }
 
 @font-face {

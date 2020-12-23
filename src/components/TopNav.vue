@@ -1,6 +1,6 @@
 <template>
   <div id="TopNav">
-    <div class="wrapper">
+    <div class="content-wrapper">
       <span class="logo"/>
       <button class="menu-button">
         <font-awesome-icon class="menu-icon" :icon="['fas', 'bars']"/>
@@ -24,7 +24,7 @@ export default {
   z-index: 10;
   background-color: transparent;
 
-  .wrapper {
+  .content-wrapper {
     margin: 80px auto 0 auto;
     display: flex;
     flex-direction: row;

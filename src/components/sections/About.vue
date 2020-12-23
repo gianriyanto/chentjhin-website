@@ -1,7 +1,7 @@
 <template>
   <div>
     <section id="About">
-      <div class="wrapper">
+      <div class="content-wrapper">
         <div class="header-container">
           <span class="header">
             Connecting aspiring learners with an education that transforms their passion into a profession.
@@ -40,11 +40,10 @@ export default {
 #About{
   position: relative;
   display: flex;
-  height: 150vh;
   width: 100vw;
   z-index: 1;
 
-  .wrapper{
+  .content-wrapper{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -54,9 +53,10 @@ export default {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      margin: 70px auto 0 auto;
+      margin: 180px auto 0 auto;
       text-align: center;
-      width: 71vw;
+      max-width: 1200px;
+      width: 68vw;
       min-width: 955px;
 
       .header{
@@ -64,7 +64,7 @@ export default {
         background: linear-gradient(to right, #5b1fff, #e791c6, #ff8820);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        font-size: 68px;
+        font-size: 71px;
         letter-spacing: -2px;
         line-height: 1.2;
       }

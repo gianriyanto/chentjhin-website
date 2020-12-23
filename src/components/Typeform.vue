@@ -1,7 +1,7 @@
 <template>
   <div>
     <section id="Typeform">
-      <div class="wrapper">
+      <div class="content-wrapper">
         <span class="header">
           Hi there!
         </span>
@@ -74,7 +74,7 @@ export default {
   flex-direction: column;
   margin: auto 0;
 
-  .wrapper{
+  .content-wrapper{
     display: flex;
     flex-direction: column;
     justify-content: center;
