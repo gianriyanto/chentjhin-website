@@ -9,7 +9,7 @@
           {{ subheader }}
         </span>
       </div>
-      <div class="testimonies-container">
+      <div class="button-container">
         <TestimonyCard v-for="testimony in testimonies"
                        :key="testimony.index"
                        v-bind:testimonyData="testimony"
@@ -160,7 +160,7 @@ export default {
         width: 45%;
       }
     }
-    .testimonies-container{
+    .button-container{
       display: flex;
       flex-direction: row;
       align-content: center;

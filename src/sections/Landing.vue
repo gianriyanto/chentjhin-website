@@ -7,13 +7,13 @@
         <div class="content-wrapper">
           <div class="header-container">
             <a class="header-index1">
-              My name is Chen,
+              Hi, my name's Chen
             </a>
             <a class="header-index2">
-              I am a senior education counsellor.
+              I'm a <a class="highlight"> Senior Education Counsellor.</a>
             </a>
-            <span class="testimonies-container">
-              <button class="get-started-button" v-scroll-to="{ el: '#About', easing: [.2, .80, .30, 1],duration: 1100}">
+            <span class="button-container">
+              <button class="learn-more-button" v-scroll-to="{ el: '#Process', easing: [.2, .80, .30, 1],duration: 1300}">
                 <a class="button-label"> See how I can help </a>
               </button>
             </span>
@@ -67,9 +67,9 @@ export default {
     flex-direction: row;
     justify-content: space-evenly;
     margin: 200px auto 0 auto;
-    width: 71vw;
-    max-width: 1097px;
-    min-width: 950px;
+    width: 70vw;
+    max-width: 1300px;
+    min-width: 750px;
     height: 60vh;
 
     .header-container {
@@ -79,31 +79,39 @@ export default {
       margin: auto 0;
       text-align: left;
       word-spacing: 1.5px;
-      letter-spacing: -3.5px;
+      letter-spacing: -2.5px;
       line-height: 1.3;
-      font-size: 53px;
-      width: 55%;
+      font-size: 55px;
+      width: 60%;
 
-      .header-index1 {
-        font-family: "Bw Modelica Bold", serif;
-        color: #5b1fff;
+      .header-index1{
+        font-family: "Bw Modelica ExtraBold", serif;
+        color: #1F1F1F;
+
+        .highlight{
+          color: #5b1fff;
+        }
       }
 
       .header-index2 {
-        font-family: "Bw Modelica Bold", serif;
-        color: #212121;
+        font-family: "Bw Modelica ExtraBold", serif;
+        color: #1F1F1F;
+
+        .highlight{
+          color: #5b1fff;
+        }
       }
 
-      .testimonies-container {
+      .button-container {
         display: flex;
         flex-direction: row;
         margin-top: 30px;
 
-        .get-started-button {
+        .learn-more-button {
           cursor: pointer;
           width: 210px;
           height: 50px;
-          background-color: #5b1fff;
+          background-image: linear-gradient(to left, #5b1fff, #3867ff);
           box-shadow: 0 8px 32px 0 rgba(17, 20, 57, 0.5);
           border-radius: 40px;
           border: none;

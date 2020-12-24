@@ -2,12 +2,9 @@
   <div>
     <section id="Typeform">
       <div class="content-wrapper">
-        <span class="header">
-          Hi there!
-        </span>
 
         <transition appear name="slide-fade">
-          <span class="input-card">
+          <span class="header-card">
             <a class="prompt"> Hi there! Your name is </a>
             <inline-input v-bind:inputData="name"/>
           </span>
@@ -36,8 +33,8 @@
 
         <transition appear name="slide-fade">
           <span v-if="contact.isValid" class="footer-card">
-            <a class="label"> Fantastic! Chat soon.</a>
-            <button class="email-button">
+            <a class="label"> Thanks <a class="highlight">{{name.input}}.</a> Chat soon!</a>
+            <button class="email-button" v-scroll-to="{ el: '#Process', easing: [.2, .80, .30, 1],duration: 1500}">
               <a class="button-label"> Done </a>
             </button>
           </span>
@@ -57,7 +54,7 @@ export default {
   },
   data() {
     return {
-      name: {prompt: 'your full name?', input: 'your full name?', edit: false, isValid: false},
+      name: {prompt: 'your name?', input: 'your name?', edit: false, isValid: false},
       course: {prompt: 'what course?', input: 'what course?', edit: false, isValid: false},
       country: {prompt: 'country?', input: 'country?', edit: false, isValid: false},
       contact: {prompt: 'your email or mobile', input: 'your email or mobile', edit: false, isValid: false},
@@ -82,14 +79,28 @@ export default {
     margin: auto;
     text-align: left;
     height: fit-content;
-    width: 366px;
+    width: 380px;
 
-    .header{
-      display: none;
-      font-family: "Gilroy Bold", serif;
-      color: #1c1c1c;
-      font-size: 30px;
-      margin: 0 9px 10px 10px;
+    .header-card{
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      margin-bottom: 13px;
+      padding: 18px 27px;
+      height: 55px;
+      border-radius: 16px 16px 7px 7px;
+      background: rgba(255, 255, 255, 0.2);
+      box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.2 );
+      backdrop-filter: blur( 10px );
+      -webkit-backdrop-filter: blur( 10px );
+
+      .prompt {
+        font-family: "Gilroy SemiBold", serif;
+        color: #1c1c1c;
+        font-size: 17px;
+        margin: 0 9px 5px 0;
+      }
     }
 
     .input-card{
@@ -100,7 +111,7 @@ export default {
       margin-bottom: 13px;
       padding: 18px 27px;
       height: 55px;
-      border-radius: 12px;
+      border-radius: 7px;
       background: rgba(255, 255, 255, 0.2);
       box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.2 );
       backdrop-filter: blur( 10px );
@@ -119,10 +130,9 @@ export default {
       flex-direction: row;
       justify-content: space-between;
       margin-bottom: 13px;
-      padding: 0 8px 0 20px;
+      padding: 5px 27px;
       height: 58px;
-      border-radius: 12px;
-
+      border-radius: 7px 7px 16px 16px;
       background: rgba(255, 255, 255, 0.1);
       box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.2 );
       backdrop-filter: blur( 10px );
@@ -130,14 +140,20 @@ export default {
 
       .label{
         margin: auto 0;
-        font-family: "Gilroy Bold", serif;
+        font-family: "Gilroy SemiBold", serif;
         color: #1c1c1c;
-        font-size: 18px;
+        font-size: 17px;
+        width: 60%;
+
+        .highlight{
+          font-family: "Gilroy Bold", serif;
+          color: #5651ec;
+        }
       }
       .email-button{
         cursor: pointer;
         margin: auto 0;
-        width: 110px;
+        width: 30%;
         height: 38px;
         border: none;
         background-color: #5b1fff;

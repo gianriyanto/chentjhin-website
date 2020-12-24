@@ -84,6 +84,7 @@ export default {
   display: flex;
   flex-direction: column;
   margin-top: 200px;
+  padding: 50px 0;
 
   .content-wrapper{
     display: flex;
