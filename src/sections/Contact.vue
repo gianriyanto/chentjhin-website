@@ -8,7 +8,6 @@
         Let's Talk.
       </div>
     </div>
-
   </section>
 </template>
 
@@ -28,12 +27,12 @@ export default {
 <style scoped lang="scss">
 
 #Contact{
-  position: absolute;
+  position: relative;
   height: fit-content;
   width: 100vw;
-  margin-top: 250px;
   display: flex;
   flex-direction: column;
+  z-index: 1;
 
   .wrapper{
     position: relative;
@@ -41,6 +40,7 @@ export default {
     width: 100vw;
     display: flex;
     flex-direction: column;
+    z-index: 1;
     background: rgba( 255, 255, 255, 0.50 );
 
     .header-container{

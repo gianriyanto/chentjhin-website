@@ -166,7 +166,6 @@ export default {
 
         .button-label{
           font-family: "Gilroy SemiBold", serif;
-          font-weight: 600;
           font-size: 13px;
           margin: auto;
           color: white;
