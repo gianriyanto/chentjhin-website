@@ -1,7 +1,7 @@
 <template>
     <section id="Landing">
 
-      <gradient-bg id="gradient-bg"/>
+      <gradient-bg id="gradient-bg" v-rellax="{ speed: 5}"/>
 
       <div class="wrapper">
         <div class="content-wrapper">

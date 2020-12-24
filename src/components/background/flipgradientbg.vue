@@ -14,6 +14,8 @@ export default {
 
 #gradient-bg{
   position: absolute;
+  display: flex;
+  flex-direction: column;
   height: 100vh;
   width: 100vw;
   z-index: -1;

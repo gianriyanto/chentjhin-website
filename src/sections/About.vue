@@ -70,8 +70,8 @@ export default {
     #AboutTiles{}
 
     .description-container{
+      display: none;
       margin: 40px auto 0 auto;
-      display: flex;
       flex-direction: row;
       justify-content: space-evenly;
       text-align: left;
