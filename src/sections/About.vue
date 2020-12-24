@@ -39,6 +39,7 @@ export default {
   display: flex;
   width: 100vw;
   z-index: 1;
+  margin-top: 170px;
 
   .wrapper{
     display: flex;
@@ -50,7 +51,7 @@ export default {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      margin: 180px auto 0 auto;
+      margin: 0 auto;
       text-align: center;
       max-width: 1200px;
       width: 68vw;

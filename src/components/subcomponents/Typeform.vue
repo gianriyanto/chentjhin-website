@@ -33,7 +33,7 @@
 
         <transition appear name="slide-fade">
           <span v-if="contact.isValid" class="footer-card">
-            <a class="label"> Thanks <a class="highlight">{{name.input}}.</a> Chat soon!</a>
+            <a class="label"> Thanks <a class="highlight">{{name.input.split(' ')[0]}}.</a> Chat soon!</a>
             <button class="email-button" v-scroll-to="{ el: '#Process', easing: [.2, .80, .30, 1],duration: 1500}">
               <a class="button-label"> Done </a>
             </button>
@@ -130,13 +130,14 @@ export default {
       flex-direction: row;
       justify-content: space-between;
       margin-bottom: 13px;
-      padding: 5px 27px;
+      padding: 10px 27px;
       height: 58px;
       border-radius: 7px 7px 17px 17px;
       background: rgba(255, 255, 255, 0.1);
       box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.2 );
       backdrop-filter: blur( 10px );
       -webkit-backdrop-filter: blur( 10px );
+      line-height: 1.3;
 
       .label{
         margin: auto 0;

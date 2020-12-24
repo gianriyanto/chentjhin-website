@@ -1,11 +1,11 @@
 <template>
   <section id="Contact">
 
-    <gradient-bg id="gradient-bg"/>
+    <flip-gradient-bg id="flip-gradient-bg"/>
 
     <div class="wrapper">
       <div class="header-container">
-        Keep in Touch
+        Let's Talk.
       </div>
     </div>
 
@@ -14,12 +14,12 @@
 
 <script>
 
-import GradientBg from "@/components/background/flipgradientbg";
+import FlipGradientBg from "@/components/background/flipgradientbg";
 
 export default {
   name: "Contact",
   components: {
-    GradientBg
+    FlipGradientBg
   }
 }
 
@@ -27,18 +27,13 @@ export default {
 
 <style scoped lang="scss">
 
-#gradient-bg{
-  display: none;
-}
-
 #Contact{
-  position: relative;
+  position: absolute;
   height: fit-content;
   width: 100vw;
-  margin-top: 500px;
+  margin-top: 250px;
   display: flex;
   flex-direction: column;
-  background-image: linear-gradient(to top, #5830ea, #594fe3);
 
   .wrapper{
     position: relative;
@@ -46,7 +41,7 @@ export default {
     width: 100vw;
     display: flex;
     flex-direction: column;
-
+    background: rgba( 255, 255, 255, 0.50 );
 
     .header-container{
       display: flex;
@@ -54,13 +49,12 @@ export default {
       margin: auto;
       width: 500px;
       height: fit-content;
+      letter-spacing: -2.5px;
       font-family: "Bw Modelica ExtraBold", serif;
-      font-size: 70px;
-      color: white;
+      font-size: 80px;
+      color: #1F1F1F;
     }
-
   }
-
 }
 
 </style>

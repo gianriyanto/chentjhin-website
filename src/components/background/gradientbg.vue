@@ -17,18 +17,18 @@ export default {
   position: absolute;
   display: flex;
   flex-direction: column;
-  height: 140vh;
+  height: 160vh;
   width: 100vw;
   z-index: -1;
 
   .image{
-    height: 125vh;
+    height: 140vh;
     width: 100%;
   }
 
   .blur-effect{
     box-shadow: 0 0 40px 40px white;
-    height: 15vh;
+    height: 20vh;
     width: 100%;
   }
 

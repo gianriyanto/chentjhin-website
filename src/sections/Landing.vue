@@ -2,7 +2,6 @@
     <section id="Landing">
 
       <gradient-bg id="gradient-bg" v-rellax="{ speed: 5}"/>
-
       <div class="wrapper">
         <div class="content-wrapper">
           <div class="header-container">
@@ -55,7 +54,7 @@ export default {
 
   .wrapper{
     position: relative;
-    height: 140vh;
+    height: 160vh;
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -66,17 +65,17 @@ export default {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    margin: 200px auto 0 auto;
+    height: 100vh;
+    margin: 50px auto 0 auto;
     width: 70vw;
     max-width: 1300px;
     min-width: 750px;
-    height: 60vh;
 
     .header-container {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      margin: auto 0;
+      margin: 150px 0;
       text-align: left;
       word-spacing: 1.5px;
       letter-spacing: -2.5px;

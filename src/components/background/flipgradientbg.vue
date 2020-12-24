@@ -1,5 +1,5 @@
 <template>
-  <div id="gradient-bg">
+  <div id="flip-gradient-bg">
     <img class="image" src="@/assets/gradient-images/Gradient-Mesh-1.jpg" alt=""/>
   </div>
 </template>
@@ -12,7 +12,7 @@ export default {
 
 <style scoped lang="scss">
 
-#gradient-bg{
+#flip-gradient-bg{
   position: absolute;
   display: flex;
   flex-direction: column;

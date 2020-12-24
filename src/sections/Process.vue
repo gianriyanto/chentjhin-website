@@ -83,7 +83,7 @@ export default {
   position: relative;
   display: flex;
   flex-direction: column;
-  margin-top: 200px;
+  margin-top: 0;
   padding: 50px 0;
 
   .content-wrapper{
