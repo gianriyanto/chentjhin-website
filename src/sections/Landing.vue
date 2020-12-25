@@ -64,23 +64,24 @@ export default {
   .content-wrapper {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     height: 100vh;
-    margin: 50px auto 0 auto;
+    padding-top: 60px;
+    margin:0 auto;
     width: 70vw;
     max-width: 1300px;
-    min-width: 750px;
+    min-width: 700px;
 
     .header-container {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      margin: 150px 0;
+      margin: 150px 20px 150px 0;
       text-align: left;
-      word-spacing: 1.5px;
-      letter-spacing: -2.5px;
+      word-spacing: 4px;
+      letter-spacing: -3.5px;
       line-height: 1.3;
-      font-size: 55px;
+      font-size: 54px;
       width: 60%;
 
       .header-index1{

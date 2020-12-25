@@ -6,13 +6,13 @@
           Connecting aspiring learners with an education that transforms their passion into a profession.
         </span>
       </div>
-      <AboutTiles id="AboutTiles"/>
       <div class="description-container">
         <span class="header-description">
         </span>
         <span class="content-description">
         </span>
       </div>
+      <AboutTiles id="AboutTiles"/>
     </div>
   </section>
 </template>
