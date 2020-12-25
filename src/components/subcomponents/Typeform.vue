@@ -5,37 +5,37 @@
 
         <transition appear name="slide-fade">
           <span class="header-card">
-            <a class="prompt"> Hi there! Your name is </a>
+            <span class="prompt"> Hi there! Your name is </span>
             <inline-input v-bind:inputData="name"/>
           </span>
         </transition>
 
         <transition appear name="slide-fade">
           <span v-if="name.isValid" class="input-card">
-            <a class="prompt"> And you're planning to study </a>
+            <span class="prompt"> And you're planning to study </span>
             <inline-input v-bind:inputData="course"/>
           </span>
         </transition>
 
         <transition appear name="slide-fade">
           <span v-if="course.isValid" class="input-card">
-            <a class="prompt"> Cool! Preferably in </a>
+            <span class="prompt"> Cool! Preferably in </span>
             <inline-input v-bind:inputData="country"/>
           </span>
         </transition>
 
         <transition appear name="slide-fade">
           <span v-if="country.isValid" class="input-card">
-            <a class="prompt"> It's best to reach you at </a>
+            <span class="prompt"> It's best to reach you at </span>
             <inline-input v-bind:inputData="contact"/>
           </span>
         </transition>
 
         <transition appear name="slide-fade">
           <span v-if="contact.isValid" class="footer-card">
-            <a class="label"> Thanks <a class="highlight">{{name.input.split(' ')[0]}}.</a> Chat soon!</a>
+            <span class="label"> Thanks <span class="highlight">{{name.input.split(' ')[0]}}.</span> Chat soon!</span>
             <button class="email-button" v-scroll-to="{ el: '#Process', easing: [.2, .80, .30, 1],duration: 1500}">
-              <a class="button-label"> Done </a>
+              <span class="button-label"> Done </span>
             </button>
           </span>
         </transition>

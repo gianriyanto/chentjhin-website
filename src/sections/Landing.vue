@@ -1,19 +1,18 @@
 <template>
     <section id="Landing">
-
       <gradient-bg id="gradient-bg" v-rellax="{ speed: 5}"/>
       <div class="wrapper">
         <div class="content-wrapper">
           <div class="header-container">
-            <a class="header-index1">
+            <span class="header-index1">
               Hi, my name's Chen
-            </a>
-            <a class="header-index2">
-              I'm a <a class="highlight"> Senior Education Counsellor.</a>
-            </a>
+            </span>
+            <span class="header-index2">
+              I'm a <span class="highlight"> Senior Education Counsellor.</span>
+            </span>
             <span class="button-container">
               <button class="learn-more-button" v-scroll-to="{ el: '#Process', easing: [.2, .80, .30, 1],duration: 1300}">
-                <a class="button-label"> See how I can help </a>
+                <span class="button-label"> See how I can help </span>
               </button>
             </span>
           </div>
@@ -21,9 +20,7 @@
         </div>
         <Process id="Process"/>
       </div>
-
     </section>
-
 </template>
 
 <script>
@@ -81,11 +78,11 @@ export default {
       word-spacing: 4px;
       letter-spacing: -3.5px;
       line-height: 1.3;
-      font-size: 54px;
+      font-size: 52px;
       width: 60%;
 
       .header-index1{
-        font-family: "Bw Modelica ExtraBold", serif;
+        font-family: "Bw Modelica Bold", serif;
         color: #1F1F1F;
 
         .highlight{
@@ -94,7 +91,7 @@ export default {
       }
 
       .header-index2 {
-        font-family: "Bw Modelica ExtraBold", serif;
+        font-family: "Bw Modelica Bold", serif;
         color: #1F1F1F;
 
         .highlight{

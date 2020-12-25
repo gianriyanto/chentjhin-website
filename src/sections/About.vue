@@ -2,31 +2,18 @@
   <section id="About">
     <div class="wrapper">
       <div class="header-container">
-        <span class="header">
+        <p class="header">
           Connecting aspiring learners with an education that transforms their passion into a profession.
-        </span>
+        </p>
       </div>
-      <div class="highlights-container">
-        <span class="highlight">
-          <a class="highlight-header"><font-awesome-icon class="icon" :icon="['fas', 'globe-americas']" /> 95 </a>
-          <a class="highlight-text"> Universities enrolled </a>
-        </span>
-        <span class="highlight">
-          <a class="highlight-header"><font-awesome-icon class="icon" :icon="['fas', 'user-graduate']" /> 100 </a>
-          <a class="highlight-text"> Clients represented </a>
-        </span>
-        <span class="highlight">
-          <a class="highlight-header"><font-awesome-icon class="icon" :icon="['fas', 'business-time']" /> 11 </a>
-          <a class="highlight-text"> Years in business </a>
-        </span>
-      </div>
+      <Highlights id="Highlights"/>
       <div class="description-container">
-        <span class="header-description">
+        <p class="header-description">
           Inani copiosae pri constituto apeirian praesent incorrupte.
-        </span>
-        <span class="content-description">
+        </p>
+        <p class="content-description">
           Vis nominavi facilisis contentiones ea, eius. Ei duis legimus qui. Paulo Ea cum cibo exerci facilis, sea errem persius alterum eu, dicat dolores adipiscing in mea. Sit fabellas gloriatur efficiendi in, has ut labore scripta persius.
-        </span>
+        </p>
       </div>
       <AboutTiles id="AboutTiles"/>
     </div>
@@ -35,10 +22,12 @@
 
 <script>
 import AboutTiles from "@/components/subcomponents/AboutTiles";
+import Highlights from "@/components/subcomponents/Highlights";
 
 export default {
   name: "About",
   components: {
+    Highlights,
     AboutTiles,
   },
   data() {
@@ -84,39 +73,7 @@ export default {
       }
     }
 
-    .highlights-container{
-      padding-top: 100px;
-      display: flex;
-      margin: 0 auto;
-      flex-direction: row;
-      justify-content: space-evenly;
-      text-align: left;
-      width: 90%;
-
-      .highlight{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        text-align: center;
-        line-height: 1.2;
-        color: #808080;
-
-        .highlight-header{
-          margin: 8px auto;
-          font-family: "Bw Modelica Bold", serif;
-          font-size: 35px;
-          letter-spacing: -1px;
-        }
-
-        .highlight-text{
-          width: 150px;
-          margin: 8px auto;
-          font-family: "Gilroy Regular", serif;
-          font-size: 18px;
-          letter-spacing: 0px;
-        }
-      }
-    }
+    #Highlights{ }
 
     .description-container{
       padding-top: 120px;
@@ -125,7 +82,7 @@ export default {
       flex-direction: row;
       justify-content: space-between;
       text-align: left;
-      width: 62%;
+      width: 70%;
 
       .header-description{
         width: 30%;

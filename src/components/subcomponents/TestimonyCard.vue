@@ -1,24 +1,24 @@
 <template>
   <div id="TestimonyCard">
-    <span class="card">
-      <a class="header">
+    <div class="card">
+      <span class="header">
         <font-awesome-icon class="quote-icon" :icon="['fas', 'quote-left']" /> {{ testimony.header }}
-      </a>
-      <a class="message">
+      </span>
+      <span class="message">
         {{ testimony.message }}
-      </a>
-    </span>
-    <span class="client-container">
+      </span>
+    </div>
+    <div class="client-container">
       <span class="image"/>
       <span class="client">
-        <a class="name">
+        <span class="name">
           {{ testimony.client }}
-        </a>
-        <a class="university">
+        </span>
+        <span class="university">
           {{ testimony.university }}
-        </a>
+        </span>
       </span>
-    </span>
+    </div>
   </div>
 </template>
 

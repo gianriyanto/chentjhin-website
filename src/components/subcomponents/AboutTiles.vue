@@ -278,7 +278,7 @@ export default {
           justify-content: space-between;
           margin: 0 0 8px 8px;
           padding: 25px;
-          height: 70%;
+          height: 55%;
           background-image: linear-gradient(to top right, #dd6fbd, #f69250, #f3ab3e);
           box-shadow: 0 8px 32px 0 rgba(17, 20, 57, 0.1);
           border-radius: 15px;
@@ -293,7 +293,7 @@ export default {
           }
 
           .image {
-            width: 81%;
+            width: 100%;
             height: auto;
             margin: 0 auto;
           }

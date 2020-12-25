@@ -1,0 +1,108 @@
+<template>
+  <div id="NameCard">
+    <div class="card-container">
+      <span class="header-card">
+        <span class="name"> CHEN TJHIN </span>
+        <span class="title"> Senior Education Counsellor </span>
+      </span>
+      <img class="image" src="@/assets/images/professional.svg" alt=""/>
+      <span class="content-card">
+        <span class="icons">
+          <font-awesome-icon class="icon" :icon="['fas', 'mobile-alt']"/>
+          <font-awesome-icon class="icon" :icon="['fas', 'at']"/>
+          <font-awesome-icon class="icon" :icon="['fas', 'globe']"/>
+        </span>
+        <span class="details">
+          <span class="phone"> +62 811 899 688 </span>
+          <span class="email"> chentjhin7@gmail.com </span>
+          <span class="website"> chentjhin.com </span>
+        </span>
+      </span>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  name: "NameCard"
+}
+</script>
+
+<style scoped lang="scss">
+
+#NameCard{
+  padding-top: 150px;
+
+  .card-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 40px 60px;
+    height: 440px;
+    width: 220px;
+    margin: auto;
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.2 );
+    backdrop-filter: blur( 10px );
+    -webkit-backdrop-filter: blur( 10px );
+    text-align: left;
+
+    .header-card{
+      display: flex;
+      flex-direction: column;
+      height: 10%;
+
+      .name{
+        letter-spacing: 0.7px;
+        font-family: "Gilroy Bold", serif;
+        font-size: 21px;
+        color: #1F1F1F;
+      }
+      .title{
+        padding-top: 4px;
+        font-family: "Gilroy SemiBold", serif;
+        font-size: 16px;
+        color: #5651ec;
+      }
+    }
+    .image{
+      height: 45%;
+      width: auto;
+    }
+    .content-card{
+      display: flex;
+      flex-direction: row;
+      line-height: 1.1;
+      padding-top: 6px;
+      height: fit-content;
+
+      .icons{
+        display: flex;
+        flex-direction: column;
+
+        .icon{
+          margin: 0 auto;
+          font-size: 14px;
+          color: #5651ec;
+          padding-top: 11px;
+          padding-right: 8px;
+        }
+      }
+
+      .details{
+        display: flex;
+        flex-direction: column;
+
+        .phone, .email, .website{
+          font-family: "Gilroy Medium", serif;
+          font-size: 14px;
+          color: #1F1F1F;
+          padding-top: 11px;
+        }
+      }
+    }
+  }
+}
+
+</style>
