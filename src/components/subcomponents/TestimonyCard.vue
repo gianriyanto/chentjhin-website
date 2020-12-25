@@ -39,12 +39,12 @@ export default {
 #TestimonyCard{
   flex: 0 0 auto;
   margin: auto 60px auto 0;
-  width: 350px;
+  width: 330px;
 
   .card{
     display: flex;
     flex-direction: column;
-    padding: 35px 45px;
+    padding: 30px 40px;
     height: fit-content;
     border-radius: 13px;
     background-color: #f8f8f8;
@@ -59,7 +59,7 @@ export default {
     .header{
       font-family: "PT Serif", serif;
       letter-spacing: -1px;
-      font-size: 28px;
+      font-size: 23px;
       color: #5651ec;
     }
     .message{

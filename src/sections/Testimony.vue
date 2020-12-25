@@ -143,12 +143,12 @@ export default {
       flex-direction: column;
       text-align: left;
       line-height: 1.5;
-      margin: 0 calc((100vw - 1152px) / 2);;
+      margin: 0 calc((100vw - 1050px) / 2);;
 
       .header{
         font-family: "Bw Modelica ExtraBold", serif;
         letter-spacing: -2px;
-        font-size: 65px;
+        font-size: 57px;
         color: #292929;
         width: 45%;
       }
@@ -165,7 +165,7 @@ export default {
       display: flex;
       flex-direction: row;
       align-content: center;
-      padding-left: calc((100vw - 1152px) / 2);
+      padding-left: calc((100vw - 1050px) / 2);
       margin-top: 30px;
       height: fit-content;
       overflow: scroll !important;

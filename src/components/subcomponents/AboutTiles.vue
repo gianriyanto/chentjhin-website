@@ -98,7 +98,8 @@ export default {
 <style scoped lang="scss">
 
 #AboutTiles {
-  margin: 200px auto 0 auto;
+  padding-top: 150px;
+  margin: 0 auto;
   position: relative;
   max-width: 1200px;
   width: 70vw;
