@@ -145,21 +145,21 @@ export default {
 
           .button-label {
             font-family: "Gilroy SemiBold", serif;
-            font-size: 15px;
+            font-size: 14px;
             margin: auto;
             color: white;
           }
         }
         .get-started-label{
           cursor: pointer;
-          font-family: "Gilroy Bold", serif;
-          font-size: 19px;
+          font-family: "Gilroy SemiBold", serif;
+          font-size: 17px;
           margin: auto;
           border: none;
           outline: none;
           text-decoration: none;
           background-color: transparent;
-          color: black;
+          color: #323232;
         }
       }
     }

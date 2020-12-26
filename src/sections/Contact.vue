@@ -133,11 +133,11 @@ export default {
           }
         }
 
-        #NameCard{ }
+        #NameCard{
 
+        }
       }
     }
-
   }
 }
 
