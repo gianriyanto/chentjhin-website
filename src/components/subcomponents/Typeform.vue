@@ -87,17 +87,17 @@ export default {
       flex-direction: column;
       justify-content: space-evenly;
       margin-bottom: 13px;
-      padding: 18px 27px;
-      height: 55px;
+      padding: 28px 27px 18px 27px;
+      height: 60px;
       border-radius: 17px 17px 7px 7px;
-      background: rgba(255, 255, 255, 0.2);
+      background: rgba(255, 255, 255, 0.1);
       box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.2 );
       backdrop-filter: blur( 10px );
       -webkit-backdrop-filter: blur( 10px );
 
       .prompt {
         font-family: "Gilroy SemiBold", serif;
-        color: #1c1c1c;
+        color: #3b3b3b;
         font-size: 17px;
         margin: 0 9px 5px 0;
       }
@@ -112,14 +112,14 @@ export default {
       padding: 18px 27px;
       height: 55px;
       border-radius: 7px;
-      background: rgba(255, 255, 255, 0.2);
+      background: rgba(255, 255, 255, 0.1);
       box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.2 );
       backdrop-filter: blur( 10px );
       -webkit-backdrop-filter: blur( 10px );
 
       .prompt {
         font-family: "Gilroy SemiBold", serif;
-        color: #1c1c1c;
+        color: #3b3b3b;
         font-size: 17px;
         margin: 0 9px 5px 0;
       }
@@ -142,7 +142,7 @@ export default {
       .label{
         margin: auto 0;
         font-family: "Gilroy SemiBold", serif;
-        color: #1c1c1c;
+        color: #3b3b3b;
         font-size: 17px;
         width: 60%;
 

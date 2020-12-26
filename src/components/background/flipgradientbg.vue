@@ -1,6 +1,8 @@
 <template>
   <div id="flip-gradient-bg">
-    <img class="image" src="@/assets/gradient-images/Gradient-Mesh-2.jpg" alt=""/>
+
+    <img class="image" src="@/assets/gradient-images/Gradient-Mesh-2.jpg" alt="">
+
   </div>
 </template>
 
