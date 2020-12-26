@@ -62,13 +62,15 @@ export default {
     .content-wrapper{
       display: flex;
       flex-direction: row;
-      margin: auto auto;
+      margin: auto;
+      padding-top: 70px;
 
       .contact-container{
+        padding-top: 50px;
         display: flex;
         flex-direction: column;
-        margin-top: 50px;
-        height: 500px;
+        justify-content: center;
+        height: 100%;
         width: 550px;
 
         .header-container {
@@ -131,10 +133,9 @@ export default {
             color: #5b1fff;
           }
         }
+      }
+      #NameCard{
 
-        #NameCard{
-
-        }
       }
     }
   }

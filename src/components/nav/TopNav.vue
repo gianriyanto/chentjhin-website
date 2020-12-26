@@ -3,7 +3,7 @@
     <div class="content-wrapper">
       <span class="logo"/>
       <button class="contact-button">
-        <span class="button-label"> Let's Talk </span>
+        <span class="button-label" v-scroll-to="{ el: '#Contact', easing: [.2, .80, .30, 1],duration: 1300}"> Let's Talk </span>
       </button>
     </div>
   </div>
@@ -45,10 +45,10 @@ export default {
       width: 130px;
       height: 50px;
       border: thin solid black;
-      background: rgba(255, 255, 255, 0.1);
+      background: rgba(255, 255, 255, 0.04);
       box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.5 );
-      backdrop-filter: blur( 10px );
-      -webkit-backdrop-filter: blur( 10px );
+      backdrop-filter: blur( 3px );
+      -webkit-backdrop-filter: blur( 3px );
       border-radius: 10px;
       outline: none;
       text-decoration: none;

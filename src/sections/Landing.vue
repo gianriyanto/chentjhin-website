@@ -86,7 +86,7 @@ export default {
       min-width: 535px;
 
       .header-text{
-        line-height: 1.3;
+        line-height: 1.2;
         font-family: "Gilroy Bold", serif;
         letter-spacing: -2px;
         font-size: 60px;
@@ -110,7 +110,7 @@ export default {
       .button-container {
         display: flex;
         flex-direction: row;
-        margin-top: 40px;
+        margin-top: 35px;
         width: fit-content;
 
         .learn-more-button {
