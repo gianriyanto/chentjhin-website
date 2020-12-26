@@ -4,14 +4,14 @@
       <div class="wrapper">
         <div class="content-wrapper">
           <div class="header-container">
-            <span class="header-index1">
+            <span class="header-text">
               Hello.
             </span>
-            <span class="header-index1">
+            <span class="header-text">
               <span> My name's <span class="highlight"> Chen </span></span>
               <hr class="dash" noshade />
             </span>
-            <span class="header-index2">
+            <span class="header-text">
               A Senior Education Counsellor.
             </span>
             <span class="button-container">
@@ -73,8 +73,6 @@ export default {
     padding-top: 50px;
     margin:0 auto;
     width: 70vw;
-    max-width: 1300px;
-    min-width: 700px;
 
     .header-container {
       display: flex;
@@ -84,9 +82,10 @@ export default {
       text-align: left;
       word-spacing: 4px;
       font-size: 52px;
-      width: 535px;
+      max-width: 535px;
+      min-width: 535px;
 
-      .header-index1{
+      .header-text{
         line-height: 1.3;
         font-family: "Gilroy Bold", serif;
         letter-spacing: -2px;
@@ -105,18 +104,6 @@ export default {
           background-color: #5651ec;
           border: none;
           margin: auto 20px
-        }
-      }
-
-      .header-index2{
-        line-height: 1.3;
-        font-family: "Gilroy Bold", serif;
-        letter-spacing: -2px;
-        font-size: 60px;
-        color: #3b3b3b;
-
-        .highlight{
-          color: #5b1fff;
         }
       }
 
