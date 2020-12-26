@@ -30,7 +30,7 @@ export default {
   data () {
     return{
       header: 'Client Stories',
-      subheader: 'I am lucky to have worked with many aspiring professionals and watch them embark on their new learning journey.',
+      subheader: 'I am lucky to have worked with many aspiring professionals discover their future and watch them embark on their new learning journey.',
       testimonies: [
         {
           client: 'Deandra Kezia Djunaedi',
@@ -143,7 +143,7 @@ export default {
       flex-direction: column;
       text-align: left;
       line-height: 1.5;
-      margin: 0 calc((100vw - 1050px) / 2);;
+      margin: 0 calc((100vw - 1100px) / 2);;
 
       .header{
         font-family: "Bw Modelica ExtraBold", serif;
@@ -165,7 +165,7 @@ export default {
       display: flex;
       flex-direction: row;
       align-content: center;
-      padding-left: calc((100vw - 1050px) / 2);
+      padding-left: calc((100vw - 1100px) / 2);
       margin-top: 30px;
       height: fit-content;
       overflow: scroll !important;
@@ -174,7 +174,9 @@ export default {
         display: none;
       }
 
-      #TestimonyCard{ }
+      #TestimonyCard{
+
+      }
     }
   }
 }

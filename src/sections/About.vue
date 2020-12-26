@@ -3,7 +3,7 @@
     <div class="wrapper">
       <div class="header-container">
         <span class="header">
-          Connecting aspiring learners with an education that transforms their passion into a profession.
+          Connecting learners with an education that transforms their passion into a profession.
         </span>
       </div>
       <Highlights id="Highlights"/>
@@ -59,15 +59,14 @@ export default {
       justify-content: center;
       margin: 0 auto;
       text-align: center;
-      max-width: 1200px;
-      width: 70%;
+      width: 64%;
 
       .header{
         font-family: "Bw Modelica ExtraBold", serif;
         background: linear-gradient(to right, #5b1fff, #e791c6, #ff8820);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        font-size: 73px;
+        font-size: 80px;
         letter-spacing: -2px;
         line-height: 1.2;
       }
@@ -77,7 +76,7 @@ export default {
 
     .description-container{
       padding-top: 120px;
-      display: flex;
+      display: none;
       margin: 0 auto;
       flex-direction: row;
       justify-content: space-between;

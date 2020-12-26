@@ -42,21 +42,21 @@ export default {
       justify-content: space-evenly;
       text-align: center;
       line-height: 1.2;
-      color: #545454;
-      opacity: 0.5;
+      color: #1d1d1d;
+      opacity: 0.8;
 
       .highlight-header{
         margin: 8px auto;
         font-family: "Bw Modelica Bold", serif;
-        font-size: 30px;
+        font-size: 37px;
         letter-spacing: -1px;
       }
 
       .highlight-text{
         width: 100px;
         margin: 8px auto;
-        font-family: "Gilroy Regular", serif;
-        font-size: 17px;
+        font-family: "Gilroy SemiBold", serif;
+        font-size: 18px;
         letter-spacing: -0.5px;
       }
     }

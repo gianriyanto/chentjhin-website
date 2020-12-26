@@ -118,7 +118,7 @@ export default {
         }
 
         .button-container{
-          margin-top: 50px;
+          margin-top: 40px;
           display: flex;
           flex-direction: row;
 
