@@ -70,7 +70,7 @@ export default {
       }
     }
     .image{
-      height: 45%;
+      height: 54%;
       width: auto;
     }
     .content-card{

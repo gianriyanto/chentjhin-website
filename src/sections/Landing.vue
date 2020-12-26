@@ -99,8 +99,8 @@ export default {
         }
 
         .dash{
-          width: 40px;
-          height: 4px;
+          width: 38px;
+          height: 3px;
           background-color: #5651ec;
           border: none;
           margin: auto 20px
