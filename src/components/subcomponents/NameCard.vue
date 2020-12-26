@@ -100,9 +100,9 @@ export default {
 
         .phone, .email, .website{
           letter-spacing: 0.5px;
-          font-family: "Gilroy Regular", serif;
+          font-family: "Gilroy Medium", serif;
           font-size: 14px;
-          color: #303030;
+          color: #1d1d1d;
           padding-top: 11px;
         }
       }

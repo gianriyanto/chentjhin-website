@@ -12,8 +12,13 @@
             <span class="description-header"> Don’t know where to start? </span>
             <span class="description-text"> Tell me about your current situations, your interests, and where you intend to travel for studies. </span>
           </span>
-          <span class="card-button">
-            <span class="button-label"> Take my card </span>
+          <span class="button-container">
+            <button class="getstarted-button">
+              <span class="getstarted-label"> Get Started </span>
+            </button>
+            <button class="card-button">
+              <span class="card-label"> Take My Card </span>
+            </button>
           </span>
         </div>
         <NameCard id="NameCard"/>
@@ -78,9 +83,9 @@ export default {
           flex-direction: column;
           justify-content: center;
           text-align: left;
+          line-height: 1.2;
 
           .header-index0, .header-index1 {
-            line-height: 1.25;
             font-family: "Bw Modelica ExtraBold", serif;
             letter-spacing: -3px;
             font-size: 67px;
@@ -112,25 +117,52 @@ export default {
           }
         }
 
-        .card-button{
-          margin-top: 25px;
-          width: 110px;
-          padding: 15px 30px;
-          border: thin solid #5b1fff;
-          background: rgba(255, 255, 255, 0.05);
-          box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.3 );
-          backdrop-filter: blur( 10px );
-          -webkit-backdrop-filter: blur( 10px );
-          border-radius: 10px;
-          outline: none;
-          text-decoration: none;
-          cursor: pointer;
+        .button-container{
+          margin-top: 40px;
+          display: flex;
+          flex-direction: row;
 
-          .button-label{
-            font-family: "Gilroy SemiBold", serif;
-            font-size: 14px;
-            margin: auto;
-            color: #5b1fff;
+          .getstarted-button{
+            margin-right: 20px;
+            width: fit-content;
+            padding: 0 50px;
+            height: 47px;
+            background-color: #5b1fff;
+            box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.9 );
+            border-radius: 10px;
+            outline: none;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+
+            .getstarted-label{
+              font-family: "Gilroy SemiBold", serif;
+              font-size: 13px;
+              margin: auto;
+              color: white;
+            }
+          }
+
+          .card-button{
+            width: fit-content;
+            padding: 0 20px;
+            height: 47px;
+            border: thin solid #5b1fff;
+            background: rgba(255, 255, 255, 0.05);
+            box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.3 );
+            backdrop-filter: blur( 10px );
+            -webkit-backdrop-filter: blur( 10px );
+            border-radius: 10px;
+            outline: none;
+            text-decoration: none;
+            cursor: pointer;
+
+            .card-label{
+              font-family: "Gilroy SemiBold", serif;
+              font-size: 13px;
+              margin: auto;
+              color: #5b1fff;
+            }
           }
         }
       }
