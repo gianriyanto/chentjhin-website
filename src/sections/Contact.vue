@@ -3,11 +3,19 @@
     <flip-gradient-bg id="flip-gradient-bg"/>
     <div class="wrapper">
       <div class="content-wrapper">
-        <span class="header-container">
-          <span class="header-index0"> Ready to build your future? </span>
-          <span class="header-index1"> Let's Talk. </span>
-          <span class="description-text"> Don’t know where to start? Tell me about your current situations, your interests, and where you intend to travel for studies. </span>
-        </span>
+        <div class="contact-container">
+          <span class="header-container">
+            <span class="header-index0"> Ready to build your future? </span>
+            <span class="header-index1"> Let's Talk. </span>
+          </span>
+          <span class="description-container">
+            <span class="description-header"> Don’t know where to start? </span>
+            <span class="description-text"> Tell me about your current situations, your interests, and where you intend to travel for studies. </span>
+          </span>
+          <span class="card-button">
+            <span class="button-label"> Take my card </span>
+          </span>
+        </div>
         <NameCard id="NameCard"/>
      </div>
     </div>
@@ -24,6 +32,12 @@ export default {
   components: {
     NameCard,
     FlipGradientBg
+  },
+  data() {
+    return{
+    }
+  },
+  methods: {
   }
 }
 
@@ -47,44 +61,83 @@ export default {
 
     .content-wrapper{
       display: flex;
-      flex-direction: row-reverse;
-      justify-content: space-evenly;
-      height: fit-content;
+      flex-direction: row;
       margin: auto auto;
-      width: 70vw;
-      max-width: 1300px;
-      min-width: 700px;
 
-      .header-container{
+      .contact-container{
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        height: 426px;
-        text-align: left;
-        margin-left: 40px;
-        width: 450px;
+        margin-top: 50px;
+        height: 500px;
+        width: 550px;
 
-        .header-index0, .header-index1{
-          line-height: 1.25;
-          font-family: "Bw Modelica ExtraBold", serif;
-          letter-spacing: -3px;
-          font-size: 65px;
-          color: #1F1F1F;
+        .header-container {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          text-align: left;
+
+          .header-index0, .header-index1 {
+            line-height: 1.25;
+            font-family: "Bw Modelica ExtraBold", serif;
+            letter-spacing: -3px;
+            font-size: 65px;
+            color: #1F1F1F;
+          }
         }
 
-        .description-text{
-          margin-top: 30px;
-          line-height: 1.5;
-          font-family: "Gilroy Regular", serif;
-          font-size: 16px;
-          color: #484848;
-          width: 430px;
+        .description-container{
+          display: flex;
+          flex-direction: column;
+          text-align: left;
+
+          .description-header{
+            margin-top: 30px;
+            line-height: 1.5;
+            font-family: "Gilroy SemiBold", serif;
+            font-size: 16px;
+            color: #1F1F1F;
+            width: 430px;
+          }
+
+          .description-text{
+            margin-top: 7px;
+            line-height: 1.5;
+            font-family: "Gilroy Regular", serif;
+            font-size: 16px;
+            color: #484848;
+            width: 430px;
+          }
         }
+
+        .card-button{
+          margin-top: 25px;
+          width: 110px;
+          padding: 15px 30px;
+          border: thin solid #5b1fff;
+          background: rgba(255, 255, 255, 0.05);
+          box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.3 );
+          backdrop-filter: blur( 10px );
+          -webkit-backdrop-filter: blur( 10px );
+          border-radius: 10px;
+          outline: none;
+          text-decoration: none;
+          cursor: pointer;
+          transition: all .35s ease-in-out;
+
+          .button-label{
+            font-family: "Gilroy SemiBold", serif;
+            font-size: 14px;
+            margin: auto;
+            color: #5b1fff;
+          }
+        }
+
+        #NameCard{ }
+
       }
-
-      #NameCard{ }
-
     }
+
   }
 }
 

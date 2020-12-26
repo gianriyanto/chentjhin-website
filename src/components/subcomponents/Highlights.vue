@@ -26,6 +26,7 @@ export default {
 <style scoped lang="scss">
 
 #Highlights{
+  padding-top: 100px;
 
   .highlights-container{
     display: flex;
@@ -42,7 +43,7 @@ export default {
       text-align: center;
       line-height: 1.2;
       color: #545454;
-      opacity: 0.4;
+      opacity: 0.5;
 
       .highlight-header{
         margin: 8px auto;

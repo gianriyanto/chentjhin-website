@@ -2,18 +2,18 @@
   <section id="About">
     <div class="wrapper">
       <div class="header-container">
-        <p class="header">
+        <span class="header">
           Connecting aspiring learners with an education that transforms their passion into a profession.
-        </p>
+        </span>
       </div>
       <Highlights id="Highlights"/>
       <div class="description-container">
-        <p class="header-description">
+        <span class="header-description">
           Inani copiosae pri constituto apeirian praesent incorrupte.
-        </p>
-        <p class="content-description">
+        </span>
+        <span class="content-description">
           Vis nominavi facilisis contentiones ea, eius. Ei duis legimus qui. Paulo Ea cum cibo exerci facilis, sea errem persius alterum eu, dicat dolores adipiscing in mea. Sit fabellas gloriatur efficiendi in, has ut labore scripta persius.
-        </p>
+        </span>
       </div>
       <AboutTiles id="AboutTiles"/>
     </div>
@@ -95,7 +95,7 @@ export default {
       .content-description{
         width: 58%;
         color: #454545;
-        line-height: 1.6;
+        line-height: 1.4;
         font-family: "Gilroy Medium", serif;
         font-size: 16px;
       }

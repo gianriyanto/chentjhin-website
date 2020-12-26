@@ -156,8 +156,8 @@ export default {
         margin-top: 10px;
         margin-left: 5px;
         font-family: "Gilroy Medium", serif;
-        font-size: 18px;
-        color: #3c3c3c;
+        font-size: 17px;
+        color: #585858;
         width: 45%;
       }
     }

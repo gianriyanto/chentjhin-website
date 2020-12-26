@@ -5,10 +5,10 @@
         <div class="content-wrapper">
           <div class="header-container">
             <span class="header-index1">
-              Hello, my
+              Hello.
             </span>
             <span class="header-index1">
-              <span> name's <span class="highlight"> Chen </span></span>
+              <span> My name's <span class="highlight"> Chen </span></span>
               <hr class="dash" noshade />
             </span>
             <span class="header-index2">
@@ -100,11 +100,11 @@ export default {
         }
 
         .dash{
-          width: 55px;
-          height: 5px;
+          width: 40px;
+          height: 4px;
           background-color: #5651ec;
           border: none;
-          margin: auto 25px
+          margin: auto 20px
         }
       }
 
