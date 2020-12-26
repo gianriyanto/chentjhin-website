@@ -8,7 +8,6 @@
           <span class="header-index1"> Let's Talk. </span>
           <span class="description-text"> Don’t know where to start? Tell me about your current situations, your interests, and where you intend to travel for studies. </span>
         </span>
-
         <NameCard id="NameCard"/>
      </div>
     </div>
@@ -48,10 +47,10 @@ export default {
 
     .content-wrapper{
       display: flex;
-      flex-direction: row;
+      flex-direction: row-reverse;
       justify-content: space-evenly;
-      height: 100vh;
-      margin: 0 auto;
+      height: fit-content;
+      margin: auto auto;
       width: 70vw;
       max-width: 1300px;
       min-width: 700px;
@@ -60,9 +59,10 @@ export default {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        height: 426px;
         text-align: left;
-        margin-right: 20px;
-        width: 500px;
+        margin-left: 40px;
+        width: 450px;
 
         .header-index0, .header-index1{
           line-height: 1.25;
@@ -82,9 +82,7 @@ export default {
         }
       }
 
-      #NameCard{
-
-      }
+      #NameCard{ }
 
     }
   }

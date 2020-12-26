@@ -15,7 +15,7 @@
         <span class="details">
           <span class="phone"> +62 811 899 688 </span>
           <span class="email"> chentjhin7@gmail.com </span>
-          <span class="website"> chentjhin.com </span>
+          <span class="website"> www.chentjhin.com </span>
         </span>
       </span>
     </div>
@@ -31,14 +31,13 @@ export default {
 <style scoped lang="scss">
 
 #NameCard{
-  padding-top: 150px;
 
   .card-container{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 40px 60px;
-    height: 440px;
+    padding: 40px;
+    height: 426px;
     width: 220px;
     margin: auto;
     border-radius: 14px;
@@ -54,16 +53,19 @@ export default {
       height: 10%;
 
       .name{
-        letter-spacing: 0.7px;
+        letter-spacing: 1px;
         font-family: "Gilroy Bold", serif;
         font-size: 21px;
-        color: #1F1F1F;
+        background-image: linear-gradient(to left, #5b1fff, #3867ff);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: #5651ec;
       }
       .title{
         padding-top: 4px;
         font-family: "Gilroy SemiBold", serif;
-        font-size: 16px;
-        color: #5651ec;
+        font-size: 13px;
+        color: #545454;
       }
     }
     .image{
@@ -83,10 +85,11 @@ export default {
 
         .icon{
           margin: 0 auto;
-          font-size: 14px;
+          font-size: 15px;
           color: #5651ec;
           padding-top: 11px;
           padding-right: 8px;
+          opacity: 0.8;
         }
       }
 
@@ -95,9 +98,10 @@ export default {
         flex-direction: column;
 
         .phone, .email, .website{
-          font-family: "Gilroy Medium", serif;
+          letter-spacing: 0.5px;
+          font-family: "Gilroy Regular", serif;
           font-size: 14px;
-          color: #1F1F1F;
+          color: #303030;
           padding-top: 11px;
         }
       }
