@@ -74,7 +74,7 @@ export default {
     margin: auto;
     text-align: left;
     height: fit-content;
-    width: 380px;
+    width: 370px;
 
     .header-card{
       position: relative;
@@ -82,13 +82,14 @@ export default {
       flex-direction: column;
       justify-content: space-evenly;
       margin-bottom: 13px;
-      padding: 28px 27px 18px 27px;
+      padding: 21px 35px 11px 35px;
       height: 60px;
       border-radius: 17px 17px 7px 7px;
       background: rgba(255, 255, 255, 0.1);
       box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.3 );
       backdrop-filter: blur( 10px );
       -webkit-backdrop-filter: blur( 10px );
+      border: 1px solid rgba( 255, 255, 255, 0.18 );
 
       .prompt {
         font-family: "Gilroy SemiBold", serif;
@@ -104,13 +105,14 @@ export default {
       flex-direction: column;
       justify-content: space-evenly;
       margin-bottom: 13px;
-      padding: 18px 27px;
+      padding: 15px 35px;
       height: 55px;
       border-radius: 7px;
       background: rgba(255, 255, 255, 0.1);
       box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.3 );
       backdrop-filter: blur( 10px );
       -webkit-backdrop-filter: blur( 10px );
+      border: 1px solid rgba( 255, 255, 255, 0.18 );
 
       .prompt {
         font-family: "Gilroy SemiBold", serif;
@@ -125,16 +127,17 @@ export default {
       flex-direction: row;
       justify-content: space-between;
       margin-bottom: 13px;
-      padding: 10px 27px;
+      padding: 10px 35px 15px 35px;
       height: 58px;
       border-radius: 7px 7px 17px 17px;
       background: rgba(255, 255, 255, 0.1);
       box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.3 );
       backdrop-filter: blur( 10px );
       -webkit-backdrop-filter: blur( 10px );
-      line-height: 1.3;
+      border: 1px solid rgba( 255, 255, 255, 0.18 );
 
       .label{
+        line-height: 1.3;
         margin: auto 0;
         font-family: "Gilroy SemiBold", serif;
         color: #3b3b3b;

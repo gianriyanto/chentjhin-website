@@ -66,12 +66,12 @@ export default {
       padding-top: 70px;
 
       .contact-container{
-        padding-top: 50px;
+        padding-top: 30px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         height: 100%;
-        width: 550px;
+        width: 570px;
 
         .header-container {
           display: flex;
@@ -83,7 +83,7 @@ export default {
             line-height: 1.25;
             font-family: "Bw Modelica ExtraBold", serif;
             letter-spacing: -3px;
-            font-size: 65px;
+            font-size: 67px;
             color: #1F1F1F;
           }
         }
@@ -99,7 +99,7 @@ export default {
             font-family: "Gilroy SemiBold", serif;
             font-size: 16px;
             color: #1F1F1F;
-            width: 430px;
+            width: 460px;
           }
 
           .description-text{
