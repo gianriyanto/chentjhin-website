@@ -2,8 +2,8 @@
   <div id="TopNav">
     <div class="content-wrapper">
       <span class="logo"/>
-      <button class="menu-button">
-        <font-awesome-icon class="menu-icon" :icon="['fas', 'bars']"/>
+      <button class="contact-button">
+        <span class="button-label"> Let's Talk </span>
       </button>
     </div>
   </div>
@@ -41,16 +41,22 @@ export default {
       border-bottom: 0;
     }
 
-    .menu-button {
-      width: 100px;
-      height: 45px;
-      background-color: transparent;
-      border: none;
-      text-decoration: none;
+    .contact-button {
+      width: 130px;
+      height: 50px;
+      border: thin solid black;
+      background: rgba(255, 255, 255, 0.1);
+      box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.5 );
+      backdrop-filter: blur( 10px );
+      -webkit-backdrop-filter: blur( 10px );
+      border-radius: 10px;
       outline: none;
+      text-decoration: none;
+      cursor: pointer;
 
-      .menu-icon{
-        font-size: 30px;
+      .button-label{
+        font-family: "Gilroy SemiBold", serif;
+        font-size: 14px;
         margin: auto;
         color: black;
       }

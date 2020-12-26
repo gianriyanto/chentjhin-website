@@ -123,7 +123,6 @@ export default {
           outline: none;
           text-decoration: none;
           cursor: pointer;
-          transition: all .35s ease-in-out;
 
           .button-label{
             font-family: "Gilroy SemiBold", serif;
