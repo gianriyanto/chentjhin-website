@@ -76,19 +76,19 @@ export default {
         flex-direction: column;
         justify-content: center;
         height: 100%;
-        width: 570px;
+        width: 550px;
 
         .header-container {
           display: flex;
           flex-direction: column;
           justify-content: center;
           text-align: left;
-          line-height: 1.2;
+          line-height: 1.4;
 
           .header-index0, .header-index1 {
             font-family: "Bw Modelica ExtraBold", serif;
             letter-spacing: -3px;
-            font-size: 67px;
+            font-size: 63px;
             color: #1F1F1F;
           }
         }
@@ -118,7 +118,7 @@ export default {
         }
 
         .button-container{
-          margin-top: 40px;
+          margin-top: 50px;
           display: flex;
           flex-direction: row;
 

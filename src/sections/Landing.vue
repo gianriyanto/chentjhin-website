@@ -115,7 +115,7 @@ export default {
 
         .learn-more-button {
           cursor: pointer;
-          width: 200px;
+          width: 178px;
           height: 50px;
           background-image: linear-gradient(to left, #5b1fff, #3867ff);
           box-shadow: 0 8px 32px 0 rgba(17, 20, 57, 0.5);
@@ -124,7 +124,7 @@ export default {
           outline: none;
           text-decoration: none;
           transition: all .35s ease-in-out;
-          margin-right: 30px;
+          margin-right: 25px;
 
           &:hover {
             opacity: 0.9;
@@ -140,7 +140,7 @@ export default {
         .get-started-label{
           cursor: pointer;
           font-family: "Gilroy SemiBold", serif;
-          font-size: 17px;
+          font-size: 16px;
           margin: auto;
           border: none;
           outline: none;

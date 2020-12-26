@@ -101,6 +101,7 @@ export default {
       margin: auto;
       display: flex;
       flex-direction: column;
+      justify-content: space-evenly;
       padding: 30px;
       height: 260px;
       width: 18%;
@@ -127,7 +128,7 @@ export default {
       }
       .description{
         font-family: "Gilroy Medium", serif;
-        font-size: 14px;
+        font-size: 13px;
         letter-spacing: -0.6px;
         color: #5b5b5b;
       }
