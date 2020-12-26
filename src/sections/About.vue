@@ -82,7 +82,7 @@ export default {
       flex-direction: row;
       justify-content: space-between;
       text-align: left;
-      width: 70%;
+      width: 55%;
 
       .header-description{
         width: 30%;

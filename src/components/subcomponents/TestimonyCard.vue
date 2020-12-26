@@ -104,7 +104,7 @@ export default {
         font-family: "Gilroy Medium", serif;
         letter-spacing: -0.5px;
         font-size: 14px;
-        color: #8c8c8c;
+        color: #5651ec;
       }
     }
   }
