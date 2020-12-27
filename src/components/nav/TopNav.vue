@@ -1,9 +1,10 @@
 <template>
   <div id="TopNav">
     <div class="content-wrapper">
-      <span class="logo"/>
+      <span class="logo"
+            v-scroll-to="{ el: '#Landing', easing: [.2, .80, .30, 1],duration: 1500}"/>
       <button class="contact-button">
-        <span class="button-label" v-scroll-to="{ el: '#Contact', easing: [.2, .80, .30, 1],duration: 1300}">
+        <span class="button-label" v-scroll-to="{ el: '#Contact', easing: [.2, .80, .30, 1],duration: 1500}">
           Get in Touch
         </span>
       </button>
@@ -41,6 +42,12 @@ export default {
       border-bottom-left-radius: 25px;
       border-top-left-radius: 25px;
       border-bottom: 0;
+      cursor: pointer;
+      transition: all .35s ease-in-out;
+
+      &:hover{
+        opacity: 0.7;
+      }
     }
 
     .contact-button {
@@ -55,12 +62,16 @@ export default {
       outline: none;
       text-decoration: none;
       cursor: pointer;
+      transition: all .35s ease-in-out;
 
       .button-label{
         font-family: "Gilroy SemiBold", serif;
         font-size: 14px;
         margin: auto;
         color: black;
+      }
+      &:hover{
+        opacity: 0.7;
       }
     }
   }
