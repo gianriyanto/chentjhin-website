@@ -34,7 +34,7 @@ export default {
     flex-direction: row;
     justify-content: space-evenly;
     text-align: left;
-    width: 70%;
+    width: 100%;
 
     .highlight{
       display: flex;

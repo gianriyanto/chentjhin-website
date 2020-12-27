@@ -190,14 +190,14 @@ export default {
         margin: auto 0;
         width: 30%;
         height: 39px;
-        border: none;
-        background-color: #5b1fff;
+        border: thin solid #5b1fff;
+        background: rgba(255, 255, 255, 0.1);
         box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.4 );
         border-radius: 7px;
         outline: none;
         text-decoration: none;
         transition: all 0.3s ease-in-out;
-        color: white;
+        color: #5b1fff;
 
         .button-label{
           font-family: "Gilroy SemiBold", serif;
@@ -215,12 +215,12 @@ export default {
         width: 30%;
         height: 39px;
         border: thin solid black;
-        background: rgba(255, 255, 255, 0.04);
+        background: rgba(255, 255, 255, 0.1);
         box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.3 );
         border-radius: 7px;
         outline: none;
         text-decoration: none;
-        transition: all 0.3s ease-in-out;
+        transition: all 0.25s ease-in-out;
         color: black;
 
         .button-label{
@@ -230,7 +230,7 @@ export default {
         }
 
         &:hover{
-          opacity: 0.9;
+          opacity: 0.6;
         }
       }
     }

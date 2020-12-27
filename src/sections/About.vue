@@ -59,7 +59,8 @@ export default {
       justify-content: center;
       margin: 0 auto;
       text-align: center;
-      width: 64%;
+      max-width: 980px;
+      min-width: 830px;
 
       .header{
         font-family: "Bw Modelica ExtraBold", serif;
