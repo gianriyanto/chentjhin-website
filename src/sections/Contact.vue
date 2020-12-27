@@ -13,15 +13,15 @@
             <span class="description-text"> Tell me about your current situations, your interests, and where you intend to travel for studies. </span>
           </span>
           <span class="button-container">
-            <button class="getstarted-button">
+            <button class="getstarted-button" v-scroll-to="{ el: '#Landing', easing: [.2, .80, .30, 1],duration: 1300}">
               <span class="getstarted-label"> Get Started </span>
             </button>
             <button class="card-button">
-              <span class="card-label"> Take My Card </span>
+              <span class="card-label"> > Take My Card </span>
             </button>
           </span>
         </div>
-        <NameCard id="NameCard"/>
+        <NameCard id="NameCard" :border-color="nameCardBorder"/>
      </div>
     </div>
   </section>
@@ -40,10 +40,11 @@ export default {
   },
   data() {
     return{
+      nameCardBorder: {
+        borderColor: '#5b1fff'
+      }
     }
   },
-  methods: {
-  }
 }
 
 </script>
@@ -127,19 +128,24 @@ export default {
             width: fit-content;
             padding: 0 50px;
             height: 47px;
-            background-color: #5b1fff;
+            background-image: linear-gradient(to left, #5b1fff, #3867ff);
             box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.9 );
             border-radius: 10px;
             outline: none;
             text-decoration: none;
             border: none;
             cursor: pointer;
+            transition: all .35s ease-in-out;
 
             .getstarted-label{
               font-family: "Gilroy SemiBold", serif;
               font-size: 13px;
               margin: auto;
               color: white;
+            }
+
+            &:hover{
+              opacity: 0.8;
             }
           }
 
@@ -156,12 +162,16 @@ export default {
             outline: none;
             text-decoration: none;
             cursor: pointer;
+            transition: all .3s ease-in-out;
 
             .card-label{
               font-family: "Gilroy SemiBold", serif;
               font-size: 13px;
               margin: auto;
               color: #5b1fff;
+            }
+            &:hover{
+              opacity: 0.6;
             }
           }
         }

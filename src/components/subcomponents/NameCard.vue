@@ -1,6 +1,6 @@
 <template>
   <div id="NameCard">
-    <div class="card-container">
+    <div class="card-container" :style="{borderColor: borderColor}">
       <span class="header-card">
         <span class="name"> CHEN TJHIN </span>
         <span class="title"> Senior Education Counsellor </span>
@@ -57,10 +57,7 @@ export default {
         letter-spacing: 1px;
         font-family: "Gilroy Bold", serif;
         font-size: 21px;
-        background-image: linear-gradient(to left, #5b1fff, #3867ff);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        color: #5651ec;
+        color: #5b1fff;
       }
       .title{
         padding-top: 4px;
