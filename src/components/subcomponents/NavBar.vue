@@ -1,7 +1,7 @@
 <template>
   <div id="NavBar">
     <button class="nav-button"
-            v-scroll-to="{ el: '#Process', easing: [.2, .80, .30, 1],duration: 1300}">
+            v-scroll-to="{ el: '#Process', easing: [.2, .80, .30, 1],duration: 1500}">
       <span class="button-label">
         Services
       </span>
@@ -34,10 +34,14 @@ export default {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin: 80px auto 0 auto;
-  width: 100vw;
+  padding-top: 80px;
   height: 50px;
+  width: fit-content;
   z-index: 11;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
 
   .nav-button {
     cursor: pointer;
@@ -51,7 +55,7 @@ export default {
 
     .button-label {
       font-family: "Gilroy Bold", serif;
-      font-size: 15px;
+      font-size: 16px;
       margin: auto;
       color: #1f1f1f;
     }

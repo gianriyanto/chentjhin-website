@@ -17,11 +17,11 @@
         <transition appear name="slide-fade">
           <span v-if="course.isValid" class="input-card">
             <span class="prompt"> Cool! Preferably in </span>
-            <inline-input v-bind:inputData="country"/>
+            <inline-input v-bind:inputData="location"/>
           </span>
         </transition>
         <transition appear name="slide-fade">
-          <span v-if="country.isValid" class="input-card">
+          <span v-if="location.isValid" class="input-card">
             <span class="prompt"> It's best to reach you at </span>
             <inline-input v-bind:inputData="contact"/>
           </span>
@@ -52,8 +52,8 @@ export default {
     return {
       componentKey: 0,
       name: {prompt: 'your name?', input: 'your name?', edit: false, isValid: false},
-      course: {prompt: 'what course?', input: 'what course?', edit: false, isValid: false},
-      country: {prompt: 'country?', input: 'country?', edit: false, isValid: false},
+      course: {prompt: 'what major or course?', input: 'what major or course?', edit: false, isValid: false},
+      location: {prompt: 'city or country?', input: 'city or country?', edit: false, isValid: false},
       contact: {prompt: 'your email or mobile', input: 'your email or mobile', edit: false, isValid: false},
       footerPrompt: 'Thanks',
       buttonLabel: 'Submit',
@@ -71,7 +71,7 @@ export default {
             {
               name: this.name.input,
               course: this.course.input,
-              country: this.country.input,
+              location: this.location.input,
               contact: this.contact.input
             }
         );
@@ -82,8 +82,8 @@ export default {
         console.log('Clear Typeform');
         this.componentKey += 1;
         this.name = {prompt: 'your name?', input: 'your name?', edit: false, isValid: false};
-        this.course = {prompt: 'what course?', input: 'what course?', edit: false, isValid: false};
-        this.country = {prompt: 'country?', input: 'country?', edit: false, isValid: false};
+        this.course = {prompt: 'what major or course?', input: 'what major or course?', edit: false, isValid: false};
+        this.location = {prompt: 'city or country?', input: 'city or country?', edit: false, isValid: false};
         this.contact = {prompt: 'your email or mobile', input: 'your email or mobile', edit: false, isValid: false};
         this.footerPrompt = 'Thanks';
         this.buttonLabel = 'Submit';
