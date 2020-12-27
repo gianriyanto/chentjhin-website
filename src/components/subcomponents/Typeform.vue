@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <section id="Typeform">
+  <div :key="componentKey">
+    <section id="Typeform" >
       <div class="content-wrapper">
         <transition appear name="slide-fade">
           <span class="header-card">
@@ -28,9 +28,9 @@
         </transition>
         <transition appear name="slide-fade">
           <span v-if="contact.isValid" class="footer-card">
-            <span class="label"> Thanks <span class="highlight">{{name.input.split(' ')[0]}}.</span> Chat soon!</span>
-            <button @click="sendEmail" class="email-button" v-scroll-to="{ el: '#Process', easing: [.2, .80, .30, 1],duration: 1500}">
-              <span class="button-label"> Submit </span>
+            <span class="label"> {{ footerPrompt }} <span class="highlight">{{ name.input.split(' ')[0] }}.</span> </span>
+            <button @click="sendEmail" :class="buttonStyle" v-scroll-to="{ el: '#Landing', easing: [.2, .80, .30, 1],duration: 1500}">
+              <span class="button-label"> {{ buttonLabel }} </span>
             </button>
           </span>
         </transition>
@@ -50,24 +50,45 @@ export default {
   },
   data() {
     return {
+      componentKey: 0,
       name: {prompt: 'your name?', input: 'your name?', edit: false, isValid: false},
       course: {prompt: 'what course?', input: 'what course?', edit: false, isValid: false},
       country: {prompt: 'country?', input: 'country?', edit: false, isValid: false},
       contact: {prompt: 'your email or mobile', input: 'your email or mobile', edit: false, isValid: false},
+      footerPrompt: 'Thanks',
+      buttonLabel: 'Submit',
+      buttonStyle: 'submit-button'
     }
   },
   methods: {
     sendEmail() {
-      emailjs.send(
-          "service_gpg6kap",
-          "template_oev55pg",
-          {
-            name: this.name.input,
-            course: this.course.input,
-            country: this.country.input,
-            contact: this.contact.input
-           }
-      );
+      if (this.buttonLabel === 'Submit') {
+        // if typeform has not been submitted
+        emailjs.send(
+            //todo: change email recipient to chentjhin7@gmail.com
+            "service_gpg6kap",
+            "", //template_oev55pg
+            {
+              name: this.name.input,
+              course: this.course.input,
+              country: this.country.input,
+              contact: this.contact.input
+            }
+        );
+        this.footerPrompt = 'Got it. Chat soon';
+        this.buttonLabel = 'Clear';
+        this.buttonStyle = 'clear-button';
+      } else {
+        console.log('Clear Typeform');
+        this.componentKey += 1;
+        this.name = {prompt: 'your name?', input: 'your name?', edit: false, isValid: false};
+        this.course = {prompt: 'what course?', input: 'what course?', edit: false, isValid: false};
+        this.country = {prompt: 'country?', input: 'country?', edit: false, isValid: false};
+        this.contact = {prompt: 'your email or mobile', input: 'your email or mobile', edit: false, isValid: false};
+        this.footerPrompt = 'Thanks';
+        this.buttonLabel = 'Submit';
+        this.buttonStyle = 'submit-button';
+      }
     }
   }
 }
@@ -164,7 +185,7 @@ export default {
           color: #5651ec;
         }
       }
-      .email-button{
+      .submit-button{
         cursor: pointer;
         margin: auto 0;
         width: 30%;
@@ -176,12 +197,36 @@ export default {
         outline: none;
         text-decoration: none;
         transition: all 0.3s ease-in-out;
+        color: white;
 
         .button-label{
           font-family: "Gilroy SemiBold", serif;
           font-size: 13px;
           margin: auto;
-          color: white;
+        }
+
+        &:hover{
+          opacity: 0.9;
+        }
+      }
+      .clear-button{
+        cursor: pointer;
+        margin: auto 0;
+        width: 30%;
+        height: 39px;
+        border: thin solid black;
+        background: rgba(255, 255, 255, 0.04);
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.3 );
+        border-radius: 7px;
+        outline: none;
+        text-decoration: none;
+        transition: all 0.3s ease-in-out;
+        color: black;
+
+        .button-label{
+          font-family: "Gilroy SemiBold", serif;
+          font-size: 13px;
+          margin: auto;
         }
 
         &:hover{

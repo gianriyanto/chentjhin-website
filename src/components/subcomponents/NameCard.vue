@@ -1,6 +1,6 @@
 <template>
   <div id="NameCard">
-    <div class="card-container" :style="{borderColor: borderColor}">
+    <div class="card-container">
       <span class="header-card">
         <span class="name"> CHEN TJHIN </span>
         <span class="title"> Senior Education Counsellor </span>

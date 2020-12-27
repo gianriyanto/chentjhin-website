@@ -21,7 +21,7 @@
             </button>
           </span>
         </div>
-        <NameCard id="NameCard" :border-color="nameCardBorder"/>
+        <NameCard id="NameCard"/>
      </div>
     </div>
   </section>
@@ -40,9 +40,6 @@ export default {
   },
   data() {
     return{
-      nameCardBorder: {
-        borderColor: '#5b1fff'
-      }
     }
   },
 }
