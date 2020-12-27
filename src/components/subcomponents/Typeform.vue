@@ -122,7 +122,7 @@ export default {
       height: 60px;
       border-radius: 17px 17px 7px 7px;
       background: rgba(255, 255, 255, 0.1);
-      box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.3 );
+      box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.2 );
       backdrop-filter: blur( 10px );
       -webkit-backdrop-filter: blur( 10px );
       border: 1px solid rgba( 255, 255, 255, 0.18 );
@@ -145,7 +145,7 @@ export default {
       height: 55px;
       border-radius: 7px;
       background: rgba(255, 255, 255, 0.1);
-      box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.3 );
+      box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.2 );
       backdrop-filter: blur( 10px );
       -webkit-backdrop-filter: blur( 10px );
       border: 1px solid rgba( 255, 255, 255, 0.18 );
@@ -167,7 +167,7 @@ export default {
       height: 58px;
       border-radius: 7px 7px 17px 17px;
       background: rgba(255, 255, 255, 0.1);
-      box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.3 );
+      box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.2 );
       backdrop-filter: blur( 10px );
       -webkit-backdrop-filter: blur( 10px );
       border: 1px solid rgba( 255, 255, 255, 0.18 );
@@ -191,8 +191,8 @@ export default {
         width: 30%;
         height: 39px;
         border: thin solid #5b1fff;
-        background: rgba(255, 255, 255, 0.1);
-        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.4 );
+        background: rgba(255, 255, 255, 0.07);
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.3 );
         border-radius: 7px;
         outline: none;
         text-decoration: none;

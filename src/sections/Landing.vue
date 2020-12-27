@@ -18,9 +18,6 @@
               <button class="learn-more-button" v-scroll-to="{ el: '#Process', easing: [.2, .80, .30, 1],duration: 1500}">
                 <span class="button-label"> See How I Can Help </span>
               </button>
-              <button class="get-started-label">
-                Get Started
-              </button>
             </span>
           </div>
           <Typeform id="Typeform"/>
@@ -139,16 +136,15 @@ export default {
           color: white;
         }
       }
-      .get-started-label{
-        cursor: pointer;
-        font-family: "Gilroy SemiBold", serif;
+      .scroll-button{
+        font-family: "Gilroy Medium", serif;
         font-size: 16px;
         margin: auto;
         border: none;
         outline: none;
         text-decoration: none;
         background-color: transparent;
-        color: #323232;
+        color: #757575;
       }
     }
   }
