@@ -3,7 +3,9 @@
     <div class="content-wrapper">
       <span class="logo"/>
       <button class="contact-button">
-        <span class="button-label" v-scroll-to="{ el: '#Contact', easing: [.2, .80, .30, 1],duration: 1300}"> Let's Talk </span>
+        <span class="button-label" v-scroll-to="{ el: '#Contact', easing: [.2, .80, .30, 1],duration: 1300}">
+          Get in Touch
+        </span>
       </button>
     </div>
   </div>
