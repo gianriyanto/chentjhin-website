@@ -64,10 +64,12 @@ export default {
     box-shadow: 0 10px 42px 0 rgba(17, 20, 57, 0.5);
 
     .content-wrapper{
+      width: 57vw;
       display: flex;
       flex-direction: row;
+      justify-content: space-between;
       margin: auto;
-      padding-top: 150px;
+      padding-top: 170px;
 
       #NameCard{
 
@@ -82,6 +84,7 @@ export default {
     width: 550px;
 
     .header-container {
+      padding-top: 30px;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -102,7 +105,7 @@ export default {
       text-align: left;
 
       .description-header{
-        margin-top: 30px;
+        margin-top: 20px;
         line-height: 1.5;
         font-family: "Gilroy SemiBold", serif;
         font-size: 16px;
