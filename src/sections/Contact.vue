@@ -13,7 +13,7 @@
             <span class="description-text"> Tell me about your current situations, your interests, and where you intend to travel for studies. </span>
           </span>
           <span class="button-container">
-            <button class="getstarted-button" v-scroll-to="{ el: '#Landing', easing: [.2, .80, .30, 1],duration: 1300}">
+            <button class="getstarted-button" v-scroll-to="{ el: '#Landing', easing: [.2, .80, .30, 1],duration: 1500}">
               <span class="getstarted-label"> Get Started </span>
             </button>
             <button class="card-button">
