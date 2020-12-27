@@ -67,7 +67,7 @@ export default {
       display: flex;
       flex-direction: row;
       margin: auto;
-      padding-top: 70px;
+      padding-top: 150px;
 
       #NameCard{
 
@@ -75,7 +75,6 @@ export default {
     }
   }
   .contact-container{
-    padding-top: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -87,7 +86,7 @@ export default {
       flex-direction: column;
       justify-content: center;
       text-align: left;
-      line-height: 1.4;
+      line-height: 1.35;
 
       .header-index0, .header-index1 {
         font-family: "Bw Modelica ExtraBold", serif;
