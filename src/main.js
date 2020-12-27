@@ -6,6 +6,9 @@ import { fas } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import VueRellax from 'vue-rellax'
+import{ init } from 'emailjs-com';
+
+init("user_QRtMhtGACRk9EF2dvew9l");
 Vue.use(Vuex)
 Vue.use(VueScrollTo)
 Vue.use(VueRellax)

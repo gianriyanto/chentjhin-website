@@ -71,113 +71,113 @@ export default {
       margin: auto;
       padding-top: 70px;
 
-      .contact-container{
-        padding-top: 30px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        height: 100%;
-        width: 550px;
-
-        .header-container {
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          text-align: left;
-          line-height: 1.4;
-
-          .header-index0, .header-index1 {
-            font-family: "Bw Modelica ExtraBold", serif;
-            letter-spacing: -3px;
-            font-size: 63px;
-            color: #1F1F1F;
-          }
-        }
-
-        .description-container{
-          display: flex;
-          flex-direction: column;
-          text-align: left;
-
-          .description-header{
-            margin-top: 30px;
-            line-height: 1.5;
-            font-family: "Gilroy SemiBold", serif;
-            font-size: 16px;
-            color: #1F1F1F;
-            width: 460px;
-          }
-
-          .description-text{
-            margin-top: 7px;
-            line-height: 1.5;
-            font-family: "Gilroy Regular", serif;
-            font-size: 16px;
-            color: #484848;
-            width: 430px;
-          }
-        }
-
-        .button-container{
-          margin-top: 40px;
-          display: flex;
-          flex-direction: row;
-
-          .getstarted-button{
-            margin-right: 20px;
-            width: fit-content;
-            padding: 0 50px;
-            height: 47px;
-            background-image: linear-gradient(to left, #5b1fff, #3867ff);
-            box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.9 );
-            border-radius: 10px;
-            outline: none;
-            text-decoration: none;
-            border: none;
-            cursor: pointer;
-            transition: all .35s ease-in-out;
-
-            .getstarted-label{
-              font-family: "Gilroy SemiBold", serif;
-              font-size: 13px;
-              margin: auto;
-              color: white;
-            }
-
-            &:hover{
-              opacity: 0.8;
-            }
-          }
-
-          .card-button{
-            width: fit-content;
-            padding: 0 20px;
-            height: 47px;
-            border: thin solid #5b1fff;
-            background: rgba(255, 255, 255, 0.05);
-            box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.3 );
-            backdrop-filter: blur( 10px );
-            -webkit-backdrop-filter: blur( 10px );
-            border-radius: 10px;
-            outline: none;
-            text-decoration: none;
-            cursor: pointer;
-            transition: all .3s ease-in-out;
-
-            .card-label{
-              font-family: "Gilroy SemiBold", serif;
-              font-size: 13px;
-              margin: auto;
-              color: #5b1fff;
-            }
-            &:hover{
-              opacity: 0.6;
-            }
-          }
-        }
-      }
       #NameCard{
 
+      }
+    }
+  }
+  .contact-container{
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 550px;
+
+    .header-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: left;
+      line-height: 1.4;
+
+      .header-index0, .header-index1 {
+        font-family: "Bw Modelica ExtraBold", serif;
+        letter-spacing: -3px;
+        font-size: 63px;
+        color: #1F1F1F;
+      }
+    }
+
+    .description-container{
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+
+      .description-header{
+        margin-top: 30px;
+        line-height: 1.5;
+        font-family: "Gilroy SemiBold", serif;
+        font-size: 16px;
+        color: #1F1F1F;
+        width: 460px;
+      }
+
+      .description-text{
+        margin-top: 7px;
+        line-height: 1.6;
+        font-family: "Gilroy Regular", serif;
+        font-size: 16px;
+        color: #484848;
+        width: 430px;
+      }
+    }
+
+    .button-container{
+      margin-top: 40px;
+      display: flex;
+      flex-direction: row;
+
+      .getstarted-button{
+        margin-right: 20px;
+        width: fit-content;
+        padding: 0 50px;
+        height: 47px;
+        background-image: linear-gradient(to left, #5b1fff, #3867ff);
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.9 );
+        border-radius: 10px;
+        outline: none;
+        text-decoration: none;
+        border: none;
+        cursor: pointer;
+        transition: all .35s ease-in-out;
+
+        .getstarted-label{
+          font-family: "Gilroy SemiBold", serif;
+          font-size: 13px;
+          margin: auto;
+          color: white;
+        }
+
+        &:hover{
+          opacity: 0.8;
+        }
+      }
+
+      .card-button{
+        width: fit-content;
+        padding: 0 20px;
+        height: 47px;
+        border: thin solid #5b1fff;
+        background: rgba(255, 255, 255, 0.05);
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.3 );
+        backdrop-filter: blur( 10px );
+        -webkit-backdrop-filter: blur( 10px );
+        border-radius: 10px;
+        outline: none;
+        text-decoration: none;
+        cursor: pointer;
+        transition: all .3s ease-in-out;
+
+        .card-label{
+          font-family: "Gilroy SemiBold", serif;
+          font-size: 13px;
+          margin: auto;
+          color: #5b1fff;
+        }
+        &:hover{
+          opacity: 0.6;
+        }
       }
     }
   }

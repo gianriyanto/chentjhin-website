@@ -46,7 +46,7 @@ export default {
       height: 50px;
       border: thin solid black;
       background: rgba(255, 255, 255, 0.04);
-      box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.5 );
+      box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.3 );
       backdrop-filter: blur( 3px );
       -webkit-backdrop-filter: blur( 3px );
       border-radius: 10px;

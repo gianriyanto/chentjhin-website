@@ -29,8 +29,8 @@
         <transition appear name="slide-fade">
           <span v-if="contact.isValid" class="footer-card">
             <span class="label"> Thanks <span class="highlight">{{name.input.split(' ')[0]}}.</span> Chat soon!</span>
-            <button class="email-button" v-scroll-to="{ el: '#Process', easing: [.2, .80, .30, 1],duration: 1500}">
-              <span class="button-label"> Done </span>
+            <button @click="sendEmail" class="email-button" v-scroll-to="{ el: '#Process', easing: [.2, .80, .30, 1],duration: 1500}">
+              <span class="button-label"> Submit </span>
             </button>
           </span>
         </transition>
@@ -41,6 +41,7 @@
 
 <script>
 import InlineInput from "@/components/subcomponents/InlineInput";
+import emailjs from 'emailjs-com';
 
 export default {
   name: "Typeform",
@@ -53,6 +54,20 @@ export default {
       course: {prompt: 'what course?', input: 'what course?', edit: false, isValid: false},
       country: {prompt: 'country?', input: 'country?', edit: false, isValid: false},
       contact: {prompt: 'your email or mobile', input: 'your email or mobile', edit: false, isValid: false},
+    }
+  },
+  methods: {
+    sendEmail() {
+      emailjs.send(
+          "service_gpg6kap",
+          "template_oev55pg",
+          {
+            name: this.name.input,
+            course: this.course.input,
+            country: this.country.input,
+            contact: this.contact.input
+           }
+      );
     }
   }
 }
