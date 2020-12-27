@@ -100,8 +100,9 @@ export default {
         font-size: 16px;
       }
     }
+    #AboutTiles{
 
-    #AboutTiles{}
+    }
   }
 
 }

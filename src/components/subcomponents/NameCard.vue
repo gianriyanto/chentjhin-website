@@ -9,12 +9,12 @@
       <span class="content-card">
         <span class="icons">
           <font-awesome-icon class="icon" :icon="['fas', 'mobile-alt']"/>
-          <font-awesome-icon class="icon" :icon="['fas', 'at']"/>
+          <font-awesome-icon class="icon" :icon="['fas', 'inbox']"/>
           <font-awesome-icon class="icon" :icon="['fas', 'globe']"/>
         </span>
         <span class="details">
           <span class="phone"> +62 811 899 688 </span>
-          <span class="email"> chentjhin7@gmail.com </span>
+          <span class="email"> chen.tjhin@gmail.com </span>
           <span class="website"> www.chentjhin.com </span>
         </span>
       </span>

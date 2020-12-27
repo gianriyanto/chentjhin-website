@@ -127,7 +127,8 @@ export default {
 #Testimony{
   position: relative;
   width: 100vw;
-  padding-top: 250px;
+  margin-top: 50px;
+  padding-top: 150px;
   padding-bottom: 250px;
 
   .wrapper{

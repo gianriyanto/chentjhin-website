@@ -17,7 +17,7 @@
               <span class="getstarted-label"> Get Started </span>
             </button>
             <button class="card-button">
-              <span class="card-label"> > Take My Card </span>
+              <span class="card-label"> Take My Card </span>
             </button>
           </span>
         </div>
@@ -61,6 +61,7 @@ export default {
     height: 100vh;
     display: flex;
     background: rgba( 255, 255, 255, 0.5 );
+    box-shadow: 0 10px 42px 0 rgba(17, 20, 57, 0.5);
 
     .content-wrapper{
       display: flex;
@@ -131,7 +132,7 @@ export default {
         padding: 0 50px;
         height: 47px;
         background-image: linear-gradient(to left, #5b1fff, #3867ff);
-        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.9 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.6 );
         border-radius: 10px;
         outline: none;
         text-decoration: none;
