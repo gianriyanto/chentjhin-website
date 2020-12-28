@@ -1,6 +1,6 @@
 <template>
     <section id="Landing">
-      <gradient-bg id="gradient-bg" v-rellax="{ speed: 5}"/>
+      <gradient-bg id="gradient-bg" />
       <div class="wrapper">
         <div class="content-wrapper">
           <div class="header-container">
@@ -22,6 +22,7 @@
           </div>
           <Typeform id="Typeform"/>
         </div>
+        <ScrollPrompt id="ScrollPrompt"/>
         <Process id="Process"/>
       </div>
     </section>
@@ -32,10 +33,12 @@
 import GradientBg from "@/components/background/gradientbg";
 import Typeform from "@/components/subcomponents/Typeform";
 import Process from "@/sections/Process";
+import ScrollPrompt from "@/components/subcomponents/ScrollPrompt";
 
 export default {
   name: "Landing",
   components: {
+    ScrollPrompt,
     Process,
     Typeform,
     GradientBg,

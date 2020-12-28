@@ -27,6 +27,7 @@ export default {
   }
 
   .blur-effect{
+    border: thin solid blue;
     box-shadow: 0 0 40px 40px white;
     height: 20vh;
     width: 100%;
