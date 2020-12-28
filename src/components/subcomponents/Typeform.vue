@@ -28,7 +28,9 @@
         </transition>
         <transition appear name="slide-fade">
           <span v-if="contact.isValid" class="footer-card">
-            <span class="label"> {{ footerPrompt }} <span class="highlight">{{ name.input.split(' ')[0] }}.</span> </span>
+            <span class="label"> {{ footerPrompt }}
+              <span class="highlight">{{ name.input.split(' ')[0] }}.</span>
+            </span>
             <button @click="sendEmail" :class="buttonStyle" v-scroll-to="{ el: '#Landing', easing: [.2, .80, .30, 1],duration: 1500}">
               <span class="button-label"> {{ buttonLabel }} </span>
             </button>
@@ -65,9 +67,8 @@ export default {
       if (this.buttonLabel === 'Submit') {
         // if typeform has not been submitted
         emailjs.send(
-            //todo: change email recipient to chentjhin7@gmail.com
             "service_gpg6kap",
-            "", //template_oev55pg
+            "template_oev55pg",
             {
               name: this.name.input,
               course: this.course.input,

@@ -60,7 +60,7 @@ export default {
       font-family: "Gilroy Bold", serif;
       font-size: 16px;
       margin: auto;
-      color: #1f1f1f;
+      color: #3b3b3b;
     }
 
     &:hover{

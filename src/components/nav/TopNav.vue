@@ -38,7 +38,7 @@ export default {
     .logo {
       width: 25px;
       height: 50px;
-      background-color: black;
+      background-color: #1f1f1f;
       border-bottom-left-radius: 25px;
       border-top-left-radius: 25px;
       border-bottom: 0;
@@ -53,7 +53,7 @@ export default {
     .contact-button {
       width: 130px;
       height: 50px;
-      border: thin solid black;
+      border: thin solid #1f1f1f;
       background: rgba(255, 255, 255, 0.04);
       box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.3 );
       backdrop-filter: blur( 3px );
@@ -68,7 +68,7 @@ export default {
         font-family: "Gilroy SemiBold", serif;
         font-size: 14px;
         margin: auto;
-        color: black;
+        color: #1f1f1f;
       }
       &:hover{
         opacity: 0.7;
