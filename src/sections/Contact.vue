@@ -13,7 +13,7 @@
           </span>
           <span class="description-container">
             <span class="description-header"> Don’t know where to start? </span>
-            <span class="description-text"> Tell me about your current situations, your interests, and where you intend to travel for studies. </span>
+            <span class="description-text"> Tell me about your current situation, your career interests, and where you intend to travel for studies. </span>
           </span>
           <span class="button-container">
             <button class="getstarted-button" v-scroll-to="{ el: '#Landing', easing: [.2, .80, .30, 1],duration: 1500}">

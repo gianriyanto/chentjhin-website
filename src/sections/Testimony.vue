@@ -151,19 +151,18 @@ export default {
     margin: 0 auto;
 
     .header-container{
-      width: 70vw;
+      width: 500px;
       display: flex;
       flex-direction: column;
       text-align: left;
       line-height: 1.5;
-      margin: 0 calc((100vw - 1100px) / 2);;
+      margin: 0 calc((100vw - 1200px) / 2);
 
       .header{
         font-family: "Bw Modelica ExtraBold", serif;
         letter-spacing: -2px;
         font-size: 57px;
         color: #292929;
-        width: 45%;
       }
       .subheader{
         margin-top: 10px;
@@ -171,14 +170,13 @@ export default {
         font-family: "Gilroy Medium", serif;
         font-size: 17px;
         color: #585858;
-        width: 45%;
       }
     }
     .button-container{
       display: flex;
       flex-direction: row;
       align-content: center;
-      padding-left: calc((100vw - 1100px) / 2);
+      padding-left: calc((100vw - 1200px) / 2);
       margin-top: 30px;
       height: fit-content;
       overflow: scroll !important;
