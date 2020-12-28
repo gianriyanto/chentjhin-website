@@ -3,20 +3,29 @@
     <div class="content-wrapper">
       <div class="left-side">
         <span class="top">
-          <span class="tile-01">
+          <span class="tile-01"
+                data-aos="fade-right"
+                data-aos-duration="1600"
+                data-aos-easing="ease-in-out">
             <a class="header">
               {{ tiles[0].content }}
             </a>
              <img class="image" :src="require(`@/assets/images/${tiles[0].url}`)" alt="failed to load image"/>
           </span>
-          <span class="tile-02">
+          <span class="tile-02"
+                data-aos="fade-down"
+                data-aos-duration="1800"
+                data-aos-easing="ease-in-out">
             <a class="header">
               {{ tiles[1].content }}
             </a>
           </span>
         </span>
         <span class="bottom">
-          <span class="tile-03">
+          <span class="tile-03"
+                data-aos="fade-right"
+                data-aos-duration="1200"
+                data-aos-easing="ease-in-out">
             <span class="cover">
               <a class="header">
                 {{ tiles[2].content }}
@@ -28,7 +37,10 @@
       </div>
       <div class="right-side">
         <span class="left">
-          <span class="tile-04">
+          <span class="tile-04"
+                data-aos="slide-up"
+                data-aos-duration="2000"
+                data-aos-easing="ease-in-out">
             <a class="header">
               {{ tiles[3].content }}
             </a>
@@ -36,13 +48,19 @@
           </span>
         </span>
         <span class="right">
-          <span class="tile-05">
+          <span class="tile-05"
+                data-aos="fade-left"
+                data-aos-duration="1500"
+                data-aos-easing="ease-in-out">
             <a class="header">
               {{ tiles[4].content }}
             </a>
              <img class="image" :src="require(`@/assets/images/${tiles[4].url}`)" alt="failed to load image"/>
           </span>
-          <span class="tile-06">
+          <span class="tile-06"
+                data-aos="slide-up"
+                data-aos-duration="1300"
+                data-aos-easing="ease-in-out">
              <font-awesome-icon class="phone-icon" :icon="['fas', 'mobile-alt']"/>
             <a class="header">
               {{ tiles[5].content }}
