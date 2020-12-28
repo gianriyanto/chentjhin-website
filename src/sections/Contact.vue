@@ -69,7 +69,7 @@ export default {
       flex-direction: row;
       justify-content: center;
       margin: auto;
-      padding-top: 170px;
+      padding-top: 150px;
 
       .contact-container{
         display: flex;
@@ -120,7 +120,7 @@ export default {
         }
 
         .button-container{
-          margin-top: 30px;
+          margin-top: 50px;
           display: flex;
           flex-direction: row;
 

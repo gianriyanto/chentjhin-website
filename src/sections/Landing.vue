@@ -1,9 +1,12 @@
 <template>
     <section id="Landing">
-      <gradient-bg id="gradient-bg" />
+      <gradient-bg id="gradient-bg" v-rellax="{ speed: 2 }"/>
       <div class="wrapper">
         <div class="content-wrapper">
-          <div class="header-container">
+          <div class="header-container"
+               data-aos="fade"
+               data-aos-duration="1500"
+               data-aos-easing="ease-in-out">
             <span class="header-text">
               Hello.
             </span>
@@ -20,7 +23,7 @@
               </button>
               <button class="getstarted-button">
                 <span class="button-label"> Get Started </span>
-                <font-awesome-icon class="arrow-icon" :icon="['fas', 'long-arrow-alt-right']" />
+                <font-awesome-icon class="arrow-icon" :icon="['fas', 'chevron-right']" />
               </button>
             </span>
           </div>
@@ -152,22 +155,33 @@ export default {
           text-decoration: none;
           transition: all .35s ease-in-out;
           border: none;
-
-          &:hover {
-            opacity: 0.8;
-          }
+          cursor: pointer;
 
           .button-label {
             font-family: "Gilroy SemiBold", serif;
             font-size: 15px;
             margin: auto 10px ;
+            transition: all .35s ease-in-out;
             color: #1f1f1f;
+
+            &:hover + .arrow-icon{
+              opacity: 0.8;
+              transform: translateX(5px) scale(1.5);
+              color: #5651ec;
+            }
           }
           .arrow-icon{
-            font-size: 25px;
+            font-size: 12px;
             padding-bottom: 2px;
             margin: auto 0;
+            transition: all .35s ease-in-out;
             color: #454545;
+
+            &:hover{
+              opacity: 0.8;
+              transform: translateX(5px) scale(1.5);
+              color: #5651ec;
+            }
           }
         }
       }
