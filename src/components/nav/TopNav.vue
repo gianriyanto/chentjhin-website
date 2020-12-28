@@ -3,8 +3,12 @@
     <div class="content-wrapper">
       <span class="logo"
             v-scroll-to="{ el: '#Landing', easing: [.2, .80, .30, 1],duration: 1500}"/>
-      <button class="contact-button">
-        <span class="button-label" v-scroll-to="{ el: '#Contact', easing: [.2, .80, .30, 1],duration: 1500}">
+      <button class="contact-button"
+              data-aos="fade"
+              data-aos-duration="2000"
+              data-aos-easing="ease-in-out">
+        <span class="button-label"
+              v-scroll-to="{ el: '#Contact', easing: [.2, .80, .30, 1],duration: 1500}">
           Get in Touch
         </span>
       </button>

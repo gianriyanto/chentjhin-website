@@ -9,10 +9,7 @@
           Connecting learners with an education that transforms their passion into a profession.
         </span>
       </div>
-      <Highlights id="Highlights"
-                  data-aos="fade"
-                  data-aos-duration="1300"
-                  data-aos-easing="ease-in-out"/>
+      <Highlights id="Highlights"/>
       <div class="description-container">
         <span class="header-description">
           Inani copiosae pri constituto apeirian praesent incorrupte.

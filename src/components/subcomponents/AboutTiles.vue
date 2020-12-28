@@ -58,8 +58,8 @@
              <img class="image" :src="require(`@/assets/images/${tiles[4].url}`)" alt="failed to load image"/>
           </span>
           <span class="tile-06"
-                data-aos="slide-up"
-                data-aos-duration="1300"
+                data-aos="fade-up"
+                data-aos-duration="1200"
                 data-aos-easing="ease-in-out">
              <font-awesome-icon class="phone-icon" :icon="['fas', 'mobile-alt']"/>
             <a class="header">

@@ -76,7 +76,7 @@ export default {
   .content-wrapper {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     height: 100vh;
     padding-top: 70px;
     margin: 0 auto;
@@ -86,7 +86,7 @@ export default {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      margin: 110px 20px 130px 0;
+      margin: 110px 80px 130px 0;
       text-align: left;
       word-spacing: 4px;
       font-size: 52px;

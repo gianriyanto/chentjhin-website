@@ -1,23 +1,29 @@
 <template>
-  <div id="NavBar"
-       data-aos="fade"
-       data-aos-duration="1300"
-       data-aos-easing="ease-in-out">
+  <div id="NavBar">
     <button class="nav-button"
             v-scroll-to="{ el: '#Process', easing: [.2, .80, .30, 1],duration: 1500}">
-      <span class="button-label">
+      <span class="button-label"
+            data-aos="fade"
+            data-aos-duration="1700"
+            data-aos-easing="ease-in-out">
         Services
       </span>
     </button>
     <button class="nav-button"
             v-scroll-to="{ el: '#About', easing: [.2, .80, .30, 1],duration: 1300}">
-      <span class="button-label">
+      <span class="button-label"
+            data-aos="fade"
+            data-aos-duration="2000"
+            data-aos-easing="ease-in-out">
         About
       </span>
     </button>
     <button class="nav-button"
             v-scroll-to="{ el: '#Testimony', easing: [.2, .80, .30, 1],duration: 1300}">
-      <span class="button-label">
+      <span class="button-label"
+            data-aos="fade"
+            data-aos-duration="2300"
+            data-aos-easing="ease-in-out">
         Clients
       </span>
     </button>
