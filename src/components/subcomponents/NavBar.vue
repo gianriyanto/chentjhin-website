@@ -1,5 +1,8 @@
 <template>
-  <div id="NavBar">
+  <div id="NavBar"
+       data-aos="fade"
+       data-aos-duration="1300"
+       data-aos-easing="ease-in-out">
     <button class="nav-button"
             v-scroll-to="{ el: '#Process', easing: [.2, .80, .30, 1],duration: 1500}">
       <span class="button-label">

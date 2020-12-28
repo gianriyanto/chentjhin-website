@@ -3,7 +3,10 @@
     <flip-gradient-bg id="flip-gradient-bg"/>
     <div class="wrapper">
       <div class="content-wrapper">
-        <div class="contact-container">
+        <div class="contact-container"
+             data-aos="fade"
+             data-aos-duration="1500"
+             data-aos-easing="ease-in-out">
           <span class="header-container">
             <span class="header-index0"> Ready to build your future? </span>
             <span class="header-index1"> Let's Talk. </span>
@@ -21,7 +24,10 @@
             </button>
           </span>
         </div>
-        <NameCard id="NameCard"/>
+        <NameCard id="NameCard"
+                  data-aos="flip-up"
+                  data-aos-duration="3000"
+                  data-aos-easing="ease-out"/>
      </div>
     </div>
   </section>

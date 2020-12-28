@@ -1,7 +1,10 @@
 <template>
   <section id="Testimony">
     <div class="wrapper">
-      <div class="header-container">
+      <div class="header-container"
+           data-aos="fade"
+           data-aos-duration="1200"
+           data-aos-easing="ease-in-out">
         <span class="header">
           {{ header }}
         </span>
@@ -13,6 +16,9 @@
         <TestimonyCard v-for="testimony in testimonies"
                        :key="testimony.index"
                        v-bind:testimonyData="testimony"
+                       data-aos="fade"
+                       data-aos-duration="1500"
+                       data-aos-easing="ease-in-out"
         />
       </div>
     </div>

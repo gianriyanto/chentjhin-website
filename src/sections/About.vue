@@ -1,12 +1,18 @@
 <template>
   <section id="About">
     <div class="wrapper">
-      <div class="header-container">
+      <div class="header-container"
+           data-aos="fade"
+           data-aos-duration="1300"
+           data-aos-easing="ease-in-out">
         <span class="header">
           Connecting learners with an education that transforms their passion into a profession.
         </span>
       </div>
-      <Highlights id="Highlights"/>
+      <Highlights id="Highlights"
+                  data-aos="fade"
+                  data-aos-duration="1300"
+                  data-aos-easing="ease-in-out"/>
       <div class="description-container">
         <span class="header-description">
           Inani copiosae pri constituto apeirian praesent incorrupte.
