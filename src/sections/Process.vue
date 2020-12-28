@@ -61,7 +61,7 @@ export default {
       services: [
         {
           index: 1,
-          name: 'Aptitude',
+          name: 'Aptitude Test',
           description: 'Discover your talent, skills, and personality to explore potential career path.',
           url: 'aptitude.svg'
         },
@@ -124,6 +124,11 @@ export default {
       backdrop-filter: blur( 5px );
       -webkit-backdrop-filter: blur( 5px );
       line-height: 1.5;
+      transition: all 0.45s ease-in-out;
+
+      &:hover{
+        box-shadow: 0 8px 32px 0 rgba(17, 20, 57, 0.35);
+      }
 
       .image {
         width: 80%;

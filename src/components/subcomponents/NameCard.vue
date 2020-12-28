@@ -50,6 +50,11 @@ export default {
     backdrop-filter: blur( 10px );
     -webkit-backdrop-filter: blur( 10px );
     text-align: left;
+    transition: all 0.3s ease-in-out;
+
+    &:hover{
+      box-shadow: 0 8px 32px 0 rgba(17, 20, 57, 0.3);
+    }
 
     .header-card{
       display: flex;
