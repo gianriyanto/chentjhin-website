@@ -38,8 +38,8 @@
       <div class="right-side">
         <span class="left">
           <span class="tile-04"
-                data-aos="slide-up"
-                data-aos-duration="2000"
+                data-aos="fade-up"
+                data-aos-duration="1800"
                 data-aos-easing="ease-in-out">
             <a class="header">
               {{ tiles[3].content }}

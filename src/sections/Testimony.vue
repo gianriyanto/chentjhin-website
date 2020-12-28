@@ -39,6 +39,18 @@ export default {
       subheader: 'I am lucky to have worked with many aspiring professionals discover their future and watch them embark on their new learning journey.',
       testimonies: [
         {
+          client: 'Nadia Gunawan',
+          university: 'University of Southern California',
+          header: 'Best decision I have made.',
+          message: "Chen had given me counselling to address concerns with selecting a major to pursue in university and attending community college. Her education plan was one the best decision I have made.",
+        },
+        {
+          client: 'Ardian Sukamdani',
+          university: 'Northeastern University.',
+          header: 'Accepted to my dream school.',
+          message: "Chen is the best counsellor that I've met. Her guidance and continuous support significantly improved my IB Grades whilst her knowledge and resilience got me into my dream school.",
+        },
+        {
           client: 'Deandra Kezia Djunaedi',
           university: 'University of Warwick',
           header: "Paved my road to success.",
@@ -69,6 +81,12 @@ export default {
           message: "Her endless support, motivation, and care has nourished me as an ambitious person able to persevere and reach my full potential. She is a great professional mentor and a trusted advisor.",
         },
         {
+          client: 'Ricky Saputra Tjioe',
+          university: 'Glion Instute of Higher Education',
+          header: 'Advised me the best campus option.',
+          message: "Chen helped me a lot in finding my bachelor's degree process. She provided a personality test to make sure I have the right passion and advised me the best campus option for my studies.",
+        },
+        {
           client: 'Diamana Vanisa Danubrata',
           university: 'Durham University',
           header: 'Played a major role in my growth as a student.',
@@ -89,14 +107,8 @@ export default {
         {
           client: 'Andi R. A. Kesuma',
           university: 'Whatcom Community College.',
-          header: 'Always believed in me no matter what',
+          header: 'Always believed in me no matter what.',
           message: "A wonderful counselor that treats clients or should I say 'kids' like on of her own. I've been had the pleasure of being her student since grade 1 and believed in me no matter what.",
-        },
-        {
-          client: 'Ardian Sukamdani',
-          university: 'Northeastern University.',
-          header: 'Accepted to my dream school',
-          message: "Chen is the best counsellor that I've met. Her guidance and continuous support significantly improved my IB Grades whilst her knowledge and resilience got me into my dream school.",
         },
         {
           client: 'Adinna A. Kadarachman',
@@ -115,12 +127,6 @@ export default {
           university: 'Bellerbys College',
           header: 'Constant motivation and close attention.',
           message: "Chen has a huge influence in my life since I was in high school and through university. She helped me through the tough transition to higher education with her constant motivation and close attention to my progress.",
-        },
-        {
-          client: 'Nadia Gunawan',
-          university: 'University of Southern California',
-          header: 'Best decision I have made.',
-          message: "Chen had given me counselling to address concerns with selecting a major to pursue in university and attending community college. Her education plan was one the best decision I have made.",
         },
       ]
     }

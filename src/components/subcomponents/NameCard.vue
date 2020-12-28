@@ -2,18 +2,20 @@
   <div id="NameCard">
     <div class="card-container">
       <span class="header-card">
-        <span class="name"> CHEN TJHIN </span>
+        <span class="name"> CHEN TJ </span>
         <span class="title"> Senior Education Counsellor </span>
       </span>
       <img class="image" src="@/assets/images/professional.svg" alt=""/>
       <span class="content-card">
         <span class="icons">
           <font-awesome-icon class="icon" :icon="['fas', 'mobile-alt']"/>
+          <font-awesome-icon class="icon" :icon="['fas', 'phone']"/>
           <font-awesome-icon class="icon" :icon="['fas', 'inbox']"/>
           <font-awesome-icon class="icon" :icon="['fas', 'globe']"/>
         </span>
         <span class="details">
           <span class="phone"> +62 811 899 688 </span>
+          <span class="phone"> +62 821 2551 3693 </span>
           <span class="email"> chen.tjhin@gmail.com </span>
           <span class="website"> www.chentjhin.com </span>
         </span>
@@ -55,7 +57,8 @@ export default {
       height: 10%;
 
       .name{
-        letter-spacing: 1px;
+        word-spacing: 1px;
+        letter-spacing: 0.8px;
         font-family: "Gilroy Bold", serif;
         font-size: 21px;
         color: #5b1fff;

@@ -37,7 +37,7 @@ export default {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding-top: 80px;
+  padding-top: 87px;
   height: 50px;
   width: fit-content;
   z-index: 11;
@@ -57,8 +57,8 @@ export default {
     transition: all .35s ease-in-out;
 
     .button-label {
-      font-family: "Gilroy Bold", serif;
-      font-size: 16px;
+      font-family: "Gilroy SemiBold", serif;
+      font-size: 17px;
       margin: auto;
       color: #3b3b3b;
     }

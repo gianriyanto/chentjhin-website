@@ -6,11 +6,11 @@
           <span class="highlight-text"> Universities enrolled </span>
         </span>
       <span class="highlight">
-          <span class="highlight-header"><font-awesome-icon class="icon" :icon="['fas', 'user-graduate']" /> 100 </span>
+          <span class="highlight-header"><font-awesome-icon class="icon" :icon="['fas', 'user-graduate']" /> 100+ </span>
           <span class="highlight-text"> Clients represented </span>
         </span>
       <span class="highlight">
-          <span class="highlight-header"><font-awesome-icon class="icon" :icon="['fas', 'business-time']" /> 11 </span>
+          <span class="highlight-header"><font-awesome-icon class="icon" :icon="['fas', 'business-time']" /> 16 </span>
           <span class="highlight-text"> Years in business </span>
         </span>
     </div>
@@ -43,7 +43,7 @@ export default {
       text-align: center;
       line-height: 1.2;
       color: #1d1d1d;
-      opacity: 0.8;
+      opacity: 0.7;
 
       .highlight-header{
         margin: 8px auto;

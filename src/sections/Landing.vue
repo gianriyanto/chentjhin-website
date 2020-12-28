@@ -155,7 +155,6 @@ export default {
           text-decoration: none;
           transition: all .35s ease-in-out;
           border: none;
-          cursor: pointer;
 
           .button-label {
             font-family: "Gilroy SemiBold", serif;
