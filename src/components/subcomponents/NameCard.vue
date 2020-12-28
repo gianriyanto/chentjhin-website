@@ -31,6 +31,7 @@ export default {
 <style scoped lang="scss">
 
 #NameCard{
+  cursor: pointer;
 
   .card-container{
     display: flex;
