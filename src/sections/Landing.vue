@@ -18,6 +18,10 @@
               <button class="learn-more-button" v-scroll-to="{ el: '#Process', easing: [.2, .80, .30, 1],duration: 1500}">
                 <span class="button-label"> See How I Can Help </span>
               </button>
+              <button class="getstarted-button">
+                <span class="button-label"> Get Started </span>
+                <font-awesome-icon class="arrow-icon" :icon="['fas', 'long-arrow-alt-right']" />
+              </button>
             </span>
           </div>
           <Typeform id="Typeform"/>
@@ -138,15 +142,33 @@ export default {
             color: white;
           }
         }
-        .scroll-button{
-          font-family: "Gilroy Medium", serif;
-          font-size: 16px;
-          margin: auto;
-          border: none;
+        .getstarted-button {
+          width: fit-content;
+          height: 50px;
+          display: flex;
+          justify-content: center;
+          background-color: transparent;
           outline: none;
           text-decoration: none;
-          background-color: transparent;
-          color: #757575;
+          transition: all .35s ease-in-out;
+          border: none;
+
+          &:hover {
+            opacity: 0.8;
+          }
+
+          .button-label {
+            font-family: "Gilroy SemiBold", serif;
+            font-size: 15px;
+            margin: auto 10px ;
+            color: #1f1f1f;
+          }
+          .arrow-icon{
+            font-size: 25px;
+            padding-bottom: 2px;
+            margin: auto 0;
+            color: #454545;
+          }
         }
       }
     }
