@@ -14,7 +14,7 @@
           </span>
           <span class="tile-02"
                 data-aos="fade-down"
-                data-aos-duration="1800"
+                data-aos-duration="1600"
                 data-aos-easing="ease-in-out">
             <a class="header">
               {{ tiles[1].content }}
@@ -24,7 +24,7 @@
         <span class="bottom">
           <span class="tile-03"
                 data-aos="fade-right"
-                data-aos-duration="1200"
+                data-aos-duration="1600"
                 data-aos-easing="ease-in-out">
             <span class="cover">
               <a class="header">
@@ -39,7 +39,7 @@
         <span class="left">
           <span class="tile-04"
                 data-aos="fade-up"
-                data-aos-duration="1800"
+                data-aos-duration="1600"
                 data-aos-easing="ease-in-out">
             <a class="header">
               {{ tiles[3].content }}
@@ -50,7 +50,7 @@
         <span class="right">
           <span class="tile-05"
                 data-aos="fade-left"
-                data-aos-duration="1500"
+                data-aos-duration="1600"
                 data-aos-easing="ease-in-out">
             <a class="header">
               {{ tiles[4].content }}
@@ -59,8 +59,8 @@
           </span>
           <span class="tile-06"
                 data-aos="fade-up"
-                data-aos-duration="1200"
-                data-aos-easing="ease-in-out">
+                data-aos-duration="2300"
+                data-aos-easing="ease-out">
              <font-awesome-icon class="phone-icon" :icon="['fas', 'mobile-alt']"/>
             <a class="header">
               {{ tiles[5].content }}
@@ -120,10 +120,10 @@ export default {
   margin: 0 auto;
   position: relative;
   max-width: 1200px;
-  width: 70vw;
+  width: 75vw;
   min-width: 1050px;
-  height: 27vh;
-  min-height: 500px;
+  height: 30vh;
+  min-height: 550px;
 
   .content-wrapper {
     margin: 0 auto 0 auto;
@@ -156,10 +156,16 @@ export default {
           justify-content: space-between;
           margin: 0 8px 8px 0;
           padding: 25px;
-          width: 60%;
+          width: 40%;
           border-radius: 15px;
           background-image: linear-gradient(to bottom, white, white);
           box-shadow: 0 8px 32px 0 rgba(17, 20, 57, 0.3);
+          transition: all 0.45s ease-in-out;
+
+          &:hover{
+            transform: scale(1.01);
+            box-shadow: 0 8px 32px 0 rgba(17, 20, 57, 0.5);
+          }
 
           .header {
             text-align: left;
@@ -171,9 +177,8 @@ export default {
           }
 
           .image {
-            margin: 0 auto;
-            width: 90%;
-            height: auto;
+            width: auto;
+            height: 50%;
           }
         }
 
@@ -182,14 +187,20 @@ export default {
           flex-direction: column-reverse;
           margin: 0 8px 8px 8px;
           padding: 25px;
-          width: 40%;
+          width: 37%;
           border-radius: 15px;
           background-image: linear-gradient(to top right, #071329, #091732);
+          transition: all 0.45s ease-in-out;
+
+          &:hover{
+            transform: scale(1.01);
+            box-shadow: 0 8px 32px 0 rgba(17, 20, 57, 0.5);
+          }
 
           .header {
             text-align: right;
             font-family: "Bw Modelica ExtraBold", serif;
-            font-size: 32px;
+            font-size: 31px;
             letter-spacing: -1px;
             line-height: 1.2;
             background: linear-gradient(to right, #f8cc8a, #fff5bf);
@@ -213,6 +224,12 @@ export default {
           background-image: linear-gradient(to top right, #482aef, #6762ec, #f5b8dd);
           box-shadow: 0 8px 32px 0 rgba(17, 20, 57, 0.3);
           margin: 8px 8px 0 0;
+          transition: all 0.45s ease-in-out;
+
+          &:hover{
+            transform: scale(1.01);
+            box-shadow: 0 8px 32px 0 rgba(17, 20, 57, 0.5);
+          }
         }
 
         .cover {
@@ -229,9 +246,9 @@ export default {
             width: 45%;
             text-align: left;
             font-family: "Bw Modelica ExtraBold", serif;
-            font-size: 20px;
+            font-size: 21px;
             letter-spacing: -1px;
-            line-height: 1.3;
+            line-height: 1.4;
             color: white;
           }
 
@@ -258,11 +275,17 @@ export default {
           display: flex;
           flex-direction: column-reverse;
           margin: 0 8px;
-          padding: 25px;
+          padding: 35px;
           width: 100%;
           border-radius: 15px;
           background-image: linear-gradient(to bottom, white, white);
           box-shadow: 0 8px 32px 0 rgba(17, 20, 57, 0.3);
+          transition: all 0.45s ease-in-out;
+
+          &:hover{
+            transform: scale(1.01);
+            box-shadow: 0 8px 32px 0 rgba(17, 20, 57, 0.5);
+          }
 
           .header {
             text-align: left;
@@ -293,13 +316,19 @@ export default {
         .tile-05 {
           display: flex;
           flex-direction: column;
-          justify-content: space-between;
+          justify-content: space-evenly;
           margin: 0 0 8px 8px;
           padding: 25px;
-          height: 55%;
+          height: 60%;
           background-image: linear-gradient(to top right, #dd6fbd, #f69250, #f3ab3e);
           box-shadow: 0 8px 32px 0 rgba(17, 20, 57, 0.1);
           border-radius: 15px;
+          transition: all 0.45s ease-in-out;
+
+          &:hover{
+            transform: scale(1.01);
+            box-shadow: 0 8px 32px 0 rgba(17, 20, 57, 0.5);
+          }
 
           .header {
             text-align: left;
@@ -308,11 +337,12 @@ export default {
             letter-spacing: -1px;
             line-height: 1.3;
             color: white;
+            height: 40%;
           }
 
           .image {
-            width: 100%;
-            height: auto;
+            width: auto;
+            height: 55%;
             margin: 0 auto;
           }
         }
@@ -326,16 +356,22 @@ export default {
           height: 30%;
           border-radius: 15px;
           background-image: linear-gradient(to top right, #0e0e0e, #454545);
+          transition: all 0.45s ease-in-out;
+
+          &:hover{
+            transform: scale(1.01);
+            box-shadow: 0 8px 32px 0 rgba(17, 20, 57, 0.5);
+          }
 
           .phone-icon{
-            margin: auto;
-            font-size: 20px;
+            margin: auto 10px auto 0;
+            font-size: 22px;
             color: white;
             position: sticky;
           }
 
           .header {
-            margin: auto;
+            margin: auto 0 ;
             text-align: center;
             font-family: "Bw Modelica ExtraBold", serif;
             font-size: 24px;

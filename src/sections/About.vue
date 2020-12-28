@@ -62,7 +62,7 @@ export default {
       justify-content: center;
       margin: 0 auto;
       text-align: center;
-      max-width: 980px;
+      max-width: 1050px;
       min-width: 830px;
 
       .header{
@@ -70,7 +70,7 @@ export default {
         background: linear-gradient(to right, #5b1fff, #e791c6, #ff8820);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        font-size: 80px;
+        font-size: 86px;
         letter-spacing: -2px;
         line-height: 1.2;
       }

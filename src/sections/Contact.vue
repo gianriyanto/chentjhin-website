@@ -26,7 +26,8 @@
         </div>
         <NameCard id="NameCard"
                   data-aos="flip-up"
-                  data-aos-duration="3000"
+                  data-aos-delay="50"
+                  data-aos-duration="2700"
                   data-aos-easing="ease-out"/>
      </div>
     </div>
