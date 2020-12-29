@@ -2,7 +2,7 @@ import Vue from 'vue'
 import App from './App.vue'
 import Vuex from 'vuex'
 import VueScrollTo from 'vue-scrollto'
-import AOS from 'aos';
+import AOS from 'aos'
 import 'aos/dist/aos.css'
 import { fas } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'

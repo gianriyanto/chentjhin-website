@@ -5,7 +5,7 @@
       <div class="content-wrapper">
         <div class="contact-container"
              data-aos="fade"
-             data-aos-duration="1500"
+             data-aos-duration="2000"
              data-aos-easing="ease-in-out">
           <span class="header-container">
             <span class="header-index0"> Ready to build your future? </span>
@@ -27,7 +27,7 @@
         <NameCard id="NameCard"
                   data-aos="flip-up"
                   data-aos-delay="50"
-                  data-aos-duration="2700"
+                  data-aos-duration="2500"
                   data-aos-easing="ease-out"/>
      </div>
     </div>

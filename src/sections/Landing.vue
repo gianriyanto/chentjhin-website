@@ -5,14 +5,14 @@
         <div class="content-wrapper">
           <div class="header-container"
                data-aos="fade"
-               data-aos-duration="1500"
+               data-aos-duration="2400"
                data-aos-easing="ease-in-out">
             <span class="header-text">
               Hello.
             </span>
             <span class="header-text">
               <span> My name's <span class="highlight"> Chen </span></span>
-              <hr class="dash" noshade />
+              <hr class="dash" noshade/>
             </span>
             <span class="header-text">
               A Senior Education Counsellor.
@@ -27,10 +27,16 @@
               </button>
             </span>
           </div>
-          <Typeform id="Typeform"/>
+          <Typeform id="Typeform"
+                    data-aos="fade"
+                    data-aos-duration="3000"
+                    data-aos-easing="ease-out"/>
         </div>
         <ScrollPrompt id="ScrollPrompt"/>
-        <Process id="Process"/>
+        <Process id="Process"
+                 data-aos="fade"
+                 data-aos-duration="1500"
+                 data-aos-easing="ease-out"/>
       </div>
     </section>
 </template>

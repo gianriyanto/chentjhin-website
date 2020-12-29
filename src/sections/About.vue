@@ -18,7 +18,10 @@
           Vis nominavi facilisis contentiones ea, eius. Ei duis legimus qui. Paulo Ea cum cibo exerci facilis, sea errem persius alterum eu, dicat dolores adipiscing in mea. Sit fabellas gloriatur efficiendi in, has ut labore scripta persius.
         </span>
       </div>
-      <AboutTiles id="AboutTiles"/>
+      <AboutTiles id="AboutTiles"
+                  data-aos="fade"
+                  data-aos-duration="2000"
+                  data-aos-easing="ease-out"/>
     </div>
   </section>
 </template>

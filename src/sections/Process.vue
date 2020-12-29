@@ -1,10 +1,7 @@
 <template>
  <section id="Process">
    <div class="content-wrapper">
-     <span class="process-card"
-           data-aos="slide-up"
-           data-aos-duration="1000"
-           data-aos-easing="ease-in-out">
+     <span class="process-card">
        <img class="image" :src="require(`@/assets/images/${services[0].url}`)" alt=""/>
        <a class="header">
           {{ services[0].name }}
@@ -13,10 +10,7 @@
            {{ services[0].description }}
        </a>
      </span>
-     <span class="process-card"
-           data-aos="slide-up"
-           data-aos-duration="1300"
-           data-aos-easing="ease-in-out">
+     <span class="process-card">
        <img class="image" :src="require(`@/assets/images/${services[1].url}`)" alt=""/>
        <a class="header">
           {{ services[1].name }}
@@ -25,10 +19,7 @@
           {{ services[1].description }}
        </a>
      </span>
-     <span class="process-card"
-           data-aos="slide-up"
-           data-aos-duration="1600"
-           data-aos-easing="ease-in-out">
+     <span class="process-card">
        <img class="image" :src="require(`@/assets/images/${services[2].url}`)" alt=""/>
        <a class="header">
           {{ services[2].name }}
@@ -37,10 +28,7 @@
          {{ services[2].description }}
        </a>
      </span>
-     <span class="process-card"
-           data-aos="slide-up"
-           data-aos-duration="1900"
-           data-aos-easing="ease-in-out">
+     <span class="process-card">
        <img class="image" :src="require(`@/assets/images/${services[3].url}`)" alt=""/>
        <a class="header">
           {{ services[3].name }}
