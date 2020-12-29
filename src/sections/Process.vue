@@ -139,7 +139,12 @@ export default {
       }
     }
   }
+}
 
+@media only screen and (max-width: 1212px) {
+  #Process{
+    display: none;
+  }
 }
 
 </style>

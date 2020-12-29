@@ -118,4 +118,96 @@ export default {
   }
 }
 
+@media only screen and (max-width: 1212px) {
+
+  #NameCard{
+    display: flex;
+    cursor: pointer;
+    height: 100vh;
+    width: 100%;
+
+    .card-container{
+      padding: 50px !important;
+      height: 75%;
+      width: 60%;
+      max-width: 280px;
+      margin: auto !important;
+
+      border-radius: 14px;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba( 255, 255, 255, 0.18 );
+      box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.2 );
+      backdrop-filter: blur( 10px );
+      -webkit-backdrop-filter: blur( 10px );
+      text-align: left;
+      transition: all 0.3s ease-in-out;
+
+      &:hover{
+        box-shadow: 0 8px 32px 0 rgba(17, 20, 57, 0.3);
+      }
+
+      .header-card{
+        display: flex;
+        flex-direction: column;
+        height: 15%;
+
+        .name{
+          word-spacing: 1px;
+          letter-spacing: 0.8px;
+          font-family: "Gilroy Bold", serif;
+          font-size: 25px;
+          color: #5b1fff;
+          text-decoration: none;
+        }
+        .title{
+          padding-top: 10px;
+          font-family: "Gilroy SemiBold", serif;
+          font-size: 17px;
+          color: #545454;
+          text-decoration: none;
+        }
+      }
+      .image{
+        height: 53%;
+        width: auto;
+      }
+      .content-card{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: flex-start;
+        line-height: 1.1;
+        padding-top: 6px;
+        height: fit-content;
+
+        .icons{
+          display: flex;
+          flex-direction: column;
+          width: fit-content;
+
+          .icon{
+            margin: 5px auto !important;
+            font-size: 15px;
+            color: #5651ec;
+            opacity: 0.8;
+          }
+        }
+
+        .details{
+          display: flex;
+          flex-direction: column;
+
+          .phone, .email, .website{
+            letter-spacing: 0.5px;
+            font-family: "Gilroy Medium", serif;
+            font-size: 14px;
+            color: #292929;
+            margin: 5px 0 0 15px !important;
+          }
+        }
+      }
+    }
+  }
+}
+
 </style>

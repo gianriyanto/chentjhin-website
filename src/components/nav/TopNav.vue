@@ -79,7 +79,13 @@ export default {
       }
     }
   }
+}
 
+@media only screen and (max-width: 1212px) {
+
+  #TopNav {
+    display: none;
+  }
 }
 
 </style>

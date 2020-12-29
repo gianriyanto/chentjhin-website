@@ -37,4 +37,11 @@ export default {
   }
 }
 
+@media only screen and (max-width: 1212px) {
+  #ScrollPrompt{
+    display: none;
+  }
+}
+
+
 </style>

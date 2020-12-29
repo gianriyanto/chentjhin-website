@@ -191,7 +191,6 @@ export default {
         }
       }
     }
-
     #Typeform {
     }
   }
@@ -199,6 +198,13 @@ export default {
 
 #Process{
 
+}
+
+@media only screen and (max-width: 1212px) {
+
+  #Landing {
+    display: none;
+  }
 }
 
 

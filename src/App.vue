@@ -1,12 +1,12 @@
 <template>
   <div id="app">
-    <TopNav/>
+    <TopNav id="TopNav"/>
+    <NavBar id="NavBar"/>
+    <Landing id="Landing"/>
+    <About id="About"/>
+    <Testimony id="Testimony"/>
     <NavBar/>
-    <Landing/>
-    <About/>
-    <Testimony/>
-    <NavBar/>
-    <Contact/>
+    <Contact id="Contact"/>
   </div>
 </template>
 
@@ -44,6 +44,16 @@ html, body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
+}
+
+@media only screen and (max-width: 1212px) {
+  *, html, body, div, span, a{
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+  }
 }
 
 @font-face {

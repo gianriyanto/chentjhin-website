@@ -27,4 +27,20 @@ export default {
   }
 }
 
+@media only screen and (max-width: 769px) {
+
+  #flip-gradient-bg{
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    z-index: -1;
+
+    .image{
+      transform: scaleY(-1);
+      height: 100vh;
+      width: 100vw;
+    }
+  }
+}
+
 </style>

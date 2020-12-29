@@ -75,4 +75,10 @@ export default {
   }
 }
 
+@media only screen and (max-width: 1212px) {
+  #NavBar{
+    display: none;
+  }
+}
+
 </style>

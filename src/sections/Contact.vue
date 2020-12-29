@@ -24,13 +24,16 @@
             </button>
           </span>
         </div>
-        <a :href="`${publicPath}MyNameCard.png`" target="_blank">
+        <a class = "namecard-container" :href="`${publicPath}MyNameCard.png`" target="_blank">
           <NameCard id="NameCard"
                     data-aos="flip-up"
                     data-aos-delay="50"
                     data-aos-duration="2500"
                     data-aos-easing="ease-out"/>
         </a>
+        <button class="mobile-card-button">
+          <a class="card-label" :href="`${publicPath}MyNameCard.png`" target="_blank"> Take My Card </a>
+        </button>
      </div>
     </div>
   </section>
@@ -189,6 +192,10 @@ export default {
         }
       }
       #NameCard{ }
+
+      .mobile-card-button{
+        display: none;
+      }
     }
   }
 }
@@ -197,6 +204,67 @@ a {
   a:visited {
     text-decoration: none;
     color: transparent;
+  }
+}
+
+@media only screen and (max-width: 1212px) {
+
+  #Contact{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    color: #2f2e41;
+
+    .wrapper{
+
+      .content-wrapper{
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+
+        .contact-container{
+          display: none;
+        }
+
+        #NameCard{
+          margin-top: 80px !important;
+          height: 80vh;
+        }
+
+        .mobile-card-button{
+          display: block;
+          margin: 0 auto !important;
+          width: 200px;
+          height: 47px;
+          border: thin solid #5b1fff;
+          background: rgba(255, 255, 255, 0.05);
+          box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.3 );
+          backdrop-filter: blur( 10px );
+          -webkit-backdrop-filter: blur( 10px );
+          border-radius: 10px;
+          outline: none;
+          text-decoration: none;
+
+          .card-label{
+            font-family: "Gilroy SemiBold", serif;
+            font-size: 13px;
+            margin: auto;
+            color: #5b1fff;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+  a {
+    color: transparent;
+    height: fit-content;
+    a:visited {
+      text-decoration: none;
+      color: transparent;
+    }
   }
 }
 
