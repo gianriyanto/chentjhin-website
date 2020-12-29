@@ -17,7 +17,7 @@
           <span class="phone"> +62 811 899 688 </span>
           <span class="phone"> +62 821 2551 3693 </span>
           <span class="email"> chen.tjhin@gmail.com </span>
-          <span class="website"> www.chentjhin.com </span>
+          <span class="website"> www.consultchen.com </span>
         </span>
       </span>
     </div>
@@ -67,12 +67,14 @@ export default {
         font-family: "Gilroy Bold", serif;
         font-size: 21px;
         color: #5b1fff;
+        text-decoration: none;
       }
       .title{
         padding-top: 4px;
         font-family: "Gilroy SemiBold", serif;
         font-size: 13px;
         color: #545454;
+        text-decoration: none;
       }
     }
     .image{

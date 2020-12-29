@@ -20,15 +20,17 @@
               <span class="getstarted-label"> Get Started </span>
             </button>
             <button class="card-button">
-              <span class="card-label"> Take My Card </span>
+              <a class="card-label" :href="`${publicPath}MyNameCard.png`" target="_blank"> Take My Card </a>
             </button>
           </span>
         </div>
-        <NameCard id="NameCard"
-                  data-aos="flip-up"
-                  data-aos-delay="50"
-                  data-aos-duration="2500"
-                  data-aos-easing="ease-out"/>
+        <a :href="`${publicPath}MyNameCard.png`" target="_blank">
+          <NameCard id="NameCard"
+                    data-aos="flip-up"
+                    data-aos-delay="50"
+                    data-aos-duration="2500"
+                    data-aos-easing="ease-out"/>
+        </a>
      </div>
     </div>
   </section>
@@ -46,9 +48,10 @@ export default {
     FlipGradientBg
   },
   data() {
-    return{
+    return {
+      publicPath: process.env.BASE_URL
     }
-  },
+  }
 }
 
 </script>
@@ -177,6 +180,7 @@ export default {
               font-size: 13px;
               margin: auto;
               color: #5b1fff;
+              text-decoration: none;
             }
             &:hover{
               opacity: 0.6;
@@ -184,11 +188,15 @@ export default {
           }
         }
       }
-
-      #NameCard{
-
-      }
+      #NameCard{ }
     }
+  }
+}
+a {
+  color: transparent;
+  a:visited {
+    text-decoration: none;
+    color: transparent;
   }
 }
 
