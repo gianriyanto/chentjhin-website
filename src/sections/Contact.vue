@@ -230,7 +230,7 @@ a {
         }
 
         #NameCard{
-          margin-top: 80px !important;
+          margin-top: 40px !important;
           height: 80vh;
         }
 
