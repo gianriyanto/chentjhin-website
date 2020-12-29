@@ -128,15 +128,14 @@ export default {
 
     .card-container{
       padding: 50px !important;
-      height: 75%;
-      width: 60%;
+      height: 70%;
+      width: 55%;
       max-width: 280px;
       margin: auto !important;
 
       border-radius: 14px;
       background: rgba(255, 255, 255, 0.1);
       border: 1px solid rgba( 255, 255, 255, 0.18 );
-      box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.2 );
       backdrop-filter: blur( 10px );
       -webkit-backdrop-filter: blur( 10px );
       text-align: left;
@@ -155,14 +154,14 @@ export default {
           word-spacing: 1px;
           letter-spacing: 0.8px;
           font-family: "Gilroy Bold", serif;
-          font-size: 25px;
+          font-size: 23px;
           color: #5b1fff;
           text-decoration: none;
         }
         .title{
           padding-top: 10px;
           font-family: "Gilroy SemiBold", serif;
-          font-size: 17px;
+          font-size: 15px;
           color: #545454;
           text-decoration: none;
         }
