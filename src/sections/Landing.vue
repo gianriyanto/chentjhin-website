@@ -34,7 +34,7 @@
         </div>
         <ScrollPrompt id="ScrollPrompt"/>
         <Process id="Process"
-                 data-aos="fade"
+                 data-aos="fade-up"
                  data-aos-duration="1500"
                  data-aos-easing="ease-out"/>
       </div>
