@@ -92,7 +92,7 @@ export default {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      margin: 110px 80px 130px 0;
+      margin: 110px 50px 130px 0;
       text-align: left;
       word-spacing: 4px;
       font-size: 52px;
@@ -100,10 +100,10 @@ export default {
       min-width: 535px;
 
       .header-text{
-        line-height: 1.2;
+        line-height: 1.15;
         font-family: "Gilroy Bold", serif;
         letter-spacing: -2px;
-        font-size: 60px;
+        font-size: 56px;
         color: #3b3b3b;
         display: flex;
         flex-direction: row;

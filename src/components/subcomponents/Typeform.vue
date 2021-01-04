@@ -10,6 +10,12 @@
         </transition>
         <transition appear name="slide-fade">
           <span v-if="name.isValid" class="input-card">
+            <span class="prompt"> The program level of interest is </span>
+            <inline-input v-bind:inputData="program"/>
+          </span>
+        </transition>
+        <transition appear name="slide-fade">
+          <span v-if="program.isValid" class="input-card">
             <span class="prompt"> And you're planning to study </span>
             <inline-input v-bind:inputData="course"/>
           </span>
@@ -54,6 +60,7 @@ export default {
     return {
       componentKey: 0,
       name: {prompt: 'your name?', input: 'your name?', edit: false, isValid: false},
+      program: {prompt: 'foundation, undergrad, or postgrad?', input: 'foundation, undergrad, or postgrad?', edit: false, isValid: false},
       course: {prompt: 'what major or course?', input: 'what major or course?', edit: false, isValid: false},
       location: {prompt: 'city or country?', input: 'city or country?', edit: false, isValid: false},
       contact: {prompt: 'your email or mobile', input: 'your email or mobile', edit: false, isValid: false},
@@ -71,6 +78,7 @@ export default {
             "template_oev55pg",
             {
               name: this.name.input,
+              program: this.program.input,
               course: this.course.input,
               location: this.location.input,
               contact: this.contact.input
@@ -82,7 +90,8 @@ export default {
       } else {
         console.log('Clear Typeform');
         this.componentKey += 1;
-        this.name = {prompt: 'your name?', input: 'your name?', edit: false, isValid: false};
+        this.name = {prompt: 'full name?', input: 'your name?', edit: false, isValid: false};
+        this.program = {prompt: 'foundation, undergrad, or postgrad?', input: 'foundation, undergrad, or postgrad?', edit: false, isValid: false};
         this.course = {prompt: 'what major or course?', input: 'what major or course?', edit: false, isValid: false};
         this.location = {prompt: 'city or country?', input: 'city or country?', edit: false, isValid: false};
         this.contact = {prompt: 'your email or mobile', input: 'your email or mobile', edit: false, isValid: false};
@@ -111,7 +120,7 @@ export default {
     margin: auto;
     text-align: left;
     height: fit-content;
-    width: 370px;
+    width: 350px;
 
     .header-card{
       position: relative;
@@ -119,19 +128,20 @@ export default {
       flex-direction: column;
       justify-content: space-evenly;
       margin-bottom: 13px;
-      padding: 21px 27px 17px 27px;
+      padding: 15px 27px 10px 27px;
       height: 60px;
-      border-radius: 17px 17px 7px 7px;
+      border-radius: 15px 15px 5px 5px;
       background: rgba(255, 255, 255, 0.1);
-      box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.2 );
+      box-shadow: 0 8px 22px 0 rgba( 31, 38, 135, 0.1 );
       backdrop-filter: blur( 10px );
       -webkit-backdrop-filter: blur( 10px );
       border: 1px solid rgba( 255, 255, 255, 0.18 );
 
       .prompt {
-        font-family: "Gilroy SemiBold", serif;
-        color: #3b3b3b;
-        font-size: 17px;
+        font-family: "Bw Modelica Medium", serif;
+        letter-spacing: -0.5px;
+        color: #1f1f1f;
+        font-size: 15px;
         margin: 0 9px 5px 0;
       }
     }
@@ -142,19 +152,20 @@ export default {
       flex-direction: column;
       justify-content: space-evenly;
       margin-bottom: 13px;
-      padding: 15px 27px;
+      padding: 10px 27px;
       height: 55px;
-      border-radius: 7px;
+      border-radius: 5px;
       background: rgba(255, 255, 255, 0.1);
-      box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.2 );
+      box-shadow: 0 8px 22px 0 rgba( 31, 38, 135, 0.1 );
       backdrop-filter: blur( 10px );
       -webkit-backdrop-filter: blur( 10px );
       border: 1px solid rgba( 255, 255, 255, 0.18 );
 
       .prompt {
-        font-family: "Gilroy SemiBold", serif;
-        color: #3b3b3b;
-        font-size: 17px;
+        font-family: "Bw Modelica Medium", serif;
+        letter-spacing: -0.5px;
+        color: #1f1f1f;
+        font-size: 15px;
         margin: 0 9px 5px 0;
       }
     }
@@ -164,11 +175,11 @@ export default {
       flex-direction: row;
       justify-content: space-between;
       margin-bottom: 13px;
-      padding: 8px 17px 8px 27px;
+      padding: 2px 17px 2px 27px;
       height: 58px;
-      border-radius: 7px 7px 17px 17px;
+      border-radius: 5px 5px 15px 15px;
       background: rgba(255, 255, 255, 0.1);
-      box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.2 );
+      box-shadow: 0 8px 22px 0 rgba( 31, 38, 135, 0.1 );
       backdrop-filter: blur( 10px );
       -webkit-backdrop-filter: blur( 10px );
       border: 1px solid rgba( 255, 255, 255, 0.18 );
@@ -176,8 +187,9 @@ export default {
       .label{
         line-height: 1.3;
         margin: auto 0;
-        font-family: "Gilroy SemiBold", serif;
-        color: #3b3b3b;
+        font-family: "Bw Modelica Medium", serif;
+        letter-spacing: -0.5px;
+        color: #1f1f1f;
         font-size: 17px;
         width: 60%;
 
@@ -193,7 +205,7 @@ export default {
         height: 39px;
         border: thin solid #5b1fff;
         background: rgba(255, 255, 255, 0.07);
-        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.3 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.2 );
         border-radius: 7px;
         outline: none;
         text-decoration: none;
