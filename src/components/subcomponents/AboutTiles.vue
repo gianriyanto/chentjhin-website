@@ -61,7 +61,7 @@
                 data-aos="fade-up"
                 data-aos-duration="2300"
                 data-aos-easing="ease-out">
-             <font-awesome-icon class="phone-icon" :icon="['fas', 'mobile-alt']"/>
+            <font-awesome-icon class="phone-icon" :icon="['fas', 'mobile-alt']"/>
             <a class="header">
               {{ tiles[5].content }}
             </a>

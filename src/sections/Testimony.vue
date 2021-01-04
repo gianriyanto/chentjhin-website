@@ -54,7 +54,7 @@ export default {
         },
         {
           client: 'Ananda Emirsyah Djajanegara',
-          university: 'Bellerbys College',
+          university: 'Conventy University London',
           header: 'Constant motivation and close attention.',
           message: "Chen has a huge influence in my life since I was in high school and through university. She helped me through the tough transition to higher education with her constant motivation and close attention to my progress.",
           imageURL: "anandadjajanegara.jpeg"
