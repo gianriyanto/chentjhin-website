@@ -5,6 +5,7 @@ import VueScrollTo from 'vue-scrollto'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import { fas } from '@fortawesome/free-solid-svg-icons'
+import { faWhatsapp } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import VueRellax from 'vue-rellax'
@@ -14,7 +15,7 @@ init("user_QRtMhtGACRk9EF2dvew9l");
 Vue.use(Vuex)
 Vue.use(VueScrollTo)
 Vue.use(VueRellax)
-library.add(fas);
+library.add(fas, faWhatsapp);
 Vue.component('font-awesome-icon', FontAwesomeIcon);
 
 Vue.config.productionTip = false
