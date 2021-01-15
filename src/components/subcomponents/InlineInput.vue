@@ -59,12 +59,12 @@ export default {
 <style lang="scss" scoped>
 
 #InlineInput{
-  font-size: 17px;
+  font-size: 15px;
   font-family: "Gilroy SemiBold", serif;
 
   .input-editing{
     font-family: "Gilroy SemiBold", serif;
-    font-size: 17px;
+    font-size: 15px;
     color: darkgrey;
     width: 290px;
     border: transparent;
@@ -80,7 +80,7 @@ export default {
   .check-icon{
     font-size: 14px;
     margin: 2px 0 0 6px;
-    color: #23b571;
+    color: #59bc8c;
   }
   .input-has-value-style{
     color: #5651ec;

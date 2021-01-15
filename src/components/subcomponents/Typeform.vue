@@ -129,13 +129,13 @@ export default {
       justify-content: space-evenly;
       margin-bottom: 13px;
       padding: 15px 27px 10px 27px;
-      height: 60px;
+      height: 55px;
       border-radius: 15px 15px 5px 5px;
       background: rgba(255, 255, 255, 0.1);
       box-shadow: 0 8px 22px 0 rgba( 31, 38, 135, 0.1 );
       backdrop-filter: blur( 10px );
       -webkit-backdrop-filter: blur( 10px );
-      border: 1px solid rgba( 255, 255, 255, 0.18 );
+      border: 1px solid rgba(255, 255, 255, 0.7);
 
       .prompt {
         font-family: "Bw Modelica Medium", serif;
@@ -153,13 +153,13 @@ export default {
       justify-content: space-evenly;
       margin-bottom: 13px;
       padding: 10px 27px;
-      height: 55px;
+      height: 50px;
       border-radius: 5px;
       background: rgba(255, 255, 255, 0.1);
       box-shadow: 0 8px 22px 0 rgba( 31, 38, 135, 0.1 );
       backdrop-filter: blur( 10px );
       -webkit-backdrop-filter: blur( 10px );
-      border: 1px solid rgba( 255, 255, 255, 0.18 );
+      border: 1px solid rgba(255, 255, 255, 0.7);
 
       .prompt {
         font-family: "Bw Modelica Medium", serif;
@@ -176,13 +176,13 @@ export default {
       justify-content: space-between;
       margin-bottom: 13px;
       padding: 2px 17px 2px 27px;
-      height: 58px;
+      height: 50px;
       border-radius: 5px 5px 15px 15px;
       background: rgba(255, 255, 255, 0.1);
       box-shadow: 0 8px 22px 0 rgba( 31, 38, 135, 0.1 );
       backdrop-filter: blur( 10px );
       -webkit-backdrop-filter: blur( 10px );
-      border: 1px solid rgba( 255, 255, 255, 0.18 );
+      border: 1px solid rgba(255, 255, 255, 0.7);
 
       .label{
         line-height: 1.3;
@@ -202,7 +202,7 @@ export default {
         cursor: pointer;
         margin: auto 0;
         width: 30%;
-        height: 39px;
+        height: 34px;
         border: thin solid #5b1fff;
         background: rgba(255, 255, 255, 0.07);
         box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.2 );
@@ -226,7 +226,7 @@ export default {
         cursor: pointer;
         margin: auto 0;
         width: 30%;
-        height: 39px;
+        height: 34px;
         border: thin solid black;
         background: rgba(255, 255, 255, 0.1);
         box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.3 );
