@@ -1,8 +1,14 @@
 <template>
   <div id="TopNav">
     <div class="content-wrapper">
+      <!--
       <span class="logo"
-            v-scroll-to="{ el: '#Landing', easing: [.2, .80, .30, 1],duration: 1500}"/>
+            v-scroll-to="{ el: '#Landing', easing: [.2, .80, .30, 1],duration: 1500}"
+      />
+      -->
+      <span class="logo-container">
+        <img class="image" src="@/assets/logo/AspectamaLogo.png">
+      </span>
       <button class="contact-button"
               data-aos="fade"
               data-aos-duration="2000"
@@ -35,11 +41,13 @@ export default {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: 50px;
+    height: 55px;
     width: 90vw;
     max-width: 1280px;
 
+    /*
     .logo {
+      border: thin solid red;
       width: 25px;
       height: 50px;
       background-color: #1f1f1f;
@@ -53,11 +61,27 @@ export default {
         opacity: 0.7;
       }
     }
+    */
+
+    .logo-container{
+      height: 60px;
+      cursor: pointer;
+
+      .image{
+        height: 100%;
+        width: auto;
+      }
+
+      &:hover{
+        opacity: 0.7;
+      }
+    }
 
     .contact-button {
+      align-self: center;
       width: 130px;
       height: 50px;
-      border: thin solid #1f1f1f;
+      border: thin solid #5651ec;
       background: rgba(255, 255, 255, 0.04);
       box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.3 );
       backdrop-filter: blur( 3px );
@@ -69,10 +93,11 @@ export default {
       transition: all .35s ease-in-out;
 
       .button-label{
-        font-family: "Gilroy SemiBold", serif;
-        font-size: 14px;
+        font-family: "Bw Modelica Medium", serif;
+        letter-spacing: -0.5px;
+        font-size: 13px;
         margin: auto;
-        color: #1f1f1f;
+        color: #3732d6;
       }
       &:hover{
         opacity: 0.7;
