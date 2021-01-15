@@ -32,7 +32,7 @@
                     data-aos-duration="3000"
                     data-aos-easing="ease-out"/>
         </div>
-        <ScrollPrompt id="ScrollPrompt"/>
+        <CallToAction id="CallToAction"/>
         <Process id="Process"
                  data-aos="fade-up"
                  data-aos-duration="1500"
@@ -46,12 +46,12 @@
 import GradientBg from "@/components/background/gradientbg";
 import Typeform from "@/components/subcomponents/Typeform";
 import Process from "@/sections/Process";
-import ScrollPrompt from "@/components/subcomponents/ScrollPrompt";
+import CallToAction from "@/components/subcomponents/CallToAction";
 
 export default {
   name: "Landing",
   components: {
-    ScrollPrompt,
+    CallToAction,
     Process,
     Typeform,
     GradientBg,
@@ -129,10 +129,10 @@ export default {
 
         .learn-more-button {
           cursor: pointer;
-          width: 178px;
+          width: 175px;
           height: 50px;
-          background-image: linear-gradient(to left, #5b1fff, #3867ff);
-          box-shadow: 0 8px 32px 0 rgba(17, 20, 57, 0.5);
+          background-image: linear-gradient(to left, #5b1fff, #6548ee);
+          box-shadow: 0 6px 28px 0 rgba(112, 121, 236, 0.7);
           border-radius: 10px;
           border: none;
           outline: none;
@@ -192,6 +192,7 @@ export default {
       }
     }
     #Typeform {
+
     }
   }
 }
