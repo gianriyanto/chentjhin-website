@@ -98,13 +98,13 @@ export default {
           flex-direction: column;
           justify-content: center;
           text-align: left;
-          line-height: 1.35;
+          line-height: 1.3;
 
           .header-index0, .header-index1 {
             font-family: "Bw Modelica ExtraBold", serif;
-            letter-spacing: -3px;
-            font-size: 64px;
-            color: #1F1F1F;
+            letter-spacing: -2px;
+            font-size: 55px;
+            color: #2b2b2b;
           }
         }
 
@@ -117,7 +117,7 @@ export default {
             margin-top: 20px;
             line-height: 1.5;
             font-family: "Gilroy SemiBold", serif;
-            font-size: 16px;
+            font-size: 15px;
             color: #1F1F1F;
             width: 460px;
           }
@@ -133,7 +133,7 @@ export default {
         }
 
         .button-container{
-          margin-top: 50px;
+          margin-top: 30px;
           display: flex;
           flex-direction: row;
 

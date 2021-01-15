@@ -40,8 +40,8 @@ export default {
     flex-direction: column;
     justify-content: space-between;
     padding: 40px;
-    height: 446px;
-    width: 250px;
+    height: 380px;
+    width: 200px;
     margin: auto;
     border-radius: 14px;
     background: rgba(255, 255, 255, 0.1);
@@ -132,7 +132,6 @@ export default {
       width: 55%;
       max-width: 280px;
       margin: auto !important;
-
       border-radius: 14px;
       background: rgba(255, 255, 255, 0.1);
       border: 1px solid rgba( 255, 255, 255, 0.18 );
