@@ -41,7 +41,7 @@ export default {
       width: 45%;
       height: auto;
       margin: auto;
-      color: #5651ec;
+      color: #128c7e;
     }
 
     &:hover{
