@@ -45,15 +45,15 @@ export default {
     margin: auto;
     border-radius: 14px;
     background: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border: 1px solid rgba( 255, 255, 255, 0.6 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.2 );
     backdrop-filter: blur( 10px );
     -webkit-backdrop-filter: blur( 10px );
     text-align: left;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.2s ease-in-out;
 
     &:hover{
-      box-shadow: 0 8px 32px 0 rgba(17, 20, 57, 0.3);
+      box-shadow: 0 8px 22px 0 rgba(61, 65, 121, 0.3);
     }
 
     .header-card{
