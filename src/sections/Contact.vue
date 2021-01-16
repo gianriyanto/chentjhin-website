@@ -126,9 +126,9 @@ export default {
             margin-top: 7px;
             line-height: 1.6;
             font-family: "Gilroy Regular", serif;
-            font-size: 16px;
+            font-size: 15px;
             color: #484848;
-            width: 430px;
+            width: 400px;
           }
         }
 
@@ -143,7 +143,7 @@ export default {
             padding: 0 42px;
             height: 47px;
             background-image: linear-gradient(to left, #5b1fff, #3867ff);
-            box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.6 );
+            filter: drop-shadow(1px 6px 10px rgb(113, 135, 246));
             border-radius: 10px;
             outline: none;
             text-decoration: none;
