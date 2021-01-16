@@ -35,13 +35,14 @@ export default {
   width: 100vw;
   z-index: 10;
   background-color: transparent;
+  border: thin solid red;
 
   .content-wrapper {
-    margin: 80px auto 0 auto;
+    margin: 56px auto 0 auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: 55px;
+    height: 53px;
     width: 90vw;
     max-width: 1280px;
 
@@ -64,7 +65,7 @@ export default {
     */
 
     .logo-container{
-      height: 60px;
+      height: 100%;
       cursor: pointer;
 
       .image{
@@ -80,7 +81,7 @@ export default {
     .contact-button {
       align-self: center;
       width: 130px;
-      height: 50px;
+      height: 46px;
       border: thin solid #5651ec;
       background: rgba(255, 255, 255, 0.04);
       box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.3 );

@@ -43,7 +43,7 @@ export default {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding-top: 87px;
+  padding-top: 62px;
   height: 50px;
   width: fit-content;
   z-index: 11;
