@@ -53,7 +53,7 @@ export default {
     transition: all 0.2s ease-in-out;
 
     &:hover{
-      box-shadow: 0 8px 22px 0 rgba(61, 65, 121, 0.3);
+      filter: drop-shadow(1px 6px 10px rgb(156, 158, 238));
     }
 
     .header-card{
