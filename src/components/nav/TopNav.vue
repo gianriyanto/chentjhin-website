@@ -35,7 +35,6 @@ export default {
   width: 100vw;
   z-index: 10;
   background-color: transparent;
-  border: thin solid red;
 
   .content-wrapper {
     margin: 56px auto 0 auto;
