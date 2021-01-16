@@ -66,6 +66,7 @@ export default {
     .logo-container{
       height: 100%;
       cursor: pointer;
+      transition: all .3s ease-in-out;
 
       .image{
         height: 100%;
