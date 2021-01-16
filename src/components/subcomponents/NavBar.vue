@@ -54,23 +54,24 @@ export default {
 
   .nav-button {
     cursor: pointer;
-    width: 110px;
+    width: 100px;
     height: 50px;
     border: 0;
     background: transparent;
     outline: none;
     text-decoration: none;
-    transition: all .35s ease-in-out;
 
     .button-label {
       font-family: "Gilroy SemiBold", serif;
-      font-size: 17px;
+      font-size: 16px;
       margin: auto;
-      color: #3b3b3b;
-    }
-
-    &:hover{
+      color: #262626;
       opacity: 0.7;
+      transition: all .35s ease-in-out;
+
+      &:hover{
+        opacity: 1;
+      }
     }
   }
 }
