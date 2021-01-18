@@ -1,14 +1,14 @@
 <template>
   <div id="TopNav">
     <div class="content-wrapper">
-      <!--
       <span class="logo"
             v-scroll-to="{ el: '#Landing', easing: [.2, .80, .30, 1],duration: 1500}"
       />
-      -->
+      <!-- #Aspectama Logo#
       <span class="logo-container">
         <img class="image" src="@/assets/logo/AspectamaLogo.png">
       </span>
+      -->
       <button class="contact-button"
               data-aos="fade"
               data-aos-duration="2000"
@@ -45,9 +45,7 @@ export default {
     width: 90vw;
     max-width: 1280px;
 
-    /*
     .logo {
-      border: thin solid red;
       width: 25px;
       height: 50px;
       background-color: #1f1f1f;
@@ -61,8 +59,7 @@ export default {
         opacity: 0.7;
       }
     }
-    */
-
+    /*
     .logo-container{
       height: 100%;
       cursor: pointer;
@@ -77,7 +74,7 @@ export default {
         opacity: 0.7;
       }
     }
-
+*/
     .contact-button {
       align-self: center;
       width: 130px;
