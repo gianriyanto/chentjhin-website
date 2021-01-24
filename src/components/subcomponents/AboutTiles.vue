@@ -61,10 +61,16 @@
                 data-aos="fade-up"
                 data-aos-duration="2300"
                 data-aos-easing="ease-out">
-            <font-awesome-icon class="phone-icon" :icon="['fas', 'mobile-alt']"/>
-            <a class="header">
-              {{ tiles[5].content }}
-            </a>
+            <span class="phone">
+              <a class="header">
+                {{ tiles[5].content[0] }}
+              </a>
+            </span>
+            <span class="phone">
+              <a class="header">
+                {{ tiles[5].content[1] }}
+              </a>
+            </span>
           </span>
         </span>
       </div>
@@ -105,7 +111,7 @@ export default {
         },
         {
           tileIndex: 6,
-          content: "62 811 899 688"
+          content: ["62 811 899 688", "61 426 368 781"]
         },
       ]
     }
@@ -163,7 +169,7 @@ export default {
           transition: all 0.45s ease-in-out;
 
           &:hover{
-            transform: scale(1.01);
+            transform: scle(1.01);
             box-shadow: 0 8px 32px 0 rgba(17, 20, 57, 0.5);
           }
 
@@ -193,7 +199,6 @@ export default {
           transition: all 0.45s ease-in-out;
 
           &:hover{
-            transform: scale(1.01);
             box-shadow: 0 8px 32px 0 rgba(17, 20, 57, 0.5);
           }
 
@@ -221,13 +226,12 @@ export default {
           height: 100%;
           background-color: lightgrey;
           border-radius: 15px;
-          background-image: linear-gradient(to top right, #482aef, #6762ec, #f5b8dd);
+          background-image: linear-gradient(to top right, #7a66ea, #6c68ec, #ffb2e0);
           box-shadow: 0 8px 32px 0 rgba(17, 20, 57, 0.3);
           margin: 8px 8px 0 0;
           transition: all 0.45s ease-in-out;
 
           &:hover{
-            transform: scale(1.01);
             box-shadow: 0 8px 32px 0 rgba(17, 20, 57, 0.5);
           }
         }
@@ -283,7 +287,6 @@ export default {
           transition: all 0.45s ease-in-out;
 
           &:hover{
-            transform: scale(1.01);
             box-shadow: 0 8px 32px 0 rgba(17, 20, 57, 0.5);
           }
 
@@ -293,7 +296,7 @@ export default {
             font-size: 38px;
             letter-spacing: -1px;
             line-height: 1.2;
-            background: linear-gradient(to right, #8f6af3, #e579bc, #fcaa61);
+            background: linear-gradient(to right, #c0aef1, #f192cd, #faba81);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
           }
@@ -320,13 +323,12 @@ export default {
           margin: 0 0 8px 8px;
           padding: 25px;
           height: 60%;
-          background-image: linear-gradient(to top right, #dd6fbd, #f69250, #f3ab3e);
+          background-image: linear-gradient(to top right, #c796f1, #f8a670, #ffbd5a);
           box-shadow: 0 8px 32px 0 rgba(17, 20, 57, 0.1);
           border-radius: 15px;
           transition: all 0.45s ease-in-out;
 
           &:hover{
-            transform: scale(1.01);
             box-shadow: 0 8px 32px 0 rgba(17, 20, 57, 0.5);
           }
 
@@ -349,8 +351,8 @@ export default {
 
         .tile-06 {
           display: flex;
-          flex-direction: row;
-          justify-content: center;
+          flex-direction: column;
+          justify-content: space-evenly;
           margin: 8px 0 0 8px;
           padding: 30px;
           height: 30%;
@@ -359,24 +361,22 @@ export default {
           transition: all 0.45s ease-in-out;
 
           &:hover{
-            transform: scale(1.01);
             box-shadow: 0 8px 32px 0 rgba(17, 20, 57, 0.5);
           }
 
-          .phone-icon{
-            margin: auto 10px auto 0;
-            font-size: 22px;
-            color: white;
-            position: sticky;
-          }
+          .phone{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
 
-          .header {
-            margin: auto 0 ;
-            text-align: center;
-            font-family: "Bw Modelica ExtraBold", serif;
-            font-size: 24px;
-            line-height: 1.4;
-            color: white;
+            .header {
+              margin: auto 0 ;
+              text-align: center;
+              font-family: "Bw Modelica Bold", serif;
+              font-size: 23px;
+              line-height: 1.4;
+              color: #ffffff;
+            }
           }
         }
       }
