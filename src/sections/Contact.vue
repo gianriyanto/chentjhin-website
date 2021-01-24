@@ -82,7 +82,7 @@ export default {
       flex-direction: row;
       justify-content: center;
       margin: auto;
-      padding-top: 150px;
+      padding-top: 130px;
 
       .contact-container{
         display: flex;
@@ -104,7 +104,7 @@ export default {
             font-family: "Bw Modelica ExtraBold", serif;
             letter-spacing: -2px;
             font-size: 55px;
-            color: #2b2b2b;
+            color: #474747;
           }
         }
 

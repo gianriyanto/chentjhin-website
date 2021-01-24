@@ -15,7 +15,7 @@
         </span>
         <span class="details">
           <span class="phone"> +62 811 899 688 </span>
-          <span class="phone"> +62 821 2551 3693 </span>
+          <span class="phone"> +61 426 368 781 </span>
           <span class="email"> chen.tjhin@gmail.com </span>
           <span class="website"> www.consultchen.com </span>
         </span>
@@ -50,10 +50,10 @@ export default {
     backdrop-filter: blur( 10px );
     -webkit-backdrop-filter: blur( 10px );
     text-align: left;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.3s ease-in-out;
 
     &:hover{
-      filter: drop-shadow(1px 6px 10px rgb(156, 158, 238));
+      box-shadow: 0 8px 25px 0 rgba( 31, 38, 135, 0.4 );
     }
 
     .header-card{
