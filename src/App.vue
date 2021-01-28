@@ -33,6 +33,7 @@ export default {
 
 <style lang="scss">
 
+// google fonts
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&display=swap');
 
 html, body {
