@@ -409,22 +409,23 @@ export default {
             margin: 8px 0 15px 0;
             border-radius: 15px;
             background-image: linear-gradient(to bottom, white, white);
-            box-shadow: 0 8px 32px 0 rgba(17, 20, 57, 0.3);
+            box-shadow: 0 8px 32px 0 rgba(17, 20, 57, 0.2);
 
             .header {
-              padding: 15px 40px 40px 15px;
+              padding: 25px 40px 40px 25px;
+              width: 80%;
               text-align: left;
               font-family: "Bw Modelica ExtraBold", serif;
-              font-size: 40px;
+              font-size: 41px;
               letter-spacing: -1px;
-              line-height: 1.3;
+              line-height: 1.2;
               color: #222222;
             }
 
             .image {
               padding: 0 15px 30px 15px;
-              width: auto;
-              height: 40%;
+              width: 90%;
+              height: auto;
             }
           }
 
@@ -435,6 +436,7 @@ export default {
             width: 100%;
             border-radius: 15px;
             background-image: linear-gradient(to top right, #071329, #071d43);
+            box-shadow: 0 8px 32px 0 rgba(17, 20, 57, 0.2);
 
             .header {
               padding: 150px 20px 15px 20px;
@@ -466,7 +468,7 @@ export default {
           }
 
           .cover {
-            padding: 15px;
+            padding: 25px;
             display: flex;
             flex-direction: column-reverse;
             justify-content: flex-start;
@@ -511,11 +513,11 @@ export default {
             width: 100%;
             border-radius: 15px;
             background-image: linear-gradient(to bottom, white, white);
-            box-shadow: 0 8px 32px 0 rgba(17, 20, 57, 0.3);
+            box-shadow: 0 8px 32px 0 rgba(17, 20, 57, 0.2);
             margin: 8px 0 15px 0;
 
             .header {
-              padding: 20px 15px 15px 15px;
+              padding: 25px 25px 25px 25px;
               text-align: left;
               font-family: "Bw Modelica ExtraBold", serif;
               font-size: 43px;
@@ -547,11 +549,11 @@ export default {
             margin: 8px 0 15px 0;
             height: fit-content;
             background-image: linear-gradient(to top right, #c796f1, #f8a670, #ffbd5a);
-            box-shadow: 0 8px 32px 0 rgba(17, 20, 57, 0.1);
+            box-shadow: 0 8px 32px 0 rgba(17, 20, 57, 0.2);
             border-radius: 15px;
 
             .header {
-              padding: 20px 15px 15px 15px;
+              padding: 20px 25px 25px 25px;
               text-align: left;
               font-family: "Bw Modelica ExtraBold", serif;
               font-size: 35px;
@@ -573,7 +575,7 @@ export default {
             flex-direction: column;
             justify-content: center;
             margin: 8px 0 15px 0;
-            height: 150px;
+            height: 200px;
             border-radius: 15px;
             background-image: linear-gradient(to top right, #181818, #5f5f5f);
 
@@ -586,11 +588,11 @@ export default {
                 margin: auto 0;
                 text-align: center;
                 font-family: "Bw Modelica ExtraBold", serif;
-                font-size: 30px;
+                font-size: 33px;
                 letter-spacing: 1px;
                 line-height: 1.4;
                 color: #ffffff;
-                background: linear-gradient(to right, #ffefe0, #fff0d6);
+                background: linear-gradient(to left, #ffefc0, #fffef6);
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
               }
