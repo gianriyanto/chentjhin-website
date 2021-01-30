@@ -118,7 +118,7 @@ export default {
 @media only screen and (max-width: 768px) {
   #TestimonyCard {
     flex: 0 0 auto;
-    margin: auto 50px auto 20px;
+    margin: auto 30px auto 25px;
     width: 330px;
 
     .card {
@@ -147,7 +147,7 @@ export default {
         margin-top: 20px;
         font-family: "Gilroy Regular", serif;
         line-height: 1.5;
-        font-size: 16px;
+        font-size: 19px;
         letter-spacing: -0.5px;
         color: #585858;
       }

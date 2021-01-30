@@ -215,7 +215,7 @@ export default {
   #Testimony {
     position: relative;
     width: 100%;
-    margin-top: 50px;
+    margin-top: 70px;
 
     .wrapper {
       position: relative;
@@ -227,7 +227,7 @@ export default {
 
       .header-container {
         align-self: center;
-        width: 90%;
+        width: 85%;
         display: flex;
         flex-direction: column;
         text-align: left;
@@ -244,7 +244,7 @@ export default {
           margin-top: 10px;
           margin-left: 5px;
           font-family: "Gilroy Medium", serif;
-          font-size: 16px;
+          font-size: 17px;
           color: #585858;
         }
       }
