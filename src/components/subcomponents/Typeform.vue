@@ -279,7 +279,7 @@ export default {
         flex-direction: column;
         justify-content: space-evenly;
         margin-bottom: 13px;
-        padding: 15px 27px 10px 27px;
+        padding: 20px 27px 15px 27px;
         height: 55px;
         border-radius: 15px 15px 5px 5px;
         background: rgba(255, 255, 255, 0.1);
@@ -303,7 +303,7 @@ export default {
         flex-direction: column;
         justify-content: space-evenly;
         margin-bottom: 13px;
-        padding: 10px 27px;
+        padding: 20px 27px;
         height: 50px;
         border-radius: 5px;
         background: rgba(255, 255, 255, 0.1);
@@ -362,17 +362,12 @@ export default {
           border-radius: 7px;
           outline: none;
           text-decoration: none;
-          transition: all 0.3s ease-in-out;
           color: #5b1fff;
 
           .button-label {
             font-family: "Gilroy SemiBold", serif;
             font-size: 13px;
             margin: auto;
-          }
-
-          &:hover {
-            opacity: 0.9;
           }
         }
 
@@ -387,17 +382,12 @@ export default {
           border-radius: 7px;
           outline: none;
           text-decoration: none;
-          transition: all 0.25s ease-in-out;
           color: black;
 
           .button-label {
             font-family: "Gilroy SemiBold", serif;
             font-size: 13px;
             margin: auto;
-          }
-
-          &:hover {
-            opacity: 0.6;
           }
         }
       }

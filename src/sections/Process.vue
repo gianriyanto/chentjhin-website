@@ -79,71 +79,129 @@ export default {
 
 <style scoped lang="scss">
 
-#Process{
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  margin-top: 0;
-  padding: 50px 0;
-
-  .content-wrapper{
+@media only screen and (min-width: 769px) {
+  #Process {
+    position: relative;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    height: fit-content;
-    margin: 0 auto;
-    max-width: 1200px;
-    width: 80vw;
-    min-width: 980px;
+    flex-direction: column;
+    margin-top: 0;
+    padding: 50px 0;
 
-    .process-card{
-      text-align: left;
-      margin: auto;
+    .content-wrapper {
       display: flex;
-      flex-direction: column;
-      justify-content: space-evenly;
-      padding: 30px;
-      height: 260px;
-      width: 18%;
-      border-radius: 11px;
-      border: 0.5px solid rgba(255,255,255,0.1);
-      background: rgba(255, 255, 255, 0.2);
-      box-shadow: 0 8px 33px 0 rgba(165, 166, 172, 0.3);
-      backdrop-filter: blur( 5px );
-      -webkit-backdrop-filter: blur( 5px );
-      line-height: 1.5;
-      transition: all 0.45s ease-in-out;
+      flex-direction: row;
+      justify-content: space-around;
+      height: fit-content;
+      margin: 0 auto;
+      max-width: 1200px;
+      width: 80vw;
+      min-width: 980px;
 
-      &:hover{
-        box-shadow: 0 8px 32px 0 rgba(17, 20, 57, 0.35);
-      }
+      .process-card {
+        text-align: left;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 30px;
+        height: 260px;
+        width: 18%;
+        border-radius: 11px;
+        border: 0.5px solid rgba(255, 255, 255, 0.1);
+        background: rgba(255, 255, 255, 0.2);
+        box-shadow: 0 8px 33px 0 rgba(165, 166, 172, 0.3);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        line-height: 1.5;
+        transition: all 0.45s ease-in-out;
 
-      .image {
-        width: 80%;
-        height: 50%;
-        margin-bottom: 18px;
-      }
+        &:hover {
+          box-shadow: 0 8px 32px 0 rgba(17, 20, 57, 0.35);
+        }
 
-      .header{
-        font-family: "Bw Modelica ExtraBold", serif;
-        font-size: 20px;
-        letter-spacing: -1px;
-        color: #373737;
-        margin-bottom: 15px;
-      }
-      .description{
-        font-family: "Gilroy Medium", serif;
-        font-size: 13px;
-        letter-spacing: -0.6px;
-        color: #5b5b5b;
+        .image {
+          width: 80%;
+          height: 50%;
+          margin-bottom: 18px;
+        }
+
+        .header {
+          font-family: "Bw Modelica ExtraBold", serif;
+          font-size: 20px;
+          letter-spacing: -1px;
+          color: #373737;
+          margin-bottom: 15px;
+        }
+
+        .description {
+          font-family: "Gilroy Medium", serif;
+          font-size: 13px;
+          letter-spacing: -0.6px;
+          color: #5b5b5b;
+        }
       }
     }
   }
 }
 
-@media only screen and (max-width: 1212px) {
-  #Process{
-    display: none;
+@media only screen and (max-width: 768px) {
+
+  #Process {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+    padding: 50px 0;
+
+    .content-wrapper {
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto;
+      height: fit-content;
+      width: 90%;
+
+      .process-card {
+        align-self: center;
+        margin-bottom: 20px;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: fit-content;
+        width: 100%;
+        border-radius: 14px;
+        border: 0.5px solid rgba(255, 255, 255, 0.2);
+        background: rgba(255, 255, 255, 0.2);
+        box-shadow: 0 8px 33px 0 rgba(165, 166, 172, 0.3);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        line-height: 1.5;
+
+        .image {
+          padding: 30px 30px 0 30px;
+          width: 80%;
+          height: 50%;
+          margin-bottom: 18px;
+        }
+
+        .header {
+          padding: 0 30px;
+          font-family: "Bw Modelica Bold", serif;
+          font-size: 24px;
+          letter-spacing: -1px;
+          color: #5b1fff;
+          margin-bottom: 15px;
+        }
+
+        .description {
+          padding: 0 30px 30px 30px;
+          font-family: "Gilroy Medium", serif;
+          font-size: 16px;
+          letter-spacing: -0.6px;
+          color: #5b5b5b;
+        }
+      }
+    }
   }
 }
 

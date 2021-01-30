@@ -294,15 +294,11 @@ export default {
         }
       }
 
-      #Typeform {
-
-      }
+      #Typeform { }
     }
   }
 
-  #Process {
-    display: none;
-  }
+  #Process { }
 }
 
 
