@@ -19,40 +19,64 @@ export default {
 
 <style scoped lang="scss">
 
-#CallToAction{
+@media only screen and (min-width: 769px) {
+  #CallToAction {
 
-  .fab{
-    cursor: pointer;
-    position: fixed;
-    display: flex;
-    width: 60px;
-    height: 60px;
-    top: 90vh;
-    right: 40px;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.2);
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.2 );
-    backdrop-filter: blur( 10px );
-    -webkit-backdrop-filter: blur( 10px );
-    z-index: 13;
-    transition: all 0.3s ease-in-out;
+    .fab {
+      cursor: pointer;
+      position: fixed;
+      display: flex;
+      width: 60px;
+      height: 60px;
+      top: 90vh;
+      right: 40px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.2);
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.2);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      z-index: 13;
+      transition: all 0.3s ease-in-out;
 
-    .whatsapp-icon{
-      width: 45%;
-      height: auto;
-      margin: auto;
-      color: #128c7e;
-    }
+      .whatsapp-icon {
+        width: 45%;
+        height: auto;
+        margin: auto;
+        color: #128c7e;
+      }
 
-    &:hover{
-      opacity: 0.7;
+      &:hover {
+        opacity: 0.7;
+      }
     }
   }
 }
 
-@media only screen and (max-width: 1212px) {
-  #CallToAction{
-    display: none;
+@media only screen and (max-width: 768px) {
+
+  #CallToAction {
+
+    .fab {
+      position: fixed;
+      display: flex;
+      width: 70px;
+      height: 70px;
+      bottom: 20px;
+      right: 20px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.2);
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.2);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      z-index: 13;
+
+      .whatsapp-icon {
+        width: 45%;
+        height: auto;
+        margin: auto;
+        color: #128c7e;
+      }
+    }
   }
 }
 

@@ -49,7 +49,7 @@
         </span>
         <span class="right">
           <span class="tile-05"
-                data-aos="fade-left"
+                data-aos="fade-down"
                 data-aos-duration="1600"
                 data-aos-easing="ease-in-out">
             <span class="header">
