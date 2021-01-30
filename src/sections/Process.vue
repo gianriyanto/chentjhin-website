@@ -162,7 +162,7 @@ export default {
 
       .process-card {
         align-self: center;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
         text-align: left;
         display: flex;
         flex-direction: column;
@@ -170,11 +170,6 @@ export default {
         height: fit-content;
         width: 100%;
         border-radius: 14px;
-        border: 0.5px solid rgba(255, 255, 255, 0.2);
-        background: rgba(255, 255, 255, 0.2);
-        box-shadow: 0 8px 33px 0 rgba(165, 166, 172, 0.3);
-        backdrop-filter: blur(5px);
-        -webkit-backdrop-filter: blur(5px);
         line-height: 1.5;
 
         .image {

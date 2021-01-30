@@ -1,6 +1,6 @@
 <template>
     <section id="Landing">
-      <gradient-bg id="gradient-bg" v-rellax="{ speed: 2 }"/>
+      <gradient-bg id="gradient-bg" v-rellax="{ speed: 6 }"/>
       <div class="wrapper">
         <div class="content-wrapper">
           <div class="header-container"
@@ -242,7 +242,7 @@ export default {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin: 110px auto;
+        margin: 130px auto;
         text-align: center;
         word-spacing: 4px;
 

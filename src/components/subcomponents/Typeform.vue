@@ -1,6 +1,11 @@
 <template>
   <div :key="componentKey">
     <section id="Typeform" >
+      <div class="header-container">
+        <span class="header-text">
+          Tell me a bit of yourself.
+        </span>
+      </div>
       <div class="content-wrapper">
         <transition appear name="slide-fade">
           <span class="header-card">
@@ -72,7 +77,7 @@ export default {
   methods: {
     sendEmail() {
       if (this.buttonLabel === 'Submit') {
-        // if typeform has not been submitted
+        // If typeform has not been submitted
         emailjs.send(
             "service_gpg6kap",
             "template_oev55pg",
@@ -113,6 +118,10 @@ export default {
     flex-direction: column;
     margin: auto 0;
     z-index: 2;
+
+    .header-container{
+      display: none;
+    }
 
     .content-wrapper {
       display: flex;
@@ -264,6 +273,21 @@ export default {
     margin: auto 0;
     z-index: 2;
 
+    .header-container{
+      display: flex;
+      flex-direction: column;
+      align-self: center;
+      margin: 0 auto 20px auto;
+      width: 90%;
+
+      .header-text{
+        font-family: "Gilroy Bold", serif;
+        color: #5b1fff;
+        font-size: 21px;
+        letter-spacing: -1px;
+      }
+    }
+
     .content-wrapper {
       display: flex;
       flex-direction: column;
@@ -286,7 +310,7 @@ export default {
         box-shadow: 0 8px 22px 0 rgba(31, 38, 135, 0.1);
         backdrop-filter: blur(10px);
         -webkit-backdrop-filter: blur(10px);
-        border: 1px solid rgba( 255, 255, 255, 0.18 );
+        border: 1px solid #9894fc;
 
         .prompt {
           font-family: "Bw Modelica Medium", serif;
@@ -310,7 +334,7 @@ export default {
         box-shadow: 0 8px 22px 0 rgba(31, 38, 135, 0.1);
         backdrop-filter: blur(10px);
         -webkit-backdrop-filter: blur(10px);
-        border: 1px solid rgba( 255, 255, 255, 0.18 );
+        border: 1px solid #9894fc;
 
         .prompt {
           font-family: "Bw Modelica Medium", serif;
@@ -334,7 +358,7 @@ export default {
         box-shadow: 0 8px 22px 0 rgba(31, 38, 135, 0.1);
         backdrop-filter: blur(10px);
         -webkit-backdrop-filter: blur(10px);
-        border: 1px solid rgba( 255, 255, 255, 0.18 );
+        border: 1px solid #9894fc;
 
         .label {
           line-height: 1.3;
