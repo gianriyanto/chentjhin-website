@@ -1,12 +1,14 @@
 <template>
   <div id="app">
-    <TopNav id="TopNav"/>
-    <NavBar id="NavBar"/>
-    <Landing id="Landing"/>
-    <About id="About"/>
-    <Testimony id="Testimony"/>
-    <NavBar/>
-    <Contact id="Contact"/>
+    <div id="wrapper">
+      <TopNav id="TopNav"/>
+      <NavBar id="NavBar"/>
+      <Landing id="Landing"/>
+      <About id="About"/>
+      <Testimony id="Testimony"/>
+      <NavBar/>
+      <Contact id="Contact"/>
+    </div>
   </div>
 </template>
 
@@ -45,15 +47,34 @@ html, body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
+
+  #wrapper{
+
+  }
+
+  button{
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+    border: 0;
+  }
+
+  a {
+    color: transparent;
+    text-decoration: none;
+    a:visited {
+      text-decoration: none;
+      color: transparent;
+    }
+  }
 }
 
-@media only screen and (max-width: 1212px) {
-  *, html, body, div, span, a{
-    margin: 0 !important;
-    padding: 0 !important;
+@media only screen and (max-width: 768px) {
+
+  #wrapper{
     width: 100%;
-    height: 100%;
-    overflow-x: hidden;
+    height: fit-content;
+    border: thin solid red;
   }
 }
 
