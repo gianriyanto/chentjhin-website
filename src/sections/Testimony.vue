@@ -12,7 +12,7 @@
           {{ subheader }}
         </span>
       </div>
-      <div class="button-container">
+      <div class="testimony-container">
         <TestimonyCard v-for="testimony in testimonies"
                        :key="testimony.index"
                        v-bind:testimonyData="testimony"
@@ -151,65 +151,120 @@ export default {
 
 <style scoped lang="scss">
 
-#Testimony{
-  position: relative;
-  width: 100vw;
-  margin-top: 50px;
-  padding-top: 150px;
-  padding-bottom: 250px;
-
-  .wrapper{
+@media only screen and (min-width: 769px) {
+  #Testimony {
     position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    margin: 0 auto;
+    width: 100vw;
+    margin-top: 50px;
+    padding-top: 150px;
+    padding-bottom: 250px;
 
-    .header-container{
-      width: 450px;
+    .wrapper {
+      position: relative;
       display: flex;
       flex-direction: column;
-      text-align: left;
-      line-height: 1.5;
-      margin: 0 calc((100vw - 1100px) / 2);
+      justify-content: flex-start;
+      margin: 0 auto;
 
-      .header{
-        font-family: "Bw Modelica ExtraBold", serif;
-        letter-spacing: -2px;
-        font-size: 54px;
-        color: #292929;
-      }
-      .subheader{
-        margin-top: 10px;
-        margin-left: 5px;
-        font-family: "Gilroy Medium", serif;
-        font-size: 16px;
-        color: #585858;
-      }
-    }
-    .button-container{
-      display: flex;
-      flex-direction: row;
-      align-content: center;
-      padding-left: calc((100vw - 1100px) / 2);
-      margin-top: 30px;
-      height: fit-content;
-      overflow: scroll !important;
+      .header-container {
+        width: 450px;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        line-height: 1.5;
+        margin: 0 calc((100vw - 1100px) / 2);
 
-      &::-webkit-scrollbar {
-        display: none;
+        .header {
+          font-family: "Bw Modelica ExtraBold", serif;
+          letter-spacing: -2px;
+          font-size: 54px;
+          color: #292929;
+        }
+
+        .subheader {
+          margin-top: 10px;
+          margin-left: 5px;
+          font-family: "Gilroy Medium", serif;
+          font-size: 16px;
+          color: #585858;
+        }
       }
 
-      #TestimonyCard{
+      .testimony-container {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        padding-left: calc((100vw - 1100px) / 2);
+        margin-top: 30px;
+        height: fit-content;
+        overflow: scroll !important;
 
+        &::-webkit-scrollbar {
+          display: none;
+        }
+
+        #TestimonyCard {
+
+        }
       }
     }
   }
 }
 
-@media only screen and (max-width: 1212px) {
-  #Testimony{
-    display: none;
+@media only screen and (max-width: 768px) {
+  #Testimony {
+    position: relative;
+    width: 100%;
+    margin-top: 50px;
+
+    .wrapper {
+      position: relative;
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      justify-content: flex-start;
+      margin: 0 auto;
+
+      .header-container {
+        align-self: center;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        line-height: 1.5;
+
+        .header {
+          font-family: "Bw Modelica ExtraBold", serif;
+          letter-spacing: -2px;
+          font-size: 35px;
+          color: #5b1fff;
+        }
+
+        .subheader {
+          margin-top: 10px;
+          margin-left: 5px;
+          font-family: "Gilroy Medium", serif;
+          font-size: 16px;
+          color: #585858;
+        }
+      }
+
+      .testimony-container {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        padding-left: calc((100vw - 1100px) / 2);
+        margin-top: 30px;
+        height: fit-content;
+        overflow: scroll !important;
+
+        &::-webkit-scrollbar {
+          display: none;
+        }
+
+        #TestimonyCard { }
+      }
+    }
   }
 }
 
