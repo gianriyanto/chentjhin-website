@@ -25,39 +25,83 @@ export default {
 
 <style scoped lang="scss">
 
-#Highlights{
-  padding-top: 100px;
+@media only screen and (min-width: 769px) {
+  #Highlights {
+    padding-top: 100px;
 
-  .highlights-container{
-    display: flex;
-    margin: 0 auto;
-    flex-direction: row;
-    justify-content: space-evenly;
-    text-align: left;
-    width: 100%;
-
-    .highlight{
+    .highlights-container {
       display: flex;
+      margin: 0 auto;
+      flex-direction: row;
+      justify-content: space-evenly;
+      text-align: left;
+      width: 100%;
+
+      .highlight {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        text-align: center;
+        line-height: 1.2;
+        color: #1d1d1d;
+        opacity: 0.7;
+
+        .highlight-header {
+          margin: 8px auto;
+          font-family: "Bw Modelica Bold", serif;
+          font-size: 37px;
+          letter-spacing: -1px;
+        }
+
+        .highlight-text {
+          width: 100px;
+          margin: 8px auto;
+          font-family: "Gilroy SemiBold", serif;
+          font-size: 18px;
+          letter-spacing: -0.5px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #Highlights {
+    padding-top: 50px;
+
+    .highlights-container {
+      display: flex;
+      margin: 0 auto;
       flex-direction: column;
       justify-content: space-evenly;
-      text-align: center;
-      line-height: 1.2;
-      color: #1d1d1d;
-      opacity: 0.7;
+      text-align: left;
+      width: 100%;
 
-      .highlight-header{
-        margin: 8px auto;
-        font-family: "Bw Modelica Bold", serif;
-        font-size: 37px;
-        letter-spacing: -1px;
-      }
+      .highlight {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        text-align: center;
+        line-height: 1.2;
+        color: #2d2d2d;
+        opacity: 0.7;
+        margin-bottom: 20px;
 
-      .highlight-text{
-        width: 100px;
-        margin: 8px auto;
-        font-family: "Gilroy SemiBold", serif;
-        font-size: 18px;
-        letter-spacing: -0.5px;
+        .highlight-header {
+          margin: 8px auto;
+          font-family: "Bw Modelica Bold", serif;
+          font-size: 37px;
+          letter-spacing: -1px;
+          color: #5b1fff;
+        }
+
+        .highlight-text {
+          width: 100px;
+          margin: 8px auto;
+          font-family: "Gilroy SemiBold", serif;
+          font-size: 18px;
+          letter-spacing: -0.5px;
+        }
       }
     }
   }

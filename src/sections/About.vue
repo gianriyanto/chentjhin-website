@@ -45,76 +45,145 @@ export default {
 
 <style scoped lang="scss">
 
-#About{
-  position: relative;
-  display: flex;
-  width: 100vw;
-  z-index: 1;
-  padding-top: 70px;
-
-  .wrapper{
+@media only screen and (min-width: 769px) {
+  #About {
+    position: relative;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    margin: 0 auto;
-    min-width: 1010px;
+    width: 100vw;
+    z-index: 1;
+    padding-top: 70px;
 
-    .header-container{
+    .wrapper {
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      justify-content: flex-start;
       margin: 0 auto;
-      text-align: center;
-      max-width: 1050px;
-      min-width: 830px;
+      min-width: 1010px;
 
-      .header{
-        font-family: "Bw Modelica ExtraBold", serif;
-        background-image: linear-gradient(to right, #b09be7, #d1aef6, #ddaef0, #e7aeea, #efaee4, #f7aed9, #fdb0ce, #ffb2c4, #ffb7b5, #ffbea6, #ffc89c, #f6d397);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        font-size: 76px;
-        letter-spacing: -1.7px;
-        line-height: 1.2;
+      .header-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+        text-align: center;
+        max-width: 1050px;
+        min-width: 830px;
+
+        .header {
+          font-family: "Bw Modelica ExtraBold", serif;
+          background-image: linear-gradient(to right, #b09be7, #d1aef6, #ddaef0, #e7aeea, #efaee4, #f7aed9, #fdb0ce, #ffb2c4, #ffb7b5, #ffbea6, #ffc89c, #f6d397);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          font-size: 76px;
+          letter-spacing: -1.7px;
+          line-height: 1.2;
+        }
       }
-    }
 
-    #Highlights{ }
-
-    .description-container{
-      padding-top: 120px;
-      display: none;
-      margin: 0 auto;
-      flex-direction: row;
-      justify-content: space-between;
-      text-align: left;
-      width: 55%;
-
-      .header-description{
-        width: 30%;
-        line-height: 1.4;
-        letter-spacing: -1.5x;
-        font-family: "Bw Modelica ExtraBold", serif;
-        font-size: 25px;
-        color: #1F1F1F;
+      #Highlights {
       }
-      .content-description{
-        width: 58%;
-        color: #454545;
-        line-height: 1.4;
-        font-family: "Gilroy Medium", serif;
-        font-size: 16px;
-      }
-    }
-    #AboutTiles{
 
+      .description-container {
+        padding-top: 120px;
+        display: none;
+        margin: 0 auto;
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+        width: 55%;
+
+        .header-description {
+          width: 30%;
+          line-height: 1.4;
+          letter-spacing: -1.5x;
+          font-family: "Bw Modelica ExtraBold", serif;
+          font-size: 25px;
+          color: #1F1F1F;
+        }
+
+        .content-description {
+          width: 58%;
+          color: #454545;
+          line-height: 1.4;
+          font-family: "Gilroy Medium", serif;
+          font-size: 16px;
+        }
+      }
+
+      #AboutTiles {
+
+      }
     }
   }
 }
 
-@media only screen and (max-width: 1212px) {
-  #About{
-    display: none;
+@media only screen and (max-width: 768px) {
+  #About {
+    position: relative;
+    display: flex;
+    z-index: 1;
+    width: 100%;
+
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      margin: 0 auto;
+      width: 90%;
+
+      .header-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+        text-align: center;
+
+        .header {
+          font-family: "Bw Modelica ExtraBold", serif;
+          background-image: linear-gradient(to right, #a181ff, #c185ff, #d691ff, #f0abff, #efaee4, #f7aed9, #fdb0ce, #ffb2c4, #ffb7b5, #ffbea6, #ffc89c, #f6d397);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          font-size: 40px;
+          letter-spacing: -1.7px;
+          line-height: 1.3;
+        }
+      }
+
+      #Highlights {
+
+      }
+
+      .description-container {
+        padding-top: 120px;
+        display: none;
+        margin: 0 auto;
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+        width: 55%;
+
+        .header-description {
+          width: 30%;
+          line-height: 1.4;
+          letter-spacing: -1.5x;
+          font-family: "Bw Modelica ExtraBold", serif;
+          font-size: 25px;
+          color: #1F1F1F;
+        }
+
+        .content-description {
+          width: 58%;
+          color: #454545;
+          line-height: 1.4;
+          font-family: "Gilroy Medium", serif;
+          font-size: 16px;
+        }
+      }
+
+      #AboutTiles {
+
+      }
+    }
   }
 }
 
