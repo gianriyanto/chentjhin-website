@@ -13,27 +13,30 @@ export default {
 
 <style scoped lang="scss">
 
-#gradient-bg{
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  height: 160vh;
-  width: 100vw;
-  z-index: -1;
+@media only screen and (min-width: 769px) {
 
-  .image{
-    height: 140vh;
-    width: 100%;
-  }
+  #gradient-bg {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    height: 160vh;
+    width: 100vw;
+    z-index: -1;
 
-  .blur-effect{
-    box-shadow: 0 0 40px 40px white;
-    height: 20vh;
-    width: 100%;
+    .image {
+      height: 140vh;
+      width: 100%;
+    }
+
+    .blur-effect {
+      box-shadow: 0 0 40px 40px white;
+      height: 20vh;
+      width: 100%;
+    }
   }
 }
 
-@media only screen and (max-width: 769px) {
+@media only screen and (max-width: 768px) {
 
   #gradient-bg{
     position: absolute;
@@ -57,8 +60,7 @@ export default {
       box-shadow: 0 0 40px 40px white;
       height: 20vh;
       width: 100%;
-      min-width: 100vw;
-      margin: 0 !important;
+      min-width: 100%;
     }
   }
 }

@@ -14,31 +14,33 @@ export default {
 
 <style scoped lang="scss">
 
-#flip-gradient-bg{
-  position: absolute;
-  height: 100vh;
-  width: 100vw;
-  z-index: -1;
-
-  .image{
-    transform: scaleY(-1);
-    height: 100vh;
-    width: 100vw;
-  }
-}
-
-@media only screen and (max-width: 769px) {
-
-  #flip-gradient-bg{
+@media only screen and (min-width: 769px) {
+  #flip-gradient-bg {
     position: absolute;
     height: 100vh;
     width: 100vw;
     z-index: -1;
 
-    .image{
+    .image {
       transform: scaleY(-1);
       height: 100vh;
       width: 100vw;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+
+  #flip-gradient-bg{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+
+    .image{
+      transform: scaleY(-1);
+      height: 100%;
+      width: 100%;
     }
   }
 }
