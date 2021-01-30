@@ -66,7 +66,7 @@ export default {
     font-family: "Gilroy SemiBold", serif;
     font-size: 15px;
     color: darkgrey;
-    width: 290px;
+    width: 98%;
     border: transparent;
     outline: transparent;
     background-color: transparent;

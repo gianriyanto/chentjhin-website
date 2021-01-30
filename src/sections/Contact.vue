@@ -207,9 +207,10 @@ a {
   }
 }
 
-@media only screen and (max-width: 1212px) {
+@media only screen and (max-width: 768px) {
 
   #Contact{
+    display: none;
     position: relative;
     height: 100%;
     width: 100%;

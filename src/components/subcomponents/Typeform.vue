@@ -106,144 +106,299 @@ export default {
 
 <style scoped lang="scss">
 
-#Typeform{
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  margin: auto 0;
-  z-index: 2;
-
-  .content-wrapper{
+@media only screen and (min-width: 769px) {
+  #Typeform {
+    position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    margin: auto;
-    text-align: left;
-    height: fit-content;
-    width: 350px;
+    margin: auto 0;
+    z-index: 2;
 
-    .header-card{
-      position: relative;
+    .content-wrapper {
       display: flex;
       flex-direction: column;
-      justify-content: space-evenly;
-      margin-bottom: 13px;
-      padding: 15px 27px 10px 27px;
-      height: 55px;
-      border-radius: 15px 15px 5px 5px;
-      background: rgba(255, 255, 255, 0.1);
-      box-shadow: 0 8px 22px 0 rgba( 31, 38, 135, 0.1 );
-      backdrop-filter: blur( 10px );
-      -webkit-backdrop-filter: blur( 10px );
-      border: 1px solid rgba(255, 255, 255, 0.7);
+      justify-content: center;
+      margin: auto;
+      text-align: left;
+      height: fit-content;
+      width: 350px;
 
-      .prompt {
-        font-family: "Bw Modelica Medium", serif;
-        letter-spacing: -0.5px;
-        color: #1f1f1f;
-        font-size: 15px;
-        margin: 0 9px 5px 0;
-      }
-    }
-
-    .input-card{
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-evenly;
-      margin-bottom: 13px;
-      padding: 10px 27px;
-      height: 50px;
-      border-radius: 5px;
-      background: rgba(255, 255, 255, 0.1);
-      box-shadow: 0 8px 22px 0 rgba( 31, 38, 135, 0.1 );
-      backdrop-filter: blur( 10px );
-      -webkit-backdrop-filter: blur( 10px );
-      border: 1px solid rgba(255, 255, 255, 0.7);
-
-      .prompt {
-        font-family: "Bw Modelica Medium", serif;
-        letter-spacing: -0.5px;
-        color: #1f1f1f;
-        font-size: 15px;
-        margin: 0 9px 5px 0;
-      }
-    }
-    .footer-card{
-      position: relative;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      margin-bottom: 13px;
-      padding: 2px 17px 2px 27px;
-      height: 50px;
-      border-radius: 5px 5px 15px 15px;
-      background: rgba(255, 255, 255, 0.1);
-      box-shadow: 0 8px 22px 0 rgba( 31, 38, 135, 0.1 );
-      backdrop-filter: blur( 10px );
-      -webkit-backdrop-filter: blur( 10px );
-      border: 1px solid rgba(255, 255, 255, 0.7);
-
-      .label{
-        line-height: 1.3;
-        margin: auto 0;
-        font-family: "Bw Modelica Medium", serif;
-        letter-spacing: -0.5px;
-        color: #1f1f1f;
-        font-size: 17px;
-        width: 60%;
-
-        .highlight{
-          font-family: "Gilroy Bold", serif;
-          color: #5651ec;
-        }
-      }
-      .submit-button{
-        cursor: pointer;
-        margin: auto 0;
-        width: 30%;
-        height: 34px;
-        border: thin solid #5b1fff;
-        background: rgba(255, 255, 255, 0.07);
-        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.2 );
-        border-radius: 7px;
-        outline: none;
-        text-decoration: none;
-        transition: all 0.3s ease-in-out;
-        color: #5b1fff;
-
-        .button-label{
-          font-family: "Gilroy SemiBold", serif;
-          font-size: 13px;
-          margin: auto;
-        }
-
-        &:hover{
-          opacity: 0.9;
-        }
-      }
-      .clear-button{
-        cursor: pointer;
-        margin: auto 0;
-        width: 30%;
-        height: 34px;
-        border: thin solid black;
+      .header-card {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-bottom: 13px;
+        padding: 15px 27px 10px 27px;
+        height: 55px;
+        border-radius: 15px 15px 5px 5px;
         background: rgba(255, 255, 255, 0.1);
-        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.3 );
-        border-radius: 7px;
-        outline: none;
-        text-decoration: none;
-        transition: all 0.25s ease-in-out;
-        color: black;
+        box-shadow: 0 8px 22px 0 rgba(31, 38, 135, 0.1);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.7);
 
-        .button-label{
-          font-family: "Gilroy SemiBold", serif;
-          font-size: 13px;
-          margin: auto;
+        .prompt {
+          font-family: "Bw Modelica Medium", serif;
+          letter-spacing: -0.5px;
+          color: #1f1f1f;
+          font-size: 15px;
+          margin: 0 9px 5px 0;
+        }
+      }
+
+      .input-card {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-bottom: 13px;
+        padding: 10px 27px;
+        height: 50px;
+        border-radius: 5px;
+        background: rgba(255, 255, 255, 0.1);
+        box-shadow: 0 8px 22px 0 rgba(31, 38, 135, 0.1);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.7);
+
+        .prompt {
+          font-family: "Bw Modelica Medium", serif;
+          letter-spacing: -0.5px;
+          color: #1f1f1f;
+          font-size: 15px;
+          margin: 0 9px 5px 0;
+        }
+      }
+
+      .footer-card {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 13px;
+        padding: 2px 17px 2px 27px;
+        height: 50px;
+        border-radius: 5px 5px 15px 15px;
+        background: rgba(255, 255, 255, 0.1);
+        box-shadow: 0 8px 22px 0 rgba(31, 38, 135, 0.1);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.7);
+
+        .label {
+          line-height: 1.3;
+          margin: auto 0;
+          font-family: "Bw Modelica Medium", serif;
+          letter-spacing: -0.5px;
+          color: #1f1f1f;
+          font-size: 17px;
+          width: 60%;
+
+          .highlight {
+            font-family: "Gilroy Bold", serif;
+            color: #5651ec;
+          }
         }
 
-        &:hover{
-          opacity: 0.6;
+        .submit-button {
+          cursor: pointer;
+          margin: auto 0;
+          width: 30%;
+          height: 34px;
+          border: thin solid #5b1fff;
+          background: rgba(255, 255, 255, 0.07);
+          box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.2);
+          border-radius: 7px;
+          outline: none;
+          text-decoration: none;
+          transition: all 0.3s ease-in-out;
+          color: #5b1fff;
+
+          .button-label {
+            font-family: "Gilroy SemiBold", serif;
+            font-size: 13px;
+            margin: auto;
+          }
+
+          &:hover {
+            opacity: 0.9;
+          }
+        }
+
+        .clear-button {
+          cursor: pointer;
+          margin: auto 0;
+          width: 30%;
+          height: 34px;
+          border: thin solid black;
+          background: rgba(255, 255, 255, 0.1);
+          box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.3);
+          border-radius: 7px;
+          outline: none;
+          text-decoration: none;
+          transition: all 0.25s ease-in-out;
+          color: black;
+
+          .button-label {
+            font-family: "Gilroy SemiBold", serif;
+            font-size: 13px;
+            margin: auto;
+          }
+
+          &:hover {
+            opacity: 0.6;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px){
+
+  #Typeform {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: auto 0;
+    z-index: 2;
+
+    .content-wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: auto;
+      text-align: left;
+      height: fit-content;
+      width: 90%;
+
+      .header-card {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-bottom: 13px;
+        padding: 15px 27px 10px 27px;
+        height: 55px;
+        border-radius: 15px 15px 5px 5px;
+        background: rgba(255, 255, 255, 0.1);
+        box-shadow: 0 8px 22px 0 rgba(31, 38, 135, 0.1);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+        .prompt {
+          font-family: "Bw Modelica Medium", serif;
+          letter-spacing: -0.5px;
+          color: #1f1f1f;
+          font-size: 15px;
+          margin: 0 9px 5px 0;
+        }
+      }
+
+      .input-card {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-bottom: 13px;
+        padding: 10px 27px;
+        height: 50px;
+        border-radius: 5px;
+        background: rgba(255, 255, 255, 0.1);
+        box-shadow: 0 8px 22px 0 rgba(31, 38, 135, 0.1);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+        .prompt {
+          font-family: "Bw Modelica Medium", serif;
+          letter-spacing: -0.5px;
+          color: #1f1f1f;
+          font-size: 15px;
+          margin: 0 9px 5px 0;
+        }
+      }
+
+      .footer-card {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 13px;
+        padding: 2px 17px 2px 27px;
+        height: 50px;
+        border-radius: 5px 5px 15px 15px;
+        background: rgba(255, 255, 255, 0.1);
+        box-shadow: 0 8px 22px 0 rgba(31, 38, 135, 0.1);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+        .label {
+          line-height: 1.3;
+          margin: auto 0;
+          font-family: "Bw Modelica Medium", serif;
+          letter-spacing: -0.5px;
+          color: #1f1f1f;
+          font-size: 17px;
+          width: 60%;
+
+          .highlight {
+            font-family: "Gilroy Bold", serif;
+            color: #5651ec;
+          }
+        }
+
+        .submit-button {
+          cursor: pointer;
+          margin: auto 0;
+          width: 30%;
+          height: 34px;
+          border: thin solid #5b1fff;
+          background: rgba(255, 255, 255, 0.07);
+          box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.2);
+          border-radius: 7px;
+          outline: none;
+          text-decoration: none;
+          transition: all 0.3s ease-in-out;
+          color: #5b1fff;
+
+          .button-label {
+            font-family: "Gilroy SemiBold", serif;
+            font-size: 13px;
+            margin: auto;
+          }
+
+          &:hover {
+            opacity: 0.9;
+          }
+        }
+
+        .clear-button {
+          cursor: pointer;
+          margin: auto 0;
+          width: 30%;
+          height: 34px;
+          border: thin solid black;
+          background: rgba(255, 255, 255, 0.1);
+          box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.3);
+          border-radius: 7px;
+          outline: none;
+          text-decoration: none;
+          transition: all 0.25s ease-in-out;
+          color: black;
+
+          .button-label {
+            font-family: "Gilroy SemiBold", serif;
+            font-size: 13px;
+            margin: auto;
+          }
+
+          &:hover {
+            opacity: 0.6;
+          }
         }
       }
     }

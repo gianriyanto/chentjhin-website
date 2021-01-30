@@ -211,7 +211,7 @@ export default {
   #Landing {
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: fit-content;
     display: flex;
     flex-direction: column;
     z-index: 1;
@@ -223,14 +223,13 @@ export default {
 
   .wrapper {
     position: relative;
-    height: 160vh;
+    height: fit-content;
     width: 90%;
     display: flex;
     flex-direction: column;
     align-self: center;
     z-index: 1;
     background: rgba(255, 255, 255, 0.50);
-    border: thin solid rebeccapurple;
 
     .content-wrapper {
       display: flex;
@@ -238,10 +237,8 @@ export default {
       justify-content: center;
       height: fit-content;
       width: 100%;
-      border: thin solid orange;
 
       .header-container {
-        border: thin solid blue;
         display: flex;
         flex-direction: column;
         justify-content: center;

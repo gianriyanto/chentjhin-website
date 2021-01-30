@@ -74,7 +74,7 @@ html, body {
   #wrapper{
     width: 100%;
     height: fit-content;
-    border: thin solid red;
+    border: thin solid slategrey;
   }
 }
 
