@@ -578,6 +578,7 @@ export default {
             height: 200px;
             border-radius: 15px;
             background-image: linear-gradient(to top right, #181818, #5f5f5f);
+            box-shadow: 0 8px 32px 0 rgba(17, 20, 57, 0.4);
 
             .phone{
               display: flex;
