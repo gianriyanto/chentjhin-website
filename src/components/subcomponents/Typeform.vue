@@ -3,7 +3,7 @@
     <section id="Typeform" >
       <div class="header-container">
         <span class="header-text">
-          Tell me a bit of yourself.
+          Tell me a bit about yourself.
         </span>
       </div>
       <div class="content-wrapper">
@@ -64,11 +64,11 @@ export default {
   data() {
     return {
       componentKey: 0,
-      name: {prompt: 'your name?', input: 'your name?', edit: false, isValid: false},
-      program: {prompt: 'foundation, undergrad, or postgrad?', input: 'foundation, undergrad, or postgrad?', edit: false, isValid: false},
-      course: {prompt: 'what major or course?', input: 'what major or course?', edit: false, isValid: false},
-      location: {prompt: 'city or country?', input: 'city or country?', edit: false, isValid: false},
-      contact: {prompt: 'your email or mobile', input: 'your email or mobile', edit: false, isValid: false},
+      name: {prompt: 'You full name?', input: 'You full name?', edit: false, isValid: false},
+      program: {prompt: 'Pre-uni Pathway, Undergrad, or Postgrad?', input: 'Pre-uni Pathway, Undergrad, or Postgrad?', edit: false, isValid: false},
+      course: {prompt: 'What major or course?', input: 'What major or course?', edit: false, isValid: false},
+      location: {prompt: 'What city or country?', input: 'What city or country?', edit: false, isValid: false},
+      contact: {prompt: 'Your mobile phone or email', input: 'Your mobile phone or email', edit: false, isValid: false},
       footerPrompt: 'Thanks',
       buttonLabel: 'Submit',
       buttonStyle: 'submit-button'
@@ -95,11 +95,11 @@ export default {
       } else {
         console.log('Clear Typeform');
         this.componentKey += 1;
-        this.name = {prompt: 'full name?', input: 'your name?', edit: false, isValid: false};
-        this.program = {prompt: 'foundation, undergrad, or postgrad?', input: 'foundation, undergrad, or postgrad?', edit: false, isValid: false};
-        this.course = {prompt: 'what major or course?', input: 'what major or course?', edit: false, isValid: false};
-        this.location = {prompt: 'city or country?', input: 'city or country?', edit: false, isValid: false};
-        this.contact = {prompt: 'your email or mobile', input: 'your email or mobile', edit: false, isValid: false};
+        this.name = {prompt: 'You full name?', input: 'Your full name?', edit: false, isValid: false};
+        this.program = {prompt: 'Pre-uni Pathway, Undergrad, or Postgrad?', input: 'Pre-uni Pathway, Undergrad, or Postgrad?', edit: false, isValid: false};
+        this.course = {prompt: 'What major or course?', input: 'What major or course?', edit: false, isValid: false};
+        this.location = {prompt: 'What city or country?', input: 'What city or country?', edit: false, isValid: false};
+        this.contact = {prompt: 'Your mobile phone or email', input: 'Your mobile phone or email', edit: false, isValid: false};
         this.footerPrompt = 'Thanks';
         this.buttonLabel = 'Submit';
         this.buttonStyle = 'submit-button';
@@ -284,7 +284,7 @@ export default {
         font-family: "Gilroy Bold", serif;
         color: #5b1fff;
         font-size: 21px;
-        letter-spacing: -1px;
+        letter-spacing: -0.5px;
       }
     }
 
@@ -351,7 +351,7 @@ export default {
         flex-direction: row;
         justify-content: space-between;
         margin-bottom: 13px;
-        padding: 2px 17px 2px 27px;
+        padding: 10px 17px 13px 27px;
         height: 50px;
         border-radius: 5px 5px 15px 15px;
         background: rgba(255, 255, 255, 0.1);
@@ -378,8 +378,8 @@ export default {
         .submit-button {
           cursor: pointer;
           margin: auto 0;
-          width: 30%;
-          height: 34px;
+          width: 40%;
+          height: 40px;
           border: thin solid #5b1fff;
           background: rgba(255, 255, 255, 0.07);
           box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.2);

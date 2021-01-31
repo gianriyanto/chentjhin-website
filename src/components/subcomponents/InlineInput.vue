@@ -60,12 +60,12 @@ export default {
 
 #InlineInput{
   font-size: 15px;
-  font-family: "Gilroy SemiBold", serif;
+  font-family: "Bw Modelica Medium", serif;
 
   .input-editing{
-    font-family: "Gilroy SemiBold", serif;
+    font-family: "Bw Modelica Medium", serif;
     font-size: 15px;
-    color: darkgrey;
+    color: #cdcdcd;
     width: 98%;
     border: transparent;
     outline: transparent;
