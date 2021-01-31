@@ -231,11 +231,12 @@ export default {
         display: flex;
         flex-direction: column;
         text-align: left;
-        line-height: 1.5;
+        line-height: 1.7;
+        margin-left: 5px;
 
         .header {
           font-family: "Bw Modelica ExtraBold", serif;
-          letter-spacing: -2px;
+          letter-spacing: -1.5px;
           font-size: 35px;
           color: #5b1fff;
         }

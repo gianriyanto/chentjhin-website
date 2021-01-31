@@ -21,10 +21,6 @@
               <button class="learn-more-button" v-scroll-to="{ el: '#Process', easing: [.2, .80, .30, 1],duration: 1500}">
                 <span class="button-label"> See How I Can Help </span>
               </button>
-              <button class="getstarted-button">
-                <span class="button-label"> Get Started </span>
-                <font-awesome-icon class="arrow-icon" :icon="['fas', 'chevron-right']" />
-              </button>
             </span>
           </div>
           <Typeform id="Typeform"
@@ -251,10 +247,10 @@ export default {
           margin: 0 auto;
           line-height: 1.25;
           letter-spacing: -2px;
-          font-size: 38px;
+          font-size: 33px;
           display: flex;
           flex-direction: row;
-          font-family: "Gilroy Bold", serif;
+          font-family: "Gilroy SemiBold", serif;
           color: #3b3b3b;
 
           .highlight {
@@ -270,14 +266,14 @@ export default {
           display: flex;
           flex-direction: column;
           justify-content: center;
-          margin: 35px auto;
+          margin: 30px auto;
           width: fit-content;
 
           .learn-more-button {
-            width: 175px;
+            width: 180px;
             height: 47px;
-            background-image: linear-gradient(to left, #5b1fff, #6548ee);
-            box-shadow: 0 6px 28px 0 rgba(112, 121, 236, 0.4);
+            background-image: linear-gradient(to left, #5b1fff, #316eff);
+            box-shadow: 0 6px 28px 0 rgba(112s, 121, 236, 0.4);
             border-radius: 10px;
 
             .button-label {
