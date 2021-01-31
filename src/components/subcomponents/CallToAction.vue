@@ -59,13 +59,13 @@ export default {
     .fab {
       position: fixed;
       display: flex;
-      width: 70px;
-      height: 70px;
+      width: 60px;
+      height: 60px;
       bottom: 20px;
       right: 20px;
       border-radius: 50%;
       background: rgba(255, 255, 255, 0.2);
-      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.2);
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
       backdrop-filter: blur(10px);
       -webkit-backdrop-filter: blur(10px);
       z-index: 13;
