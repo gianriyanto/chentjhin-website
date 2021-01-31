@@ -22,6 +22,10 @@
             <button class="card-button">
               <a class="card-label" :href="`${publicPath}MyNameCard.png`" target="_blank"> Take My Card </a>
             </button>
+            <button class="whatsapp-button">
+              <font-awesome-icon class="whatsapp-icon" :icon="['fab', 'whatsapp']" />
+              <a class="whatsapp-label" v-on:click="goToSite('https://wa.me/+62811899688')"> WhatsApp </a>
+            </button>
           </span>
         </div>
         <a class = "namecard-container" :href="`${publicPath}MyNameCard.png`" target="_blank">
@@ -49,6 +53,11 @@ export default {
   components: {
     NameCard,
     FlipGradientBg
+  },
+  methods: {
+    goToSite(url) {
+      window.open(url, '_blank');
+    }
   },
   data() {
     return {
@@ -146,10 +155,6 @@ export default {
               background-image: linear-gradient(to left, #5b1fff, #3867ff);
               filter: drop-shadow(1px 6px 10px rgb(113, 135, 246));
               border-radius: 10px;
-              outline: none;
-              text-decoration: none;
-              border: none;
-              cursor: pointer;
               transition: all .35s ease-in-out;
 
               .getstarted-label {
@@ -174,9 +179,6 @@ export default {
               backdrop-filter: blur(10px);
               -webkit-backdrop-filter: blur(10px);
               border-radius: 10px;
-              outline: none;
-              text-decoration: none;
-              cursor: pointer;
               transition: all .3s ease-in-out;
 
               .card-label {
@@ -190,6 +192,10 @@ export default {
               &:hover {
                 opacity: 0.6;
               }
+            }
+
+            .whatsapp-button{
+              display: none;
             }
           }
         }
@@ -228,11 +234,11 @@ export default {
       background: rgba(255, 255, 255, 0.5);
 
       .content-wrapper {
+        padding-top: 120px;
         width:  100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding-top: 80px;
 
         .contact-container {
           display: flex;
@@ -282,7 +288,7 @@ export default {
           .button-container {
             display: flex;
             flex-direction: column;
-            margin: 30px auto;
+            margin: 30px auto 20px auto;
             width: 60%;
 
             .getstarted-button {
@@ -291,34 +297,46 @@ export default {
               height: 47px;
               background-image: linear-gradient(to left, #5b1fff, #3867ff);
               border: thin solid #3867ff;
-              filter: drop-shadow(1px 6px 10px rgb(113, 135, 246));
+              filter: drop-shadow(1px 6px 10px rgb(154, 170, 250));
               border-radius: 10px;
               margin-bottom: 20px;
 
               .getstarted-label {
                 font-family: "Gilroy SemiBold", serif;
-                font-size: 13px;
+                font-size: 14px;
                 margin: auto;
                 color: white;
               }
             }
-
             .card-button {
+              display: none;
+            }
+            .whatsapp-button {
               align-self: center;
+              display: flex;
+              flex-direction: row;
+              justify-content: center;
               width: 100%;
-              padding: 0 20px;
               height: 47px;
-              border: thin solid #5b1fff;
               background: rgba(255, 255, 255, 0.05);
-              box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.2);
+              box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
               backdrop-filter: blur(10px);
               -webkit-backdrop-filter: blur(10px);
+              border: thin solid #3867ff;
+              filter: drop-shadow(1px 6px 10px rgb(113, 135, 246));
               border-radius: 10px;
 
-              .card-label {
+              .whatsapp-icon{
+                align-self: center;
+                margin-right: 5px;
+                color: #5b1fff;
+                font-size: 20px;
+              }
+
+              .whatsapp-label {
+                align-self: center;
                 font-family: "Gilroy SemiBold", serif;
-                font-size: 13px;
-                margin: auto;
+                font-size: 14px;
                 color: #5b1fff;
               }
             }
@@ -330,7 +348,24 @@ export default {
         }
 
         .mobile-card-button {
-          display: none;
+          align-self: center;
+          width: 60%;
+          padding: 0 20px;
+          margin-bottom: 40px;
+          height: 50px;
+          border: thin solid #5b1fff;
+          background: rgba(255, 255, 255, 0.05);
+          box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.2);
+          backdrop-filter: blur(10px);
+          -webkit-backdrop-filter: blur(10px);
+          border-radius: 10px;
+
+          .card-label {
+            font-family: "Gilroy SemiBold", serif;
+            font-size: 13px;
+            margin: auto;
+            color: #5b1fff;
+          }
         }
       }
     }
