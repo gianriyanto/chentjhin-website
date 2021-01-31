@@ -242,16 +242,16 @@ export default {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin: 130px auto;
+        margin: 150px auto;
         text-align: center;
         word-spacing: 4px;
 
         .header-text {
           text-align: center;
           margin: 0 auto;
-          line-height: 1.15;
+          line-height: 1.25;
           letter-spacing: -2px;
-          font-size: 32px;
+          font-size: 38px;
           display: flex;
           flex-direction: row;
           font-family: "Gilroy Bold", serif;
@@ -277,7 +277,7 @@ export default {
             width: 175px;
             height: 47px;
             background-image: linear-gradient(to left, #5b1fff, #6548ee);
-            box-shadow: 0 6px 28px 0 rgba(112, 121, 236, 0.7);
+            box-shadow: 0 6px 28px 0 rgba(112, 121, 236, 0.4);
             border-radius: 10px;
 
             .button-label {

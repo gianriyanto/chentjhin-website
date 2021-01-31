@@ -162,7 +162,7 @@ export default {
 
       .process-card {
         align-self: center;
-        margin-bottom: 10px;
+        margin-bottom: 30px;
         text-align: left;
         display: flex;
         flex-direction: column;
@@ -182,7 +182,7 @@ export default {
         .header {
           padding: 0 30px;
           font-family: "Bw Modelica Bold", serif;
-          font-size: 24px;
+          font-size: 22px;
           letter-spacing: -1px;
           color: #5b1fff;
           margin-bottom: 15px;
