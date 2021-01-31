@@ -129,7 +129,7 @@ export default {
     display: flex;
     height: fit-content;
     width: 80%;
-    margin: 40px auto;
+    margin: 30px auto;
 
     .card-container{
       padding: 40px;
