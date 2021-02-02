@@ -71,7 +71,7 @@ export default {
 
         .header {
           font-family: "Bw Modelica ExtraBold", serif;
-          background-image: linear-gradient(to right, #b09be7, #d1aef6, #ddaef0, #e7aeea, #efaee4, #f7aed9, #fdb0ce, #ffb2c4, #ffb7b5, #ffbea6, #ffc89c, #f6d397);
+          background-image: linear-gradient(to right, #9c82de, #be93ec, #ce96e5, #e398e7, #efaee4, #f7aed9, #fdb0ce, #ffb2c4, #ffb7b5, #ffbea6, #ffba81, #f6d397);
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
           font-size: 76px;

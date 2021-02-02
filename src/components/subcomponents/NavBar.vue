@@ -2,28 +2,19 @@
   <div id="NavBar">
     <button class="nav-button"
             v-scroll-to="{ el: '#Process', easing: [.2, .80, .30, 1],duration: 1500}">
-      <span class="button-label"
-            data-aos="fade"
-            data-aos-duration="1700"
-            data-aos-easing="ease-in-out">
+      <span class="button-label">
         Services
       </span>
     </button>
     <button class="nav-button"
             v-scroll-to="{ el: '#About', easing: [.2, .80, .30, 1],duration: 1300}">
-      <span class="button-label"
-            data-aos="fade"
-            data-aos-duration="2000"
-            data-aos-easing="ease-in-out">
+      <span class="button-label">
         About
       </span>
     </button>
     <button class="nav-button"
             v-scroll-to="{ el: '#Testimony', easing: [.2, .80, .30, 1],duration: 1300}">
-      <span class="button-label"
-            data-aos="fade"
-            data-aos-duration="2300"
-            data-aos-easing="ease-in-out">
+      <span class="button-label">
         Clients
       </span>
     </button>
@@ -54,7 +45,7 @@ export default {
 
   .nav-button {
     cursor: pointer;
-    width: 100px;
+    width: 120px;
     height: 50px;
     border: 0;
     background: transparent;
@@ -63,14 +54,14 @@ export default {
 
     .button-label {
       font-family: "Gilroy SemiBold", serif;
-      font-size: 16px;
+      font-size: 1.1vw;
       margin: auto;
-      color: #262626;
-      opacity: 0.7;
+      color: #1f1f1f;
+      opacity: 0.9;
       transition: all .35s ease-in-out;
 
       &:hover{
-        opacity: 1;
+        opacity: 0.7;
       }
     }
   }

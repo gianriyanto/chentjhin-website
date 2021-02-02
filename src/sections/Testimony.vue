@@ -172,7 +172,7 @@ export default {
         flex-direction: column;
         text-align: left;
         line-height: 1.5;
-        margin: 0 calc((100vw - 1100px) / 2);
+        margin: 0 calc((100vw - 77vw) / 2);
 
         .header {
           font-family: "Bw Modelica ExtraBold", serif;
@@ -194,7 +194,7 @@ export default {
         display: flex;
         flex-direction: row;
         align-content: center;
-        padding-left: calc((100vw - 1100px) / 2);
+        padding-left: calc((100vw - 77vw) / 2);
         margin-top: 30px;
         height: fit-content;
         overflow: scroll !important;
