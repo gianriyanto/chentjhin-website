@@ -3,13 +3,10 @@
     <flip-gradient-bg id="flip-gradient-bg"/>
     <div class="wrapper">
       <div class="content-wrapper">
-        <div class="contact-container"
-             data-aos="fade"
-             data-aos-duration="2000"
-             data-aos-easing="ease-in-out">
+        <div class="contact-container">
           <span class="header-container">
             <span class="header-index0"> Ready to build your future? </span>
-            <span class="header-index1"> Let's Talk. </span>
+            <span class="header-index1"> Let's talk. </span>
           </span>
           <span class="description-container">
             <span class="description-header"> Don’t know where to start? </span>
@@ -17,10 +14,10 @@
           </span>
           <span class="button-container">
             <button class="getstarted-button" v-scroll-to="{ el: '#Landing', easing: [.2, .80, .30, 1],duration: 1500}">
-              <span class="getstarted-label"> Get Started </span>
+              <span class="getstarted-label"> Get started </span>
             </button>
             <button class="card-button">
-              <a class="card-label" :href="`${publicPath}MyNameCard.png`" target="_blank"> Take My Card </a>
+              <a class="card-label" :href="`${publicPath}MyNameCard.png`" target="_blank"> Take my card </a>
             </button>
             <button class="whatsapp-button">
               <font-awesome-icon class="whatsapp-icon" :icon="['fab', 'whatsapp']" />
@@ -30,13 +27,13 @@
         </div>
         <a class = "namecard-container" :href="`${publicPath}MyNameCard.png`" target="_blank">
           <NameCard id="NameCard"
-                    data-aos="flip-up"
+                    data-aos="fade"
                     data-aos-delay="50"
-                    data-aos-duration="2500"
+                    data-aos-duration="1500"
                     data-aos-easing="ease-out"/>
         </a>
         <button class="mobile-card-button">
-          <a class="card-label" :href="`${publicPath}MyNameCard.png`" target="_blank"> Take My Card </a>
+          <a class="card-label" :href="`${publicPath}MyNameCard.png`" target="_blank"> Take my card </a>
         </button>
      </div>
     </div>

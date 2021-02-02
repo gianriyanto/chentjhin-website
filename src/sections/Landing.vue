@@ -19,7 +19,7 @@
             </span>
             <span class="button-container">
               <button class="learn-more-button" v-scroll-to="{ el: '#Process', easing: [.2, .80, .30, 1],duration: 1500}">
-                <span class="button-label"> See How I Can Help </span>
+                <span class="button-label"> See how I can help </span>
               </button>
             </span>
           </div>
