@@ -68,7 +68,7 @@ export default {
       program: {prompt: 'Pre-uni Pathway, Undergrad, or Postgrad?', input: 'Pre-uni Pathway, Undergrad, or Postgrad?', edit: false, isValid: false},
       course: {prompt: 'What major or course?', input: 'What major or course?', edit: false, isValid: false},
       location: {prompt: 'What city or country?', input: 'What city or country?', edit: false, isValid: false},
-      contact: {prompt: 'Your mobile number or email', input: 'Your mobile number or email', edit: false, isValid: false},
+      contact: {prompt: "What's your mobile number or email", input: "What's your mobile number or email", edit: false, isValid: false},
       footerPrompt: 'Thanks',
       buttonLabel: 'Submit',
       buttonStyle: 'submit-button'
@@ -99,7 +99,7 @@ export default {
         this.program = {prompt: 'Pre-uni Pathway, Undergrad, or Postgrad?', input: 'Pre-uni Pathway, Undergrad, or Postgrad?', edit: false, isValid: false};
         this.course = {prompt: 'What major or course?', input: 'What major or course?', edit: false, isValid: false};
         this.location = {prompt: 'What city or country?', input: 'What city or country?', edit: false, isValid: false};
-        this.contact = {prompt: 'Your mobile number or email', input: 'Your mobile number or email', edit: false, isValid: false};
+        this.contact = {prompt: "What's your mobile number or email", input: "What's your mobile number or email", edit: false, isValid: false};
         this.footerPrompt = 'Thanks';
         this.buttonLabel = 'Submit';
         this.buttonStyle = 'submit-button';
