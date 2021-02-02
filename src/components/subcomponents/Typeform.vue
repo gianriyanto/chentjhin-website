@@ -65,7 +65,7 @@ export default {
     return {
       componentKey: 0,
       name: {prompt: 'You full name?', input: 'You full name?', edit: false, isValid: false},
-      program: {prompt: 'Pre-uni Pathway, Undergrad, or Postgrad?', input: 'Pre-uni Pathway, Undergrad, or Postgrad?', edit: false, isValid: false},
+      program: {prompt: 'Pre-uni, Undergrad, or Postgrad?', input: 'Pre-uni, Undergrad, or Postgrad?', edit: false, isValid: false},
       course: {prompt: 'What major or course?', input: 'What major or course?', edit: false, isValid: false},
       location: {prompt: 'What city or country?', input: 'What city or country?', edit: false, isValid: false},
       contact: {prompt: "What's your mobile number or email", input: "What's your mobile number or email", edit: false, isValid: false},
@@ -96,7 +96,7 @@ export default {
         console.log('Clear Typeform');
         this.componentKey += 1;
         this.name = {prompt: 'You full name?', input: 'Your full name?', edit: false, isValid: false};
-        this.program = {prompt: 'Pre-uni Pathway, Undergrad, or Postgrad?', input: 'Pre-uni Pathway, Undergrad, or Postgrad?', edit: false, isValid: false};
+        this.program = {prompt: 'Pre-uni, Undergrad, or Postgrad?', input: 'Pre-uni, Undergrad, or Postgrad?', edit: false, isValid: false};
         this.course = {prompt: 'What major or course?', input: 'What major or course?', edit: false, isValid: false};
         this.location = {prompt: 'What city or country?', input: 'What city or country?', edit: false, isValid: false};
         this.contact = {prompt: "What's your mobile number or email", input: "What's your mobile number or email", edit: false, isValid: false};
@@ -130,7 +130,7 @@ export default {
       margin: auto;
       text-align: left;
       height: fit-content;
-      width: 350px;
+      width: 360px;
 
       .header-card {
         position: relative;
@@ -145,12 +145,12 @@ export default {
         box-shadow: 0 8px 22px 0 rgba(31, 38, 135, 0.1);
         backdrop-filter: blur(10px);
         -webkit-backdrop-filter: blur(10px);
-        border: 1px solid rgba(255, 255, 255, 0.7);
+        border: 1px solid #9894fc;
 
         .prompt {
           font-family: "Bw Modelica Medium", serif;
           letter-spacing: -0.5px;
-          color: #1f1f1f;
+          color: #161616;
           font-size: 15px;
           margin: 0 9px 5px 0;
         }
@@ -169,12 +169,12 @@ export default {
         box-shadow: 0 8px 22px 0 rgba(31, 38, 135, 0.1);
         backdrop-filter: blur(10px);
         -webkit-backdrop-filter: blur(10px);
-        border: 1px solid rgba(255, 255, 255, 0.7);
+        border: 1px solid #9894fc;
 
         .prompt {
           font-family: "Bw Modelica Medium", serif;
           letter-spacing: -0.5px;
-          color: #1f1f1f;
+          color: #161616;
           font-size: 15px;
           margin: 0 9px 5px 0;
         }
@@ -188,12 +188,12 @@ export default {
         margin-bottom: 13px;
         padding: 2px 17px 2px 27px;
         height: 50px;
-        border-radius: 5px 5px 15px 15px;
+        border-radius: 10px 5px 20px 15px;
         background: rgba(255, 255, 255, 0.1);
         box-shadow: 0 8px 22px 0 rgba(31, 38, 135, 0.1);
         backdrop-filter: blur(10px);
         -webkit-backdrop-filter: blur(10px);
-        border: 1px solid rgba(255, 255, 255, 0.7);
+        border: 1px solid #9894fc;
 
         .label {
           line-height: 1.3;
@@ -206,7 +206,7 @@ export default {
 
           .highlight {
             font-family: "Gilroy Bold", serif;
-            color: #5651ec;
+            color: #161616;
           }
         }
 
