@@ -1,6 +1,6 @@
 <template>
   <div id="gradient-bg">
-    <img class="image" src="@/assets/gradient-images/Gradient-Mesh-14.jpg" alt=""/>
+    <img class="image" src="@/assets/gradient-images/Gradient-Mesh-2.jpg" alt=""/>
     <span class="blur-effect"></span>
   </div>
 </template>
